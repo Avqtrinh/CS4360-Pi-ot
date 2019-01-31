@@ -8,4 +8,5 @@ Members
 -----------------
 Andrew Trinh
 John Tran
+Kevin Ngovanduc
 

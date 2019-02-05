@@ -9,4 +9,4 @@ Members
 Andrew Trinh
 John Tran
 Kevin Ngovanduc
-
+Diego Medina

@@ -14,8 +14,7 @@ class pir_sensor():
             print("and the gpio pin id is correct.")
 
     def look_for_motion(self):
-        while True:
-            self.pir.wait_for_motion()
-            #send with mqtt here? or return.
-            print(dt.now())
-            sleep(2)
+        if self.pir.motion_detected:
+            return dt.now()
+        else:
+            return ''

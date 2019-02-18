@@ -9,6 +9,9 @@ from Motion import pir_sensor
 
 
 class testMotionSensor(unittest.TestCase):
+    #test cases:
+    # no sensor found
+    # sensor is found
     def test_init(self):
         test_pir=pir_sensor(1)
         self.assertIsNone(test_pir.pir)
@@ -16,14 +19,17 @@ class testMotionSensor(unittest.TestCase):
         test_pir=pir_sensor(4)
         self.assertIsNotNone(test_pir.pir)
 
+    #test cases:
+    #make sure that if motion_detected returns true to output a datetime
+    #make sure that if motion_detected returns false to output None
     def test_look_for_motion(self):
         Device.pin_factory = MockFactory()
         test_pir=pir_sensor(4)
         pin = Device.pin_factory.pin(4)
-        self.assertEqual(test_pir.look_for_motion(),'')
+        self.assertEqual(test_pir.look_for_motion(),None)
         pin.drive_high()
         sleep(0.5) #give time for state switch
-        self.assertNotEqual(test_pir.look_for_motion(),'')
+        self.assertNotEqual(test_pir.look_for_motion(),None)
 
 if __name__ == '__main__':
     unittest.main()

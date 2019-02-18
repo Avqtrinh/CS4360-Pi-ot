@@ -17,4 +17,4 @@ class pir_sensor():
         if self.pir.motion_detected:
             return dt.now()
         else:
-            return ''
+            return None

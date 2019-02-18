@@ -14,9 +14,9 @@ com_handler = communication_handler(endpoint,ca,cert,privatekey)
 #create settings ini later for this
 pir = pir_sensor(4)
 while True:
-    payload =""
+    payload = None
     payload = pir.look_for_motion()
-    if payload != '':
+    if payload != None:
         com_handler.send_payload(payload)
         print(payload)
         sleep(5)

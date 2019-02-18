@@ -3,7 +3,7 @@ from datetime import datetime as dt
 from time import sleep
 
 class pir_sensor():
-
+    pir = None
     def __init__(self,gpioid):
         try:
             self.pir = MotionSensor(4)

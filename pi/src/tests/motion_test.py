@@ -8,7 +8,7 @@ sys.path.insert(0,sys.path[0][0:path_length]+'modules')
 from Motion import pir_sensor
 
 
-class testMotionSensor(unittest.TestCase):
+class test_motion_sensor(unittest.TestCase):
     #test cases:
     # no sensor found
     # sensor is found

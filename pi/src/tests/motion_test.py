@@ -1,5 +1,5 @@
 import sys
-from gpiozero.pins.mock import MockFactory,MockPin,MockConnectedPin
+from gpiozero.pins.mock import MockFactory, MockPin, MockConnectedPin
 import unittest
 from time import sleep
 from gpiozero import MotionSensor
@@ -7,7 +7,6 @@ from gpiozero import Device
 from Motion import PirSensor
 path_length = sys.path[0].index("tests")
 sys.path.insert(0,sys.path[0][0:path_length]+'modules')
-
 
 
 class test_motion_sensor(unittest.TestCase):
@@ -28,10 +27,10 @@ class test_motion_sensor(unittest.TestCase):
         Device.pin_factory = MockFactory()
         test_pir=PirSensor(4)
         pin = Device.pin_factory.pin(4)
-        self.assertEqual(test_pir.look_for_motion(),None)
+        self.assertEqual(test_pir.look_for_motion(), None)
         pin.drive_high()
         sleep(0.5) #give time for state switch
-        self.assertNotEqual(test_pir.look_for_motion(),None)
+        self.assertNotEqual(test_pir.look_for_motion(), None)
 
 if __name__ == '__main__':
     unittest.main()

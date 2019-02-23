@@ -22,7 +22,7 @@ class communication_handler():
             return False
         
         #Payload as JSON object
-        payload = {"id": "001", "data": data}
+        payload = '{"id": "001", "data": "'+str(data)+'"}'
         try:
             self.mqttClient.connect()
             self.mqttClient.publish("testConnection", payload, 0) #Topic: "testConnection" on AWS IoT

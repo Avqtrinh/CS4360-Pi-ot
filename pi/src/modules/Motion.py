@@ -1,13 +1,12 @@
-from gpiozero import MotionSensor
 from datetime import datetime as dt
-from time import sleep
+from gpiozero import MotionSensor
 
-class pir_sensor():
+class PirSensor():
     pir = None
     def __init__(self, gpioid):
         try:
-            self.pir = MotionSensor(4)
-        except:
+            self.pir = MotionSensor(gpioid)
+        except NoSensorError:
             print("Error: 1")
             print("No motion sensor device found.")
             print("Please check that the sensor is connected")
@@ -16,5 +15,10 @@ class pir_sensor():
     def look_for_motion(self):
         if self.pir.motion_detected:
             return dt.now()
-        else:
-            return None
+        return None
+
+class Error(Exception):
+    """Base class for other exceptions"""
+
+class NoSensorError(Error):
+    """The device has failed to send the payload to AWS"""

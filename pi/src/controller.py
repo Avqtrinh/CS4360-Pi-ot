@@ -1,4 +1,4 @@
-#insert path to the rest of the files will change for safty later
+#insert path to the rest of the files will change for later
 import sys
 
 sys.path.insert(0,'modules/*')

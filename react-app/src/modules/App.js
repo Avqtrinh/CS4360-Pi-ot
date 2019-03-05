@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Dashboard from './Dashboard';
+import Navigation from './Navigation'
 
 class App extends Component {
   render() {
     return (
-      <p>hello</p>
+      <div>
+        <h1>Pi-oT</h1>
+      </div>
     );
   }
 }

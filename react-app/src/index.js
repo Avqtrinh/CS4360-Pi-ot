@@ -12,6 +12,7 @@ import Login from './modules/Login';
 import Dashboard from './modules/Dashboard';
 import Stats from './modules/Stats';
 import Log from './modules/Log';
+import Logout from './modules/Logout';
 
 const routes = (
     <Router> 
@@ -21,6 +22,7 @@ const routes = (
             <Route path="/stats" component={Stats} />
             <Route path="/log" component={Log} />
             <Route path="/login" component={Login} />
+            <Route path="/logout" component={Logout} />
         </div>
     </Router>
 )

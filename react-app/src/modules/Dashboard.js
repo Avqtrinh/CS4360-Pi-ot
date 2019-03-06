@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Basic.css';
 
 class Dashboard extends Component {
   render() {
     return (
-        <p>
+        <p className="basic">
             dashboard
         </p>
     );

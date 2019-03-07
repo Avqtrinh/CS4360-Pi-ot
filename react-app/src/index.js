@@ -13,9 +13,10 @@ import Dashboard from './modules/Dashboard';
 import Stats from './modules/Stats';
 import Log from './modules/Log';
 import Logout from './modules/Logout';
+import Display from './modules/Display';
 
 const routes = (
-    <Router> 
+    <Router>
         <div>
             <Route path ="/" component={App} />
             <Route path="/dashboard" component={Dashboard} />
@@ -23,6 +24,7 @@ const routes = (
             <Route path="/log" component={Log} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
+            <Route path="/display" component={Display} />
         </div>
     </Router>
 )

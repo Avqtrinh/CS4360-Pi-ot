@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@material/textfield": "^0.44.1",
+    "aws-mqtt": "^1.0.0",
+    "aws-sdk": "^2.416.0",
     "mdbreact": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

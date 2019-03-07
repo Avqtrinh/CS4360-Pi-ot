@@ -12,8 +12,7 @@ class Controller():
         self.CA = "certinfo/CA.pem"
         self.CERT = "certinfo/29c44ddf59-certificate.pem.crt"
         self.PRIVATE_KEY = 'certinfo/29c44ddf59-private.pem.key'
-
-        self.COM_HANDLER = CommunicationHandler(ENDPOINT, CA, CERT, PRIVATE_KEY)
+        self.COM_HANDLER = CommunicationHandler(self.ENDPOINT, self.CA, self.CERT, self.PRIVATE_KEY)
         #create settings ini later for this
         self.PIR = PirSensor(4)
         while True:

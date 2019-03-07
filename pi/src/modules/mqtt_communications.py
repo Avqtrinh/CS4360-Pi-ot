@@ -14,21 +14,21 @@ class CommunicationHandler():
             self.mqtt_client.configureMQTTOperationTimeout(5)
             self.initilized = True
         except FailedToCreateMQTTConnection:
-            print("Error: MqttClient Construction Failed")
+            print("Error: MQTTClient Construction Failed.")
             self.initilized = False
 
     def send_payload(self, data):
         if data in("", '', None):
-            print("Error: Message Empty")
+            print("Error: Message Empty.")
             return False
-        payload = '{ID: "Success", Data: '+str(data)+' }'
+        payload = '{"ID": "Success", "Data": "'+str(data)+'" }'
         try:
             self.mqtt_client.connect()
             self.mqtt_client.publish("testConnection", payload, 0)
-            print("Publish success.")
+            print("Publish Success.")
             return True
         except FailedToSendError:
-            print("Publish failed.")
+            print("Publish Failed.")
             return False
 
 class Error(Exception):

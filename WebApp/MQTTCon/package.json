@@ -1,0 +1,13 @@
+{
+  "name": "mqttClient",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon mqtt.service.js"
+  },
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.1",
+    "debug": "~2.6.9",
+    "nodemon": "^1.18.10"
+  }
+}

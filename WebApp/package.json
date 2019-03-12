@@ -1,0 +1,17 @@
+{
+  "name": "WebApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "react-app": "cd react-app && npm start",
+    "MQTTCon": "cd MQTTCon && npm start",
+    "start": "concurrently - kill-others \"npm run react-app\" \"npm run MQTTCon\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

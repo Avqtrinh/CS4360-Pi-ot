@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy":"http://localhost:3001",
   "scripts": {
     "react-app": "cd react-app && npm start",
     "MQTTCon": "cd MQTTCon && npm start",

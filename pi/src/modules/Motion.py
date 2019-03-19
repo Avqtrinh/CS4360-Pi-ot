@@ -9,7 +9,7 @@ class PirSensor():
     pir = None
     def __init__(self, gpioid):
         """
-        Args: gpioid (GPIO pin ID)
+        Args: self, gpioid (GPIO pin ID)
         -try statement to set instance of pir to Motion Sensor
         -if no sensor is detected then print error message
         """

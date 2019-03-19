@@ -8,16 +8,18 @@ class CommunicationHandler():
     def __init__(self, ENDPOINT, CA, CERT, PRIVATE_KEY):
         """
         This method defines instance variables of mqtt client and initalizes
-        ARGS:
+        Attributes:
+        -mqtt_client
+        -initalized
+        Args:
         -self
         -ENDPOINT
-        -Certification
-        -Cert credentials
-        -Cert Private key
+        -CA -Certification Info
+        -CERT -Certification Cridential Details
+        -PRIVATE_KEY -private key for Certification
         -Return True
 
         -catches if connection to MQTT was unsucessfully created
-        -Return False
         """
         try:
             print("test")
@@ -35,24 +37,25 @@ class CommunicationHandler():
 
     def send_payload(self, data):
         """
+        Attributes:
+        -mqtt_client -AWS IoT connection through mqtt
+        -PAYLOAD -Pi information data with ID
+        Args:
+        -self
+        -data -Raspberry Pi event outcome
+
         Sends data payload to mqtt
-
-        ARGS: instance of mqtt client and Data
-
         -if there is no data then print Message
         -return False
-
         -Define payload as data with ID
 
-        -Try catch statement to connect and publish data to AWS
-        ARGS:
-        -PAYLOAD
-
+        -Try statement to connect and publish data to AWS
+        -connect mqtt_client
         -Publish data to AWS
         -print publish success
         -return True
 
-        -catch if failed to send Data
+        -Catch if failed to send Data
         -print published failed
         -return False
         """

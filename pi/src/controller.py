@@ -10,19 +10,21 @@ class Controller():
 
     def __init__(self):
         """This method defines
-        -Endpoint of AWS Connection for IOT
-        -Certificate certificate info
-        -Certificate
-        -Private key for Certificate
+        Args: self
+        Attributes:
+            -Endpoint of AWS Connection for IOT
+            -CA - Certification Info
+            -CERT - Certificate details
+            -PRIVATE KEY - Private key for Certificate
+            -Communication Handler
+            -PirSensor
+            -PAYLOAD
 
         -Communication Handler
-
-        Args: Endpoint, Certificate info, Certificate, Private Key
         -Define PIR-PIR sensor
         -If no detection occurs
         Return: None
         -Look for detection
-
         -if Detection occurs
         -Send Information Payload to AWS
         -Print PAYLOAD

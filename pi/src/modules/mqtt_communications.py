@@ -1,8 +1,24 @@
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 
 class CommunicationHandler():
+    """
+    This class handles the communication to AWS
+    """
 
     def __init__(self, ENDPOINT, CA, CERT, PRIVATE_KEY):
+        """
+        This method defines instance variables of mqtt client and initalizes
+        ARGS:
+        -self
+        -ENDPOINT
+        -Certification
+        -Cert credentials
+        -Cert Private key
+        -Return True
+
+        -catches if connection to MQTT was unsucessfully created
+        -Return False
+        """
         try:
             print("test")
             self.mqtt_client = AWSIoTMQTTClient("client")
@@ -18,6 +34,28 @@ class CommunicationHandler():
             self.initilized = False
 
     def send_payload(self, data):
+        """
+        Sends data payload to mqtt
+
+        ARGS: instance of mqtt client and Data
+
+        -if there is no data then print Message
+        -return False
+
+        -Define payload as data with ID
+
+        -Try catch statement to connect and publish data to AWS
+        ARGS:
+        -PAYLOAD
+
+        -Publish data to AWS
+        -print publish success
+        -return True
+
+        -catch if failed to send Data
+        -print published failed
+        -return False
+        """
         if data in("", '', None):
             print("Error: Message Empty.")
             return False

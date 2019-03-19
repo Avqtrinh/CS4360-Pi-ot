@@ -14,13 +14,7 @@ class Controller():
         -Certificate certificate info
         -Certificate
         -Private key for Certificate
-         """
-        self.ENDPOINT = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
-        self.CA = "certinfo/CA.pem"
-        self.CERT = "certinfo/29c44ddf59-certificate.pem.crt"
-        self.PRIVATE_KEY = 'certinfo/29c44ddf59-private.pem.key'
 
-        """
         -Communication Handler
 
         Args: Endpoint, Certificate info, Certificate, Private Key
@@ -32,7 +26,12 @@ class Controller():
         -if Detection occurs
         -Send Information Payload to AWS
         -Print PAYLOAD
-        """
+         """
+        self.ENDPOINT = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
+        self.CA = "certinfo/CA.pem"
+        self.CERT = "certinfo/29c44ddf59-certificate.pem.crt"
+        self.PRIVATE_KEY = 'certinfo/29c44ddf59-private.pem.key'
+
         self.COM_HANDLER = CommunicationHandler(ENDPOINT, CA, CERT, PRIVATE_KEY)
         #create settings ini later for this
         self.PIR = PirSensor(4)

@@ -5,13 +5,13 @@ const cors = require('cors')
 var app = express()
 const port = 3000
 
-var message = "This is a test message"
+var message = "Loading..."
 
 
 var device = awsIot.device({
-  keyPath:"./certinfo/private.pem.key",
-  certPath:"./certinfo/certificate.pem.crt",
-  caPath: "./certinfo/CA.pem",
+  keyPath:"./keys/private.pem.key",
+  certPath:"./keys/certificate.pem.crt",
+  caPath: "./keys/CA.pem",
   host: "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
 });
 

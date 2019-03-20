@@ -1,4 +1,15 @@
 .basic {
-    padding-top: 200px;
     text-align: center;
+    align-content: center;
 }
+
+h1 {
+    padding-top: 150px;
+}
+
+.cards {
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+

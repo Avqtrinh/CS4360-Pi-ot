@@ -2,8 +2,6 @@ var awsIot = require('aws-iot-device-sdk');
 
 function test(){
 
-console.log("This is a test")
-
 var device = awsIot.device({
   keyPath:"./certinfo/private.pem.key",
   certPath:"./certinfo/certificate.pem.crt",

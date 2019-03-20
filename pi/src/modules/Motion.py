@@ -1,17 +1,19 @@
 from datetime import datetime as dt
 from gpiozero import MotionSensor
 
+
 class PirSensor():
     """
-    Class for Sensor for Pi Infrared sensor
-    -Define pir to none
+    Class for Sensor for Pi Infrared sensor.
+    Attributes
+        pir - the motion sensor object from gpiozero
     """
-    pir = None
     def __init__(self, gpioid):
         """
-        Args: self, gpioid (GPIO pin ID)
-        -try statement to set instance of pir to Motion Sensor
-        -if no sensor is detected then print error message
+        This Method Initializes the pir sensor with the connection to the pi's gpio
+        Args:
+            -self - this object
+            -gpioid - the pin ID (int) for the I/O
         """
         try:
             self.pir = MotionSensor(gpioid)
@@ -21,17 +23,21 @@ class PirSensor():
             print("Please check that the sensor is connected")
             print("and the GPIO pin ID is correct.")
 
+
     def look_for_motion(self):
         """
-        -if motion was detected return the event
-        -next, return none
+        This method checks to see if there is currently any motion.
+        Args:
+            -self - this object
         """
         if self.pir.motion_detected:
             return dt.now()
         return None
 
+
 class Error(Exception):
     """Base class for other exceptions"""
+
 
 class NoSensorError(Error):
     """The device has failed to send the payload to AWS"""

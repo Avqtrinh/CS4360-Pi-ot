@@ -1,25 +1,24 @@
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 
+
 class CommunicationHandler():
     """
-    This class handles the communication to AWS
+    This class handles the communication to AWS.
+    Attributes:
+        -mqtt_client - the client used to connect to AWS
+        -initalized - used for testing
     """
+
 
     def __init__(self, ENDPOINT, CA, CERT, PRIVATE_KEY):
         """
-        This method defines instance variables of mqtt client and initalizes
-        Attributes:
-        -mqtt_client
-        -initalized
+        This method initializes the CommunicationHandler class with the MQTT client and handles errors on client creation.
         Args:
-        -self
-        -ENDPOINT
-        -CA -Certification Info
-        -CERT -Certification Cridential Details
-        -PRIVATE_KEY -private key for Certification
-        -Return True
-
-        -catches if connection to MQTT was unsucessfully created
+            -self
+            -ENDPOINT - The endpoint for AWS Connection for IOT
+            -CA - Certification Info for AWS
+            -CERT - Certificate details for AWS
+            -PRIVATE KEY - Private Key for AWS
         """
         try:
             print("test")
@@ -35,29 +34,16 @@ class CommunicationHandler():
             print("Error: MQTTClient Construction Failed.")
             self.initilized = False
 
+
     def send_payload(self, data):
         """
-        Attributes:
-        -mqtt_client -AWS IoT connection through mqtt
-        -PAYLOAD -Pi information data with ID
+        Handles the sending of the data to AWS in a Json format.
         Args:
-        -self
-        -data -Raspberry Pi event outcome
+            -self - this object
+            -data - the string object that is to be formated and sent to aws
 
-        Sends data payload to mqtt
-        -if there is no data then print Message
-        -return False
-        -Define payload as data with ID
-
-        -Try statement to connect and publish data to AWS
-        -connect mqtt_client
-        -Publish data to AWS
-        -print publish success
-        -return True
-
-        -Catch if failed to send Data
-        -print published failed
-        -return False
+        Attributes:
+            -PAYLOAD - the json object that is sent to aws
         """
         if data in("", '', None):
             print("Error: Message Empty.")

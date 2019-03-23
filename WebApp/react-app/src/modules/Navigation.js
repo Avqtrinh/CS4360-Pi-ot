@@ -36,7 +36,7 @@ render() {
             <MDBNavLink to="/login">Login</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/logout">Logout</MDBNavLink>
+            <MDBNavLink to="/logout">Signup</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBDropdown>

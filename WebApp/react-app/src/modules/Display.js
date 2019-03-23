@@ -5,7 +5,6 @@ class Display extends Component {
     text: "Display"
   }
 
-
   componentDidMount() {
     this.interval = setInterval(() =>
       fetch('http://localhost:3001/api')
@@ -18,16 +17,17 @@ class Display extends Component {
             }
       ),5000);
   }
+
   componentWillUnmount() {
     clearInterval(this.interval);
   }
-
 
   render() {
       return (
         <div id= "test" align = "center">
           <p className="basic" align = "center">
             {this.state.text}
+            {this.state.load}
             </p>
         </div>
       );

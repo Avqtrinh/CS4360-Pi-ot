@@ -5,12 +5,10 @@ const cors = require('cors')
 var app = express()
 const port = 3000
 
-var message = "Loading..."
-
-
+var message = ""
 var device = awsIot.device({
   keyPath:"./keys/private.pem.key",
-  certPath:"./keys/certificate.pem.crt",
+  certPath:"./keys/cert.pem.crt",
   caPath: "./keys/CA.pem",
   host: "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
 });
@@ -25,12 +23,12 @@ app.listen(3001, ()=>{
   console.log('server started');
 });
 
-
 device
-    .on('connect', function() {
-      console.log('Connected');
-      device.subscribe('testConnection');
-    })
+  .on('connect', function() {
+    console.log('Connected');
+    device.subscribe('testConnection');
+  });
+
 device
   .on('message', function(topic, payload) {
     console.log(payload.toString());
@@ -40,6 +38,6 @@ device
   });
 
 device
-    .on('error', function(error) {
-        console.log('Error: ', error)
-    });
+  .on('error', function(error) {
+    console.log('Error: ', error)
+  });

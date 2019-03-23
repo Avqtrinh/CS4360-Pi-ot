@@ -7,10 +7,10 @@ class Stats extends Component {
 
   state = {
     dataLine: {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: ["3-13-19", "3-14-19", "3-15-19", "3-16-19", "3-17-19", "3-18-19", "3-19-19"],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Successful Connections",
           fill: false,
           lineTension: 0.1,
           backgroundColor: "rgba(75,192,192,0.4)",
@@ -28,7 +28,7 @@ class Stats extends Component {
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
-          data: [65, 59, 80, 81, 56, 55, 40]
+          data: [0, 4, 0, 1, 0, 2, 2]
         }
       ]
     }
@@ -37,8 +37,9 @@ class Stats extends Component {
   render() {
     return (
       <MDBContainer>
-        <h3 className="mt-5">Line chart</h3>
-        <Line data={this.state.dataLine} options={{ responsive: true }} />
+        <div className="stat">
+          <Line data={this.state.dataLine} options={{ responsive: true }} />
+        </div>
       </MDBContainer>
     );
   }

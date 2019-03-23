@@ -7,6 +7,7 @@ class Login extends Component {
   render() {
     return (
       <div className="basic">
+        <h2>Log In</h2>
         <MDBContainer>
           <MDBRow>
             <MDBCol>

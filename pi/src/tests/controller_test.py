@@ -2,9 +2,9 @@ import sys
 import unittest
 from unittest.mock import MagicMock
 from time import sleep
-from modules.Motion import PirSensor
 path_length = sys.path[0].index("tests")
 sys.path.insert(0,sys.path[0][0:path_length])
+from modules.Motion import PirSensor
 from controller import Controller
 
 class TestPiController(unittest.TestCase):

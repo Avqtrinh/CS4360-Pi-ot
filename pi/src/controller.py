@@ -5,20 +5,37 @@ from modules.Motion import PirSensor
 from modules.mqtt_communications import CommunicationHandler
 sys.path.insert(0, 'modules/*')
 
+
 class Controller():
+    """
+    Class for Controller of All Pi-ot functions.
+    Attributes:
+        -ENDPOINT - The endpoint for AWS Connection for IOT
+        -CA - Certification Info for AWS
+        -CERT - Certificate details for AWS
+        -PRIVATE KEY - Private Key for AWS
+        -Communication Handler - The Mqtt communications handler
+        -Pir - The pi's sensor controller
+        -PAYLOAD - The datetime object from the Pi
+    """
+
 
     def __init__(self):
+        """This Method Initializes The Controller it contains the following:
+        Args:
+            -self - this object
+        """
         self.ENDPOINT = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
+
         self.CA = "keys/CA.pem"
         self.CERT = "keys/certificate.pem.crt"
         self.PRIVATE_KEY = 'keys/private.pem.key'
         self.COM_HANDLER = CommunicationHandler(self.ENDPOINT, self.CA, self.CERT, self.PRIVATE_KEY)
+
         #create settings ini later for this
         self.PIR = PirSensor(4)
-        while True:
-            self.PAYLOAD = None
+        while True
             self.PAYLOAD = self.PIR.look_for_motion()
             if self.PAYLOAD is not None:
                 self.COM_HANDLER.send_payload(PAYLOAD)
-                print(PAYLOAD)
                 sleep(5)

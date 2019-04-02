@@ -8,7 +8,7 @@ const port = 3000
 var message = ""
 var device = awsIot.device({
   keyPath:"./keys/private.pem.key",
-  certPath:"./keys/cert.pem.crt",
+  certPath:"./keys/certificate.pem.crt",
   caPath: "./keys/CA.pem",
   host: "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
 });
@@ -17,7 +17,7 @@ app.use(cors())
 app.set('json spaces',0)
 app.get('/api',(req,res)=>{
   res.send(JSON.stringify({text:message}))
-  console.log("express get called")
+  //console.log("express get called")
 })
 app.listen(3001, ()=>{
   console.log('server started');

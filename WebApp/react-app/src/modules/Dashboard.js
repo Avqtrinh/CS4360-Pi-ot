@@ -17,11 +17,13 @@ class Dashboard extends Component {
           .then(res => res.json())
           .then(
             (result) => {
-              this.setState({
-                load: "",
-                text: result.text,
+              if (result.text != ""){
+                this.setState({
+                  load: "",
+                  text: result.text,
                 });
               }
+            }
           ),2000);
   }
   componentWillUnmount() {
@@ -39,7 +41,7 @@ class Dashboard extends Component {
                 <MDBCardBody>
                   <MDBCardTitle>User's Pi</MDBCardTitle>
                   <MDBCardText>
-                    {this.state.load}                   
+                    {this.state.load}
                     {this.state.text}
                   </MDBCardText>
                   <MDBBtn href="#">More Info</MDBBtn>

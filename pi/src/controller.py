@@ -26,10 +26,12 @@ class Controller():
             -self - this object
         """
         self.ENDPOINT = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
-        self.CA = "certinfo/CA.pem"
-        self.CERT = "certinfo/29c44ddf59-certificate.pem.crt"
-        self.PRIVATE_KEY = 'certinfo/29c44ddf59-private.pem.key'
-        self.COM_HANDLER = CommunicationHandler(ENDPOINT, CA, CERT, PRIVATE_KEY)
+
+        self.CA = "keys/CA.pem"
+        self.CERT = "keys/certificate.pem.crt"
+        self.PRIVATE_KEY = 'keys/private.pem.key'
+        self.COM_HANDLER = CommunicationHandler(self.ENDPOINT, self.CA, self.CERT, self.PRIVATE_KEY)
+
         #create settings ini later for this
         self.PIR = PirSensor(4)
         while True

@@ -6,7 +6,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 class Login extends Component {
   render() {
     return (
-      <div className="basic">
+      <div className="basic" data-test="login">
         <h2>Log In</h2>
         <MDBContainer>
           <MDBRow>
@@ -31,7 +31,7 @@ class Login extends Component {
                   id="defaultFormLoginPasswordEx"
                   className="form-control"
                 />
-                <div className="text-center mt-4">
+                <div className="text-center mt-4" data-test="loginSubmit">
                   <MDBBtn color="indigo" type="submit">Login</MDBBtn>
                 </div>
               </form>

@@ -45,12 +45,14 @@ import { MDBDataTable } from 'mdbreact';
 class Log extends Component {
   render() {
     return (
+      <div data-test="log">
           <MDBDataTable
             striped
             bordered
             hover
             data={data}
           />
+      </div>
     );
   }
 }

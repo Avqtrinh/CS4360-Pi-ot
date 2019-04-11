@@ -5,7 +5,7 @@ import './Basic.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div data-test="app">
         <Navigation />
       </div>
     );

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import './Basic.css';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer, MDBRow } from 'mdbreact';
-import Display from './Display';
 
 class Dashboard extends Component {
+  constructor(props){
+    super(props)
+  this.state = {didLoad: false};
+  }
+
   state = {
+    didLoad: false,
     text: "",
     load: <div class="spinner-grow" role="status">
             <span class="sr-only"></span>
@@ -17,13 +22,12 @@ class Dashboard extends Component {
           .then(res => res.json())
           .then(
             (result) => {
-              if (result.text != ""){
-                this.setState({
-                  load: "",
-                  text: result.text,
+              this.setState({
+                didLoad: true,
+                load: "",
+                text: result.text,
                 });
               }
-            }
           ),2000);
   }
   componentWillUnmount() {
@@ -32,7 +36,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-        <div className="cards">
+        <div className="cards" data-test="dashboard">
           <MDBContainer>
             <MDBRow>
             <MDBCol md="6">
@@ -41,7 +45,7 @@ class Dashboard extends Component {
                 <MDBCardBody>
                   <MDBCardTitle>User's Pi</MDBCardTitle>
                   <MDBCardText>
-                    {this.state.load}
+                    {this.state.load}                   
                     {this.state.text}
                   </MDBCardText>
                   <MDBBtn href="#">More Info</MDBBtn>

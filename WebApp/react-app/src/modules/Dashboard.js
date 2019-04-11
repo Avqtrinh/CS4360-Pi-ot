@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Basic.css';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer, MDBRow } from 'mdbreact';
-import Display from './Display';
 
 class Dashboard extends Component {
   state = {
@@ -13,17 +12,23 @@ class Dashboard extends Component {
 
   componentDidMount() {
     this.interval = setInterval(() =>
-      fetch('http://localhost:3001/api_livePing')
+      fetch('http://localhost:3001/api_logPing')
           .then(res => res.json())
           .then(
             (result) => {
-              if (result.text != ""){
+                var newest = 0
+                result['Contents'].forEach(function(item,index){
+                  var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
+                  if (dateTime.getTime() > newest){
+                    newest = dateTime
+                  }
+                });
+                var newText = "Last Motion: "+(parseInt(newest.getMonth())+1).toString()+'/'+newest.getDate()+"/"+newest.getFullYear()+' '+newest.getHours()+':'+newest.getMinutes();
                 this.setState({
                   load: "",
-                  text: result.text,
+                  text: newText,
                 });
               }
-            }
           ),2000);
   }
   componentWillUnmount() {

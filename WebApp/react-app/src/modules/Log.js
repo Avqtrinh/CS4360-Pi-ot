@@ -36,9 +36,8 @@ class Log extends Component {
                       ]
                   };
                   result['Contents'].forEach(function(item,index){
-                    console.log(item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length))
                     var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
-                    console.log(dateTime)
+
                     temp['rows'].push({date:(parseInt(dateTime.getMonth())+1).toString()+"/"+dateTime.getDate()+"/"+dateTime.getFullYear(),time:dateTime.getHours()+":"+dateTime.getMinutes(),gps_coordinates:"n/a"},)
                   });
                   this.setState({data:temp});

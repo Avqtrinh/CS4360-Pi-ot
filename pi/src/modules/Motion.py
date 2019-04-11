@@ -31,7 +31,7 @@ class PirSensor():
             -self - this object
         """
         if self.pir.motion_detected:
-            return dt.now()
+            return 'gps n/a'
         return None
 
 

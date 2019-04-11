@@ -1,15 +1,15 @@
 var AWS = require("aws-sdk")
-var awsIot = require('aws-iot-device-sdk');
+var awsIot = require('aws-iot-device-sdk')
 var express = require('express')
 var router = express.Router()
 const cors = require('cors')
 var app = express()
 const port = 3000
-
+const config = require('./keys/config.json')
 
 var logS3 = new AWS.S3({
-  secretAccessKey:'D+s8z7mXDB5ajugyZVwP/EkMGNNC8Z86tebBVxtf',
-  accessKeyId:'AKIAXJ3NINUNPBQZR2A5',
+  secretAccessKey:config['keys']['secret'],
+  accessKeyId:config['keys']['access'],
   region:'us-east-2',
 });
 var params = {

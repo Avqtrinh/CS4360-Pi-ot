@@ -13,7 +13,7 @@ class Dashboard extends Component {
 
   componentDidMount() {
     this.interval = setInterval(() =>
-      fetch('http://localhost:3001/api')
+      fetch('http://localhost:3001/api_livePing')
           .then(res => res.json())
           .then(
             (result) => {

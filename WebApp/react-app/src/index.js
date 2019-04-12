@@ -13,7 +13,6 @@ import Dashboard from './modules/Dashboard';
 import Stats from './modules/Stats';
 import Log from './modules/Log';
 import Logout from './modules/Logout';
-import Display from './modules/Display'
 import Home from './modules/Home';
 
 const routes = (
@@ -27,7 +26,6 @@ const routes = (
             <Route path="/stats" component={Stats} />
             <Route path="/log" component={Log} />
             <Route path="/logout" component={Logout} />
-            <Route path="/display" component={Display} />
         </div>
     </Router>
 )

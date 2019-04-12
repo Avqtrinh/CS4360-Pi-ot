@@ -17,7 +17,7 @@ class Dashboard extends Component {
           .then(
             (result) => {
                 var newest = 0
-                result['Contents'].forEach(function(item,index){
+                result.forEach(function(item,index){
                   var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
                   if (dateTime.getTime() > newest){
                     newest = dateTime

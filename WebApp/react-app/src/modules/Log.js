@@ -35,7 +35,7 @@ class Log extends Component {
                       rows: [
                       ]
                   };
-                  result['Contents'].forEach(function(item,index){
+                  result.forEach(function(item,index){
                     var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
 
                     temp['rows'].push({date:(parseInt(dateTime.getMonth())+1).toString()+"/"+dateTime.getDate()+"/"+dateTime.getFullYear(),time:dateTime.getHours()+":"+dateTime.getMinutes(),gps_coordinates:"n/a"},)

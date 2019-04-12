@@ -48,7 +48,7 @@ class CommunicationHandler():
         if data in("", '', None):
             print("Error: Message Empty.")
             return False
-        payload = {"clientId": get_mac(), "Data":data}
+        payload = {"clientId": get_mac(), "data":data}
         try:
             self.mqtt_client.connect()
             self.mqtt_client.publish("pi", payload, 0)

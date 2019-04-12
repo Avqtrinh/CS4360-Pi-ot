@@ -21,10 +21,24 @@ app.get('/api_logPing',(req,res)=>{
   }
   logS3.listObjectsV2(params, function(err,data){ //error here somewhere
     if (err) console.log(err,err.stack);
-    else res.send(data);
+    else buildSendListOfObjects(data,res);
   });
 });
-
+function buildSendListOfObjects(data,res){
+  var listItems = []
+  data['Contents'].forEach(function(item,index){
+    var params = {
+      Bucket:"pidatalog",
+      Key:item['Key']
+    }
+    logS3.getObject(params, function(err, data) {
+        if (err) console.log(err, err.stack); // an error occurred
+        else    temp = JSON.parse(data["Body"].toString()), temp["Key"] = item["Key"], listItems.push(temp);           // successful response
+    });
+    console.log(listItems)
+  });
+  //res.send(listItems)
+}
 app.listen(3001, ()=>{
   console.log('server started');
 });

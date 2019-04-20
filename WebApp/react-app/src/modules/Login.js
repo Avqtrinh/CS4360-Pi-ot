@@ -1,9 +1,41 @@
 import React, { Component } from 'react';
-import './Basic.css';
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import './Basic.css';
+import { Auth } from 'aws-amplify';
 
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      email :"",
+      password: ""
+    };
+  }
+
+  validateForm() {
+    return this.state.email.length > 0 && this.state.password.length > 0;
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  }
+
+  handleSubmit = async event => {
+    event.preventDefault();
+
+    try {
+      await Auth.signIn(this.state.email, this.state.password);
+      alert('Logged in');
+    }
+    catch(e) {
+      alert(e.message);
+    }
+  }
+
   render() {
     return (
       <div className="basic" data-test="login">
@@ -11,7 +43,7 @@ class Login extends Component {
         <MDBContainer>
           <MDBRow>
             <MDBCol>
-              <form>
+              <form onSubmit = {this.handleSubmit}>
                 <h1></h1>
                 <p className="h4 text-center mb-7"></p>
                 <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
@@ -21,6 +53,8 @@ class Login extends Component {
                   type="email"
                   id="defaultFormLoginEmailEx"
                   className="form-control"
+                  value={this.state.email}
+                  onChange={this.handleChange}
                 />
                 <br />
                 <label htmlFor="defaultFormLoginPasswordEx" className="grey-text">
@@ -30,9 +64,11 @@ class Login extends Component {
                   type="password"
                   id="defaultFormLoginPasswordEx"
                   className="form-control"
+                  value={this.state.password}
+                  onChange={this.handleChange}
                 />
                 <div className="text-center mt-4" data-test="loginSubmit">
-                  <MDBBtn color="indigo" type="submit">Login</MDBBtn>
+                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Login</MDBBtn>
                 </div>
               </form>
             </MDBCol>

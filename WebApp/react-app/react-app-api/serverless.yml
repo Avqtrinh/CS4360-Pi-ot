@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: notes-app-api
+service: react-app-api
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
@@ -16,19 +16,6 @@ custom:
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: dev
-  region: us-east-1
-  # To load environment variables externally
-  # rename env.example to env.yml and uncomment
-  # the following line. Also, make sure to not
-  # commit your env.yml.
-  #
-  #environment: ${file(env.yml):${self:provider.stage}}
+  stage: prod
+  region: us-east-2
 
-functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          path: hello
-          method: get

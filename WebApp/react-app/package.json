@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material/textfield": "^0.44.1",
+    "aws-amplify": "^1.1.26",
     "material-components-web": "^1.0.0",
     "mdbreact": "^4.11.0",
     "react": "^16.8.3",

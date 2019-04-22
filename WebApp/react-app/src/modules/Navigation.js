@@ -5,7 +5,8 @@ MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
 class Navigation extends Component {
 
 state = {
-  isOpen: false
+  isOpen: false,
+  visible: 'invisible'
 };
 
 toggleCollapse = () => {
@@ -23,25 +24,25 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem>
-              <MDBNavLink to="/dashboard">Dashboard</MDBNavLink>
+              <MDBNavLink class = {this.state.visible}  to="/dashboard">Dashboard</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/stats">Stats</MDBNavLink>
+              <MDBNavLink class = {this.state.visible} to="/stats">Stats</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/log">Log</MDBNavLink>
+              <MDBNavLink class = {this.state.visible} to="/log">Log</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
           <MDBNavItem>
               <MDBNavLink to="/login">Login</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
+          </MDBNavItem>
+          <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="user" />
+                  <MDBIcon icon="user"/>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default" color="dark" right>
+                <MDBDropdownMenu  className="dropdown-default" color="dark" right>
                   <MDBDropdownItem>Account Details</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
@@ -55,3 +56,4 @@ render() {
 }
 
 export default Navigation;
+;

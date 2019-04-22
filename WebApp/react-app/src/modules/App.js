@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div data-test="app">
         <Navigation />
-        <Routes />
+        <Routes childProps={childProps}/>
       </div>
     );
   }

@@ -6,15 +6,16 @@ import Dashboard from './Dashboard';
 import Stats from './Stats';
 import Log from './Log';
 import Logout from './Logout';
-import Display from './Display'
+import Display from './Display';
+import AppliedRoute from '../components/AppliedRoute';
 
-export default () =>
+export default ({ childProps }) =>
     <Switch>
-        <Route path ="/" exact component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/stats" component={Stats} />
-        <Route path="/log" component={Log} />
-        <Route path="/logout" component={Logout} />
-        <Route path="/display" component={Display} />
+        <AppliedRoute path ="/" exact component={Home} props={childProps} />
+        <AppliedRoute path="/login" component={Login} props={childProps} />
+        <AppliedRoute path="/dashboard" component={Dashboard} props={childProps} />
+        <AppliedRoute path="/stats" component={Stats} props={childProps} />
+        <AppliedRoute path="/log" component={Log} props={childProps} />
+        <AppliedRoute path="/logout" component={Logout} props={childProps} />
+        <AppliedRoute path="/display" component={Display} props={childProps} />
     </Switch>;

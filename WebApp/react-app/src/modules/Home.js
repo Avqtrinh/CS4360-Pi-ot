@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div className="basic" data-test="home">
         <h1> Welcome to Pi-oT.</h1>
-          <p> Please login to access the dashboard. </p>
+          <p> Please login to access the Pi-oT Utilities. </p>
           <p> This web application was written for Dr. Beaty's CS4360 Senior Project class.</p>
       </div>
     );

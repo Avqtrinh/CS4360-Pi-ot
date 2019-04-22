@@ -28,6 +28,7 @@ class Login extends Component {
     event.preventDefault();
     try {
       await Auth.signIn(this.state.email, this.state.password);
+      this.setProps({usesrHasAuthentcated:true});
       alert('Logged in');
     }
     catch(e) {

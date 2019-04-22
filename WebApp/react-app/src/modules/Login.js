@@ -18,15 +18,14 @@ class Login extends Component {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
-  handleChange = event => {
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
+    handleChange = event => {
+      this.setState({
+        [event.target.type]: event.target.value
+      });
+    }
 
   handleSubmit = async event => {
     event.preventDefault();
-
     try {
       await Auth.signIn(this.state.email, this.state.password);
       alert('Logged in');

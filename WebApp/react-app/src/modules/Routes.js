@@ -9,6 +9,7 @@ import Logout from './Logout';
 import Display from './Display';
 import AppliedRoute from '../components/AppliedRoute';
 
+
 export default ({ childProps }) =>
     <Switch>
         <AppliedRoute path ="/" exact component={Home} props={childProps} />

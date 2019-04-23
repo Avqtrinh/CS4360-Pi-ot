@@ -7,7 +7,6 @@ import { Auth } from 'aws-amplify';
 class Login extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       email :"",
       password: ""
@@ -28,8 +27,8 @@ class Login extends Component {
     event.preventDefault();
     try {
       await Auth.signIn(this.state.email, this.state.password);
-      this.setProps({usesrHasAuthentcated:true});
-      alert('Logged in');
+      this.props.userHasAuthenticated(true)
+      //alert("logged In")
     }
     catch(e) {
       alert(e.message);

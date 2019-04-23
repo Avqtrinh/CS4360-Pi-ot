@@ -40,17 +40,17 @@ const mockData = {
       {
         date: '3-19-19',
         time: '12:34 PM',
-        gps_coordinates: '39.744, -105.008' 
+        gps_coordinates: '39.744, -105.008'
       },
       {
         date: '3-19-19',
         time: '12:34 PM',
-        gps_coordinates: '39.744, -105.008' 
+        gps_coordinates: '39.744, -105.008'
       },
       {
         date: '3-19-19',
         time: '12:34 PM',
-        gps_coordinates: '39.744, -105.008' 
+        gps_coordinates: '39.744, -105.008'
       }
     ]
 };
@@ -58,7 +58,7 @@ const mockData = {
 const findTest = (component, attr) => {
     const wrapper = component.find(`[data-test='${attr}']`);
     return wrapper;
-} 
+}
 
 //#region ShallowSetup
 const app = (props={}) => {
@@ -118,7 +118,7 @@ describe('App component', () => {
         expect(component).toMatchSnapshot();
     });
 
-    
+
 });
 
 describe('Home component', () => {
@@ -292,4 +292,3 @@ describe('Navigation component', () => {
     });
 });
 //#endregion
-

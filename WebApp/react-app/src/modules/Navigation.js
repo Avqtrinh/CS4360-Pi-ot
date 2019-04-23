@@ -3,15 +3,45 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    console.log('Starting nav')
+    console.log(props.childProps.isAuthenticated)
+    var temptest = ''
+    if (props.childProps.isAuthenticated){
+      temptest='d-block nav-link Ripple-parent'
+    }
+    else (
+      temptest='d-none'
+    )
+    this.state = {
+      isOpen:false,
+      email :"",
+      password: "",
+      visible:temptest,
+      lastAuth: props.childProps.isAuthenticated
+    };
 
-state = {
-  isOpen: false,
-  visible: 'invisible'
-};
+  }
 
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
+componentDidUpdate(props){
+  if(props.childProps.isAuthenticated!=this.state.lastAuth){
+    console.log('render nav')
+    console.log(this.props.childProps)
+    var temptest = ''
+    if (this.props.childProps.isAuthenticated){
+      temptest='d-block nav-link Ripple-parent'
+    }
+    else (
+      temptest='d-none'
+    )
+    this.setState({visible:temptest,lastAuth:props.childProps.isAuthenticated})
+  }
+}
+
 
 render() {
   return (
@@ -34,9 +64,10 @@ render() {
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-          <MDBNavItem>
-              <MDBNavLink to="/login">Login</MDBNavLink>
-          </MDBNavItem>
+          {this.state.lastAuth
+          ? <MDBNavLink to="/logout" onClick ={this.handleLogout}> Logout </MDBNavLink>
+          : <MDBNavLink to="/login">Login</MDBNavLink>
+          }
           <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>

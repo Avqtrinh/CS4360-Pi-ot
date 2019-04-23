@@ -8,23 +8,40 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: false
+      isAuthenticated: false,
     };
   }
 
-  userAuthenticated = authenticated => {
-    this.setState({isAuthenticated: authenticated})
-  }
+  userHasAuthenticated = authenticated => {
+      this.setState({ isAuthenticated: authenticated });
 
+  }
+  /*
+  componentDidUpdate(){
+  const childProps = {
+    isAuthenticated: this.isAuthenticated,
+    userHasAuthenticated: this.userHasAuthenticated,
+  };
+
+
+  return (
+    <div data-test="app">
+      <Navigation childProps={childProps}/>
+      <Routes childProps={childProps}/>
+    </div>
+  );
+  }
+  */
   render() {
     const childProps = {
       isAuthenticated: this.state.isAuthenticated,
-      userAuthenticated: this.userAuthenticated
+      userHasAuthenticated: this.userHasAuthenticated,
     };
-
+    console.log("render App")
+    console.log(childProps)
     return (
       <div data-test="app">
-        <Navigation />
+        <Navigation childProps={childProps}/>
         <Routes childProps={childProps}/>
       </div>
     );

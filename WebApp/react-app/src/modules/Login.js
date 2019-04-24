@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import './Basic.css';
 import { Auth } from 'aws-amplify';
 
@@ -43,7 +43,11 @@ class Login extends Component {
           <MDBRow>
             <MDBCol>
               <form onSubmit = {this.handleSubmit}>
-                <h1></h1>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
                 <p className="h4 text-center mb-7"></p>
                 <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
                   Your email

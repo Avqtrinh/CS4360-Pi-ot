@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Amplify from 'aws-amplify';
-import {BrowserRouter as Router, Route, Redirect} from "react-router-dom"
+import {BrowserRouter as Router} from "react-router-dom"
 import * as serviceWorker from './serviceWorker';
 import config from './config'
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -10,14 +10,6 @@ import 'mdbreact/dist/css/mdb.css';
 import './index.css';
 
 import App from './modules/App';
-
-
-const routes = (
-    <Router>
-        <div>
-        </div>
-    </Router>
-);
 
 Amplify.configure({
     Auth: {
@@ -34,7 +26,7 @@ Amplify.configure({
     }
   });
 
-ReactDOM.render(<Router> 
+ReactDOM.render(<Router>
                     <App />
                 </Router>,
                 document.getElementById('root'));

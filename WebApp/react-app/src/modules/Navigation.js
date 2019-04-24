@@ -1,73 +1,68 @@
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
+MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon , MDBRow } from 'mdbreact';
+import { Auth } from 'aws-amplify';
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
-    console.log('Starting nav')
-    console.log(props.childProps.isAuthenticated)
-    var temptest = ''
-    if (props.childProps.isAuthenticated){
-      temptest='d-block nav-link Ripple-parent'
-    }
-    else (
-      temptest='d-none'
-    )
     this.state = {
       isOpen:false,
       email :"",
       password: "",
-      visible:temptest,
-      lastAuth: props.childProps.isAuthenticated
     };
-
   }
 
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
-componentDidUpdate(props){
-  if(props.childProps.isAuthenticated!=this.state.lastAuth){
-    console.log('render nav')
-    console.log(this.props.childProps)
-    var temptest = ''
-    if (this.props.childProps.isAuthenticated){
-      temptest='d-block nav-link Ripple-parent'
-    }
-    else (
-      temptest='d-none'
-    )
-    this.setState({visible:temptest,lastAuth:props.childProps.isAuthenticated})
+
+handleLogout = async event => {
+  try {
+     await Auth.signOut()
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+    this.props.childProps.userHasAuthenticated(false)
+  }
+  catch(e) {
+    alert(e.message);
   }
 }
-
 
 render() {
   return (
     <div>
       <MDBNavbar color="indigo" dark expand="md" data-test="navigation">
         <MDBNavbarBrand>
-          <strong className="white-text">Pi_oT</strong>
+          {this.props.childProps.isAuthenticated
+            ?<MDBNavLink to='/dashboard'><strong className="white-text"><font face = "arial" size = '6'>Pi_oT</font></strong></MDBNavLink>
+            :<MDBNavLink to='/'><strong className="white-text"><font face = "arial" size = '6'>Pi_oT</font></strong></MDBNavLink>
+          }
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        {this.props.childProps.isAuthenticated &&
           <MDBNavbarNav left>
             <MDBNavItem>
-              <MDBNavLink class = {this.state.visible}  to="/dashboard">Dashboard</MDBNavLink>
+              <MDBNavLink  to="/dashboard">Dashboard</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink class = {this.state.visible} to="/stats">Stats</MDBNavLink>
+              <MDBNavLink to="/stats">Stats</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink class = {this.state.visible} to="/log">Log</MDBNavLink>
+              <MDBNavLink to="/log">Log</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
+        }
           <MDBNavbarNav right>
-          {this.state.lastAuth
-          ? <MDBNavLink to="/logout" onClick ={this.handleLogout}> Logout </MDBNavLink>
-          : <MDBNavLink to="/login">Login</MDBNavLink>
+          {this.props.childProps.isAuthenticated
+            ? <MDBNavLink to="/logout" onClick ={this.handleLogout}> Logout </MDBNavLink>
+            : <MDBRow>
+                <MDBNavLink to='/signup'>Signup</MDBNavLink>
+                <MDBNavLink to="/login">Login</MDBNavLink>
+              </MDBRow>
           }
+          {this.props.childProps.isAuthenticated &&
           <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
@@ -78,6 +73,7 @@ render() {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
+          }
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
@@ -87,4 +83,3 @@ render() {
 }
 
 export default Navigation;
-;

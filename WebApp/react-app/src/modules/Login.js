@@ -27,7 +27,8 @@ class Login extends Component {
     event.preventDefault();
     try {
       await Auth.signIn(this.state.email, this.state.password);
-      this.props.userHasAuthenticated(true)
+      this.props.userHasAuthenticated(true);
+      this.props.updateUser(Auth.currentAuthenticatedUser());
       this.props.history.push('/dashboard');
       //alert("logged In")
     }

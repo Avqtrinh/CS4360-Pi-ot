@@ -8,17 +8,25 @@ class Signup extends Component{
     super(props);
     this.state = {
       email :"",
-      verifiedEmail : "",
       password: "",
-      verifiedPassword : "",
-      submited: false,
-      code:
-    };
+      verifyPassword : "",
+      code: "",
+      submitted: false,
+      newUser: null,
+    }
   }
 
-  validateForm(){
-      return this.state.email === this.state.verifiedEmail && this.state.password === this.state.verifiedPassword
-          && this.state.email.length > 0 && this.state.password.length >= 8
+  validateForm() {
+    return (
+      this.state.email === this.state.verifiedEmail && this.state.password === this.state.verifiedPassword
+      && this.state.email.length > 0 && this.state.password.length >= 8
+    );
+  }
+
+  validateConfirmationForm() {
+    return (
+      this.state.code.length > 0
+    ); 
   }
 
   handleChange = event => {
@@ -29,51 +37,80 @@ class Signup extends Component{
 
   handleSubmit = async event => {
     event.preventDefault();
-    var email = this.state.email
-    var username = email
-    var password = this.state.password
-    console.log("email: "+ email)
-    try{
-      this.setState({
-        submitted:true
-      })
-      //Used Tutorial and code from tutorial here https://aws-amplify.github.io/docs/js/authentication
-      await Auth.signUp({
-        username,
-        password,
-        attributes:{
-            email
-        }
-      })
-      .then(data => console.log(data))
-      .catch(err => console.log(err));
-/*
-      Auth.confirmSignUp(username, code, {
-    // Optional. Force user confirmation irrespective of existing alias. By default set to True.
-        forceAliasCreation: false
-      }).then(data => console.log(data))
-        .catch(err => console.log(err));
-
-      Auth.resendSignUp(username).then(() => {
-        console.log('code resent successfully');
-      }).catch(e => {
-        console.log(e);
+    try {
+      const newUser = await Auth.signUp({
+        username: this.state.email,
+        password: this.state.password
       });
-*/
-    }
-    catch(e){
-      alert(e.message);
+      alert("Check your email for a verification code")
+      this.setState({
+        newUser
+      });
+    } 
+    catch(e) {
+      alert(e.message)
     }
   }
 
-  render(){
+  handleConfirmation = async event => {
+    event.preventDefault();
+
+    try {
+      await Auth.confirmSignUp(this.state.email, this.state.code);
+      await Auth.signIn(this.state.email, this.state.password);
+      alert("Confirmed, Welcome!")
+      this.props.userHasAuthenticated(true);
+      this.props.history.push("/dashboard");
+    }
+    catch(e) {
+      alert(e.message)
+    }
+  }
+
+
+  renderConfirmationForm() {
+    return(
+    <div className ="basic">
+      <MDBContainer>
+            <MDBRow>
+              <MDBCol>
+                <form onSubmit = {this.handleConfirmation}>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p className="h4 text-center mb-7"></p>
+                  <label htmlFor="defaultFormLoginPasswordEx" className="grey-text">
+                    Input your verification code sent to your email.
+                  </label>
+                  <br/>
+                  <input
+                  type="text"
+                  id="code"
+                  className="form-control"
+                    value={this.state.code}
+                    onChange={this.handleChange}
+                  />
+                  <br/>
+                  <div className="text-center mt-4" data-test="loginSubmit">
+                    <MDBBtn color="indigo" type="submit" disabled={!this.validateConfirmationForm()}>Confirm</MDBBtn>
+                  </div>
+                </form>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </div>
+    )
+  }
+
+  renderForm(){
     return (
       <div className = "basic">
         <h2>Sign Up</h2>
-        {this.state.submmited
-        ?<MDBContainer>
-          <MDBRow>
-            <MDBCol>
+          <MDBContainer>
+            <MDBRow>
+              <MDBCol>
               <form onSubmit = {this.handleSubmit}>
                 <br/>
                 <br/>
@@ -131,46 +168,27 @@ class Signup extends Component{
                   onChange={this.handleChange}
                 />
                 <div className="text-center mt-4" data-test="loginSubmit">
-                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Signup</MDBBtn>
+                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Sign up</MDBBtn>
                 </div>
               </form>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        :<MDBContainer>
-          <MDBRow>
-            <MDBCol>
-              <form onSubmit = {this.handleVerification}>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <p className="h4 text-center mb-7"></p>
-                <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-                  Input your verification code sent to your email.
-                </label>
-                <br/>
-                <input
-                  type = "text"
-                  id = "verificationCode"
-                  className = "formControl"
-                  value={this.state.code}
-                  onChange={this.handleChange}
-                />
-                <br/>
-//stoped here!!!!!!!!!!!!!!!!
-                <div className="text-center mt-4" data-test="loginSubmit">
-                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Signup</MDBBtn>
-                </div>
-              </form>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      }
       </div>
     )
   }
+
+  render() {
+    return (
+        <div>
+        {this.state.newUser == null
+        ? this.renderForm()
+        : this.renderConfirmationForm()}
+        </div>
+    )
+  }
+  
+
 }
 
 export default Signup;

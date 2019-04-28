@@ -13,7 +13,6 @@ import AppliedRoute from '../components/AppliedRoute';
 
 export default ({ childProps }) =>
     <Switch>
-
         <AppliedRoute path ="/" exact component={Home} props={childProps} />
         <AppliedRoute path="/login" component={Login} props={childProps} />
         <AppliedRoute path="/signup" component={Signup} props={childProps} />
@@ -33,5 +32,4 @@ export default ({ childProps }) =>
         { childProps.isAuthenticated &&
             <AppliedRoute path="/display" component={Display} props={childProps} />
         }
-
     </Switch>;

@@ -19,7 +19,7 @@ class Login extends Component {
 
     handleChange = event => {
       this.setState({
-        [event.target.type]: event.target.value
+        [event.target.id]: event.target.value
       });
     }
 
@@ -28,7 +28,8 @@ class Login extends Component {
     try {
       await Auth.signIn(this.state.email, this.state.password);
       this.props.userHasAuthenticated(true)
-      //alert("logged In")
+      this.props.history.push("/dashboard")
+      alert("Login Successful")
     }
     catch(e) {
       alert(e.message);
@@ -49,23 +50,23 @@ class Login extends Component {
               <br/>
               <br/>
                 <p className="h4 text-center mb-7"></p>
-                <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
+                <label htmlFor="email" className="grey-text">
                   Your email
                 </label>
                 <input
                   type="email"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
                   className="form-control"
                   value={this.state.email}
                   onChange={this.handleChange}
                 />
                 <br />
-                <label htmlFor="defaultFormLoginPasswordEx" className="grey-text">
+                <label htmlFor="password" className="grey-text">
                   Your password
                 </label>
                 <input
                   type="password"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
                   className="form-control"
                   value={this.state.password}
                   onChange={this.handleChange}

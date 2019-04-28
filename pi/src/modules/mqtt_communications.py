@@ -48,7 +48,7 @@ class CommunicationHandler():
         if data in("", '', None):
             print("Error: Message Empty.")
             return False
-        payload = '{"ID": "Success", "Data": "'+str(data)+'" }'
+        payload = '{"ID": "'+getSerial()+'", "Data": "'+str(data)+'" }'
         try:
             self.mqtt_client.connect()
             self.mqtt_client.publish("testConnection", payload, 0)
@@ -57,7 +57,20 @@ class CommunicationHandler():
         except FailedToSendError:
             print("Publish Failed.")
             return False
+            
+    ##https://www.raspberrypi-spy.co.uk/2012/09/getting-your-raspberry-pi-serial-number-using-python/
+    def getSerial():
+        cpuserial = "0000000000000000"
+        try:
+            f = open('/proc/cpuinfo','r')
+            for line in f:
+                if line[0:6]=='Serial':
+                    cpuserial = line[10:26]
+            f.close()
+        except:
+            cpuserial = "ERROR000000000"
 
+  return cpuserial
 class Error(Exception):
     """Base class for other exceptions"""
 

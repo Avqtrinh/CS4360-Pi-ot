@@ -45,7 +45,7 @@ class Dashboard extends Component {
                 <MDBCardBody>
                   <MDBCardTitle>User's Pi</MDBCardTitle>
                   <MDBCardText>
-                    {this.state.load}                   
+                    {this.state.load}
                     {this.state.text}
                   </MDBCardText>
                   <MDBBtn href="#">More Info</MDBBtn>
@@ -53,11 +53,11 @@ class Dashboard extends Component {
               </MDBCard>
             </MDBCol>
             <MDBCol md="6">
-            <ul class="list-group">
-              <li class="list-group-item active">Components</li>
-              <li class="list-group-item">GPS: Inactive</li>
-              <li class="list-group-item">Motion Sensor: Active</li>
-              <li class="list-group-item">Camera: Inactive</li>
+            <ul className="list-group">
+              <li className="list-group-item active">Components</li>
+              <li className="list-group-item">GPS: Inactive</li>
+              <li className="list-group-item">Motion Sensor: Active</li>
+              <li className="list-group-item">Camera: Inactive</li>
             </ul>
             </MDBCol>
             </MDBRow>

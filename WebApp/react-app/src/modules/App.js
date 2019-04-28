@@ -20,8 +20,8 @@ class App extends Component {
       isAuthenticated: this.state.isAuthenticated,
       userHasAuthenticated: this.userHasAuthenticated,
     };
-    //console.log("render App")
-    //console.log(childProps)
+    console.log("render App")
+    console.log(childProps)
     return (
       <div data-test="app">
         <Navigation childProps={childProps}/>

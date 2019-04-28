@@ -68,8 +68,13 @@ render() {
                 <MDBDropdownToggle nav caret>
                   <MDBIcon icon="user"/>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu  className="dropdown-default" color="dark" right>
-                  <MDBDropdownItem>Account Details</MDBDropdownItem>
+                <MDBDropdownMenu  className="dropdown" color="dark" right>
+                  <MDBDropdownItem>
+                    <MDBNavLink to ='/addDevice'> <font size = '3' color = 'black'> Add Devices </font> </MDBNavLink>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem>
+                    <MDBNavLink to =""> <font size = '3' color = 'black'>Account Details </font ></MDBNavLink>
+                  </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBNavLink } from 'mdbreact';
 import './Basic.css';
 import { Auth } from 'aws-amplify';
 
@@ -11,14 +11,24 @@ class Signup extends Component{
       verifiedEmail : "",
       password: "",
       verifiedPassword : "",
-      submited: false,
-      code:
+      submitted: false,
+      code:""
     };
   }
 
   validateForm(){
       return this.state.email === this.state.verifiedEmail && this.state.password === this.state.verifiedPassword
           && this.state.email.length > 0 && this.state.password.length >= 8
+  }
+  handleVerification = async event => {
+    console.log("VERIFIED")
+    var user = this.state.email
+    var code = this.state.code
+    Auth.confirmSignUp(user, code, {
+  // Optional. Force user confirmation irrespective of existing alias. By default set to True.
+      forceAliasCreation: false
+    }).then(data => console.log(data))
+      .catch(err => console.log(err));
   }
 
   handleChange = event => {
@@ -46,14 +56,8 @@ class Signup extends Component{
         }
       })
       .then(data => console.log(data))
-      .catch(err => console.log(err));
+      .catch(err => alert(err.message));
 /*
-      Auth.confirmSignUp(username, code, {
-    // Optional. Force user confirmation irrespective of existing alias. By default set to True.
-        forceAliasCreation: false
-      }).then(data => console.log(data))
-        .catch(err => console.log(err));
-
       Auth.resendSignUp(username).then(() => {
         console.log('code resent successfully');
       }).catch(e => {
@@ -70,8 +74,37 @@ class Signup extends Component{
     return (
       <div className = "basic">
         <h2>Sign Up</h2>
-        {this.state.submmited
+        {this.state.submitted
         ?<MDBContainer>
+          <MDBRow>
+            <MDBCol>
+              <form onSubmit = {this.handleVerification}>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p className="h4 text-center mb-7"></p>
+                <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
+                  Input your verification code sent to your email.
+                </label>
+                <br/>
+                <input
+                  type = "text"
+                  id = "code"
+                  className = "formControl"
+                  value={this.state.code}
+                  onChange={this.handleChange}
+                />
+                <br/>
+                <div className="text-center mt-4" data-test="loginSubmit">
+                  <MDBBtn color="indigo" type="submit">Submit</MDBBtn>
+                </div>
+              </form>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+        :<MDBContainer>
           <MDBRow>
             <MDBCol>
               <form onSubmit = {this.handleSubmit}>
@@ -130,36 +163,6 @@ class Signup extends Component{
                   value={this.state.verifiedPassword}
                   onChange={this.handleChange}
                 />
-                <div className="text-center mt-4" data-test="loginSubmit">
-                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Signup</MDBBtn>
-                </div>
-              </form>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-        :<MDBContainer>
-          <MDBRow>
-            <MDBCol>
-              <form onSubmit = {this.handleVerification}>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <p className="h4 text-center mb-7"></p>
-                <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-                  Input your verification code sent to your email.
-                </label>
-                <br/>
-                <input
-                  type = "text"
-                  id = "verificationCode"
-                  className = "formControl"
-                  value={this.state.code}
-                  onChange={this.handleChange}
-                />
-                <br/>
-//stoped here!!!!!!!!!!!!!!!!
                 <div className="text-center mt-4" data-test="loginSubmit">
                   <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Signup</MDBBtn>
                 </div>

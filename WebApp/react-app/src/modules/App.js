@@ -23,10 +23,11 @@ class App extends Component {
     const childProps = {
       isAuthenticated: this.state.isAuthenticated,
       userHasAuthenticated: this.userHasAuthenticated,
+      updateUser:this.updateUser,
       user: this.state.user,
     };
-    console.log("render App")
-    console.log(childProps)
+    //console.log("render App")
+    //console.log(childProps)
     return (
       <div data-test="app">
         <Navigation childProps={childProps}/>

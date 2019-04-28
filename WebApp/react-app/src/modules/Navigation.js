@@ -34,10 +34,8 @@ render() {
     <div>
       <MDBNavbar color="indigo" dark expand="md" data-test="navigation">
         <MDBNavbarBrand>
-          {this.props.childProps.isAuthenticated
-            ?<MDBNavLink to='/dashboard'><strong className="white-text"><font face = "arial" size = '6'>Pi_oT</font></strong></MDBNavLink>
-            :<MDBNavLink to='/'><strong className="white-text"><font face = "arial" size = '6'>Pi_oT</font></strong></MDBNavLink>
-          }
+        <strong className="white-text">Pi-oT</strong>
+
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -58,7 +56,7 @@ render() {
           {this.props.childProps.isAuthenticated
             ? <MDBNavLink to="/logout" onClick ={this.handleLogout}> Logout </MDBNavLink>
             : <MDBRow>
-                <MDBNavLink to='/signup'>Signup</MDBNavLink>
+                <MDBNavLink to='/signup'>Sign up</MDBNavLink>
                 <MDBNavLink to="/login">Login</MDBNavLink>
               </MDBRow>
           }

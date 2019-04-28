@@ -25,15 +25,16 @@ class AddDevice extends Component {
 
   handleSubmit = async event => {
     event.preventDefault();
-    var attributes = {"UserAttributes":[{"Name":"DeviceID","Value":this.state.id}]}
+    var attributes = {"custom:DeviceID":this.state.id}
     try {
-
       Auth.updateUserAttributes(this.props.user, attributes)
       this.props.history.push('/dashboard');
       //alert("logged In")
     }
     catch(e) {
+      this.props.history.push('/dashboard');
       alert(e.message);
+
     }
   }
 

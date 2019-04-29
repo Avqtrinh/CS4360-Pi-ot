@@ -6,7 +6,6 @@ import Dashboard from './Dashboard';
 import Stats from './Stats';
 import Log from './Log';
 import Logout from './Logout';
-import Display from './Display';
 import Signup from './Signup';
 import AddDevice from "./addDevice";
 import AppliedRoute from '../components/AppliedRoute';
@@ -26,9 +25,6 @@ export default ({ childProps }) =>
         }
         { childProps.isAuthenticated &&
             <AppliedRoute path="/log" component={Log} props={childProps} />
-        }
-        { childProps.isAuthenticated &&
-            <AppliedRoute path="/display" component={Display} props={childProps} />
         }
         { childProps.isAuthenticated &&
             <AppliedRoute path ="/addDevice" component={AddDevice} props ={childProps}/>

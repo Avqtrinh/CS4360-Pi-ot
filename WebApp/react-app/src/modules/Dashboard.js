@@ -5,34 +5,46 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, 
 class Dashboard extends Component {
   constructor(props){
     super(props)
-  this.state = {didLoad: false};
+
+      this.state = {
+        didLoad: false,
+        text: "",
+        load: <span className="spinner-grow" role="status">
+                <span className="sr-only"></span>
+              </span>
+      }
   }
 
-  state = {
-    didLoad: false,
-    text: "",
-    load: <div class="spinner-grow" role="status">
-            <span class="sr-only"></span>
-          </div>
-  }
 
   componentDidMount() {
     this.interval = setInterval(() =>
-      fetch('http://localhost:3001/api')
+      fetch('http://localhost:3001/api_logPing')
           .then(res => res.json())
           .then(
             (result) => {
-              this.setState({
-                didLoad: true,
-                load: "",
-                text: result.text,
+
+                var newest = 0
+                result.forEach(function(item,index){
+                  var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
+                  if (dateTime.getTime() > newest){
+                    newest = dateTime
+                  }
+                });
+                try{
+                  var newText = "Last Motion: "+(parseInt(newest.getMonth())+1).toString()+'/'+newest.getDate()+"/"+newest.getFullYear()+' '+newest.getHours()+':'+newest.getMinutes();
+                }
+                catch (e){
+                  newText = "An error occured please reload the page."
+                }
+                this.setState({
+                  didLoad: true,
+                  load: "",
+                  text: newText,
                 });
               }
           ),2000);
   }
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+
 
   render() {
     return (

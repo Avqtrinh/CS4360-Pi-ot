@@ -28,13 +28,8 @@ class Login extends Component {
     try {
       await Auth.signIn(this.state.email, this.state.password);
       this.props.userHasAuthenticated(true)
-<<<<<<< HEAD
       this.props.history.push("/dashboard")
       alert("Login Successful")
-=======
-      this.props.history.push('/dashboard');
-      //alert("logged In")
->>>>>>> eb942753c9363f80505da964f7178a45e7f11b36
     }
     catch(e) {
       alert(e.message);

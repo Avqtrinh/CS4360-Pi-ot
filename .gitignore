@@ -1,0 +1,7 @@
+PI/src/__pycache__/*
+PI/src/certinfo/*
+PI/src/modules/__pycache__/*
+WebApp/MQTTCon/keys/*
+WebApp/node_modules/*
+WebApp/react-app/node_modules/*
+venv/*

@@ -9,12 +9,12 @@ class AddDevice extends Component {
     this.state = {
       id:"",
       email:this.props.user.attributes["email"],
-      password:"123456789Aa!"
+      password:""
     };
   }
 
   validateForm() {
-    return this.state.id.length > 0;
+    return this.state.id.length > 0 && this.state.password.length >0;
   }
 
     handleChange = event => {
@@ -26,19 +26,19 @@ class AddDevice extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     var attributes = {"custom:DeviceID":this.state.id}
-    try {
-      var email = this.props.user.attributes["email"];
+    try{
       await Auth.updateUserAttributes(this.props.user, attributes)
         .then(await Auth.signOut())
         .then(await Auth.signIn(this.state.email, this.state.password))
         .then(await Auth.currentAuthenticatedUser().then(result =>{ this.props.updateUser(result)}));
-      this.props.history.push('/dashboard');
-      //alert("logged In")
+        this.props.history.push('/dashboard');
     }
-    catch(e) {
-      this.props.history.push('/dashboard');
-      alert(e.message);
+    catch(e){
+        alert("Incorrect Password");
     }
+
+    //alert("logged In")
+
   }
 
   render() {
@@ -66,8 +66,19 @@ class AddDevice extends Component {
                   onChange={this.handleChange}
                 />
                 <br />
+                <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
+                  Verify Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  className="form-control"
+                  value={this.state.password}
+                  onChange={this.handleChange}
+                />
+                <br />
                 <div className="text-center mt-4" data-test="loginSubmit">
-                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>addDevice</MDBBtn>
+                  <MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}>Add Device</MDBBtn>
                 </div>
               </form>
             </MDBCol>

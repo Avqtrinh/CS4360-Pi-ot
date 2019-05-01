@@ -51,9 +51,6 @@ class Dashboard extends Component {
           ),2000);
       }
   }
-  componentDidUpdate(){
-    console.log(this.props.user.attributes['custom:DeviceID'])
-  }
 
   render() {
     return (

@@ -38,7 +38,7 @@ class Log extends Component {
                       ]
                   };
                   result.forEach(function(item,index){
-                    if(item["deviceid"] == props.user.attributes['custom:DeviceID']){
+                    if(item["deviceid"] === props.user.attributes['custom:DeviceID']){
                       var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
                       temp['rows'].push({date:(parseInt(dateTime.getMonth())+1).toString()+"/"+dateTime.getDate()+"/"+dateTime.getFullYear(),time:dateTime.getHours()+":"+dateTime.getMinutes(),gps_coordinates:"n/a"},)
                     }

@@ -51,6 +51,9 @@ class Dashboard extends Component {
           ),2000);
       }
   }
+  componentDidUpdate(){
+    console.log(this.props.user.attributes['custom:DeviceID'])
+  }
 
   render() {
     return (
@@ -61,7 +64,7 @@ class Dashboard extends Component {
               <MDBCard style={{ width: "22rem" }}>
                 <MDBCardImage className="img-fluid" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1" waves />
                 <MDBCardBody>
-                  <MDBCardTitle>User's Pi</MDBCardTitle>
+                  <MDBCardTitle>User's Pi ID: {this.props.user.attributes['custom:DeviceID']}</MDBCardTitle>
                   <MDBCardText>
                     {this.state.load}
                     {this.state.text}

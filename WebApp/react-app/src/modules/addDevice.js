@@ -3,12 +3,13 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import './Basic.css';
 import { Auth } from 'aws-amplify';
 
-
 class AddDevice extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      id:""
+      id:"",
+      email:this.props.user.attributes["email"],
+      password:"123456789Aa!"
     };
   }
 
@@ -26,15 +27,17 @@ class AddDevice extends Component {
     event.preventDefault();
     var attributes = {"custom:DeviceID":this.state.id}
     try {
-      Auth.updateUserAttributes(this.props.user, attributes)
-      Auth.currentAuthenticatedUser().then(result =>this.props.updateUser(result))
+      var email = this.props.user.attributes["email"];
+      await Auth.updateUserAttributes(this.props.user, attributes)
+        .then(await Auth.signOut())
+        .then(await Auth.signIn(this.state.email, this.state.password))
+        .then(await Auth.currentAuthenticatedUser().then(result =>{ this.props.updateUser(result)}));
       this.props.history.push('/dashboard');
       //alert("logged In")
     }
     catch(e) {
       this.props.history.push('/dashboard');
       alert(e.message);
-
     }
   }
 

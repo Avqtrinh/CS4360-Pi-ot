@@ -7,6 +7,8 @@ class Log extends Component {
   state = { data: {} };
 
   componentDidMount() {
+    var props = this.props
+        if(this.props.isAuthenticated &&this.props.user !=null && this.props.user.attributes['custom:DeviceID'] != null){
         fetch('http://localhost:3001/api_logPing')
             .then(res => res.json())
             .then(
@@ -36,12 +38,14 @@ class Log extends Component {
                       ]
                   };
                   result.forEach(function(item,index){
-                    var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
-
-                    temp['rows'].push({date:(parseInt(dateTime.getMonth())+1).toString()+"/"+dateTime.getDate()+"/"+dateTime.getFullYear(),time:dateTime.getHours()+":"+dateTime.getMinutes(),gps_coordinates:"n/a"},)
+                    if(item["deviceid"] == props.user.attributes['custom:DeviceID']){
+                      var dateTime = new Date(parseInt((item['Key'].substring(item['Key'].lastIndexOf('/')+1,item['Key'].length-1+"0"))));
+                      temp['rows'].push({date:(parseInt(dateTime.getMonth())+1).toString()+"/"+dateTime.getDate()+"/"+dateTime.getFullYear(),time:dateTime.getHours()+":"+dateTime.getMinutes(),gps_coordinates:"n/a"},)
+                    }
                   });
-                  this.setState({data:temp});
+                  this.setState({data:temp,user:this.props.user});
             })
+          }
   }
   componentWillUnmount() {
     this.setState({data:[]});

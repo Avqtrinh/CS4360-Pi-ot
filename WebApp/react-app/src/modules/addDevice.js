@@ -17,7 +17,6 @@ class AddDevice extends Component {
   }
 
     handleChange = event => {
-      console.log(event.target.value)
       this.setState({
         [event.target.id]: event.target.value
       });
@@ -28,6 +27,7 @@ class AddDevice extends Component {
     var attributes = {"custom:DeviceID":this.state.id}
     try {
       Auth.updateUserAttributes(this.props.user, attributes)
+      Auth.currentAuthenticatedUser().then(result =>this.props.updateUser(result))
       this.props.history.push('/dashboard');
       //alert("logged In")
     }

@@ -1,0 +1,282 @@
+{
+  "config": {
+    "title": "React App",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [],
+  "props": [
+    {
+      "key": "src\\modules\\App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [
+            {
+              "name": "userHasAuthenticated",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "authenticated",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Dashboard.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Dashboard",
+          "methods": [],
+          "actualName": "Dashboard"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Display.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Display",
+          "methods": [],
+          "actualName": "Display"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Home.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "actualName": "Home"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Log.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Log",
+          "methods": [],
+          "actualName": "Log"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Login.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Login",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Login"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Logout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logout",
+          "methods": [],
+          "actualName": "Logout"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Navigation.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Navigation",
+          "methods": [
+            {
+              "name": "toggleCollapse",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleLogout",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Navigation"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Signup.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Signup",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "validateConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleConfirmation",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "renderConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "renderForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Signup"
+        }
+      ]
+    },
+    {
+      "key": "src\\components\\AppliedRoute.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Stats.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Stats",
+          "methods": [],
+          "actualName": "Stats"
+        }
+      ]
+    }
+  ]
+}

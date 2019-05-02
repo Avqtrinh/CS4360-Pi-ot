@@ -1,0 +1,359 @@
+{
+  "config": {
+    "title": "Web App",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "props": [
+    {
+      "key": "react-app\\src\\components\\AppliedRoute.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [
+            {
+              "name": "userHasAuthenticated",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "authenticated",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Dashboard.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Dashboard",
+          "methods": [],
+          "actualName": "Dashboard"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Display.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Display",
+          "methods": [],
+          "actualName": "Display"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Home.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "actualName": "Home"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Log.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Log",
+          "methods": [],
+          "actualName": "Log"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Login.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Login",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Login"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Logout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logout",
+          "methods": [],
+          "actualName": "Logout"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Navigation.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Navigation",
+          "methods": [
+            {
+              "name": "toggleCollapse",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleLogout",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Navigation"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Signup.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Signup",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "validateConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleConfirmation",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "renderConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "renderForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Signup"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Stats.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Stats",
+          "methods": [],
+          "actualName": "Stats"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "components.mdx",
+      "value": {
+        "name": "react-app",
+        "menu": "App Components",
+        "id": "cf7dbdcd542087979eb8ee738a09ea45",
+        "filepath": "components.mdx",
+        "link": "",
+        "slug": "components",
+        "route": "/components",
+        "headings": [
+          {
+            "slug": "react-app",
+            "depth": 1,
+            "value": "react-app"
+          }
+        ]
+      }
+    },
+    {
+      "key": "docs.mdx",
+      "value": {
+        "name": "About",
+        "route": "/",
+        "id": "25053fa47ba195f3649324c83228a7dd",
+        "filepath": "docs.mdx",
+        "link": "",
+        "slug": "docs",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "welcome",
+            "depth": 1,
+            "value": "Welcome!"
+          }
+        ]
+      }
+    },
+    {
+      "key": "mqtt.mdx",
+      "value": {
+        "name": "mqttconn",
+        "menu": "App Components",
+        "id": "2025f1ab7b6bd1efe2228acf07f2a195",
+        "filepath": "mqtt.mdx",
+        "link": "",
+        "slug": "mqtt",
+        "route": "/mqtt",
+        "headings": [
+          {
+            "slug": "mqttconn",
+            "depth": 1,
+            "value": "mqttconn"
+          }
+        ]
+      }
+    },
+    {
+      "key": "test.mdx",
+      "value": {
+        "name": "hi3",
+        "id": "500c9e61ab378cdcebd3a49a682704ef",
+        "filepath": "test.mdx",
+        "link": "",
+        "slug": "test",
+        "route": "/test",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "hi3",
+            "depth": 1,
+            "value": "hi3"
+          }
+        ]
+      }
+    }
+  ]
+}

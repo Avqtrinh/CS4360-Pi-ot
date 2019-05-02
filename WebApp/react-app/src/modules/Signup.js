@@ -42,7 +42,6 @@ class Signup extends Component{
         username: this.state.email,
         password: this.state.password
       });
-      alert("Check your email for a verification code")
       this.setState({
         newUser
       });
@@ -58,7 +57,6 @@ class Signup extends Component{
     try {
       await Auth.confirmSignUp(this.state.email, this.state.code);
       await Auth.signIn(this.state.email, this.state.password);
-      alert("Confirmed, Welcome!")
       this.props.userHasAuthenticated(true);
       this.props.history.push("/dashboard");
     }

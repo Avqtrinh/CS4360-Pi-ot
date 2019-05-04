@@ -33,13 +33,13 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "react-app-src-modules-home" */ 'react-app/src/modules/Home.mdx'
     ),
-  'react-app/src/modules/Login.mdx': () =>
-    import(
-      /* webpackPrefetch: true, webpackChunkName: "react-app-src-modules-login" */ 'react-app/src/modules/Login.mdx'
-    ),
   'react-app/src/modules/Log.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "react-app-src-modules-log" */ 'react-app/src/modules/Log.mdx'
+    ),
+  'react-app/src/modules/Login.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "react-app-src-modules-login" */ 'react-app/src/modules/Login.mdx'
     ),
   'react-app/src/modules/Logout.mdx': () =>
     import(

@@ -45,17 +45,6 @@
       ]
     },
     {
-      "key": "react-app\\src\\modules\\Dashboard.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Dashboard",
-          "methods": [],
-          "actualName": "Dashboard"
-        }
-      ]
-    },
-    {
       "key": "react-app\\src\\modules\\Home.js",
       "value": [
         {
@@ -276,6 +265,57 @@
           "actualName": "Signup"
         }
       ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Dashboard.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Dashboard",
+          "methods": [],
+          "actualName": "Dashboard",
+          "props": {
+            "stateVariables": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'didLoad'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'text'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'load'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            },
+            "methods": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'componentDidMount'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'componentWillUnmount'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
     }
   ],
   "entries": [
@@ -427,6 +467,21 @@
             "slug": "dashboardjs",
             "depth": 1,
             "value": "Dashboard.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -451,25 +506,6 @@
       }
     },
     {
-      "key": "react-app/src/modules/Login.mdx",
-      "value": {
-        "name": "Login",
-        "menu": "React-App",
-        "id": "4470da4e9c061466d668b00b00837572",
-        "filepath": "react-app/src/modules/Login.mdx",
-        "link": "",
-        "slug": "react-app-src-modules-login",
-        "route": "/react-app-src-modules-login",
-        "headings": [
-          {
-            "slug": "loginjs",
-            "depth": 1,
-            "value": "Login.js"
-          }
-        ]
-      }
-    },
-    {
       "key": "react-app/src/modules/Log.mdx",
       "value": {
         "name": "Log",
@@ -484,6 +520,25 @@
             "slug": "logjs",
             "depth": 1,
             "value": "Log.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Login.mdx",
+      "value": {
+        "name": "Login",
+        "menu": "React-App",
+        "id": "4470da4e9c061466d668b00b00837572",
+        "filepath": "react-app/src/modules/Login.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-login",
+        "route": "/react-app-src-modules-login",
+        "headings": [
+          {
+            "slug": "loginjs",
+            "depth": 1,
+            "value": "Login.js"
           }
         ]
       }

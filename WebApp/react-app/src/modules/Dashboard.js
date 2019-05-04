@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Basic.css';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer, MDBRow } from 'mdbreact';
+import t from 'prop-types';
 
 class Dashboard extends Component {
   constructor(props){
@@ -65,6 +65,11 @@ class Dashboard extends Component {
         </div>
     );
   }
+}
+
+Dashboard.propTypes = {
+  stateVariables: t.oneOf(['didLoad', 'text', 'load']),
+  methods: t.oneOf(['componentDidMount', 'componentWillUnmount'])
 }
 
 export default Dashboard;

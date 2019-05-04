@@ -1,12 +1,20 @@
 export const imports = {
-  'components.mdx': () =>
+  'about.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "about" */ 'about.mdx'),
+  'libraries.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "components" */ 'components.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "libraries" */ 'libraries.mdx'
     ),
-  'docs.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "docs" */ 'docs.mdx'),
-  'mqtt.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "mqtt" */ 'mqtt.mdx'),
-  'test.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "test" */ 'test.mdx'),
+  'MQTTCon/mqtt.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "mqtt-con-mqtt" */ 'MQTTCon/mqtt.mdx'
+    ),
+  'MQTTCon/mqtt_service.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "mqtt-con-mqtt-service" */ 'MQTTCon/mqtt_service.mdx'
+    ),
+  'react-app/react-app.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "react-app-react-app" */ 'react-app/react-app.mdx'
+    ),
 }

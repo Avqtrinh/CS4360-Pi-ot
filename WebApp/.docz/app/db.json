@@ -373,6 +373,203 @@
           }
         ]
       }
+    },
+    {
+      "key": "react-app/src/index.mdx",
+      "value": {
+        "name": "Index",
+        "menu": "React-App",
+        "id": "f9efe9232ff80b7bd97f51c0ef413ed2",
+        "filepath": "react-app/src/index.mdx",
+        "link": "",
+        "slug": "react-app-src-index",
+        "route": "/react-app-src-index",
+        "headings": [
+          {
+            "slug": "indexjs",
+            "depth": 1,
+            "value": "index.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/App.mdx",
+      "value": {
+        "name": "App",
+        "menu": "React-App",
+        "id": "3cebb4ccad7b62c3b446267e04d07f28",
+        "filepath": "react-app/src/modules/App.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-app",
+        "route": "/react-app-src-modules-app",
+        "headings": [
+          {
+            "slug": "appjs",
+            "depth": 1,
+            "value": "App.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Dashboard.mdx",
+      "value": {
+        "name": "Dashboard",
+        "menu": "React-App",
+        "id": "f67904cbb52770e1c27be118949e3472",
+        "filepath": "react-app/src/modules/Dashboard.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-dashboard",
+        "route": "/react-app-src-modules-dashboard",
+        "headings": [
+          {
+            "slug": "dashboardjs",
+            "depth": 1,
+            "value": "Dashboard.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Home.mdx",
+      "value": {
+        "name": "Home",
+        "menu": "React-App",
+        "id": "cb7ed55f289fe3fd92d39b8b5f61a959",
+        "filepath": "react-app/src/modules/Home.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-home",
+        "route": "/react-app-src-modules-home",
+        "headings": [
+          {
+            "slug": "homejs",
+            "depth": 1,
+            "value": "Home.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Login.mdx",
+      "value": {
+        "name": "Login",
+        "menu": "React-App",
+        "id": "4470da4e9c061466d668b00b00837572",
+        "filepath": "react-app/src/modules/Login.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-login",
+        "route": "/react-app-src-modules-login",
+        "headings": [
+          {
+            "slug": "loginjs",
+            "depth": 1,
+            "value": "Login.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Log.mdx",
+      "value": {
+        "name": "Log",
+        "menu": "React-App",
+        "id": "8bf0be73a721ebc5ac5cd48703150031",
+        "filepath": "react-app/src/modules/Log.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-log",
+        "route": "/react-app-src-modules-log",
+        "headings": [
+          {
+            "slug": "logjs",
+            "depth": 1,
+            "value": "Log.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Logout.mdx",
+      "value": {
+        "name": "Logout",
+        "menu": "React-App",
+        "id": "af7650f78bddaf83fafea12444e278f8",
+        "filepath": "react-app/src/modules/Logout.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-logout",
+        "route": "/react-app-src-modules-logout",
+        "headings": []
+      }
+    },
+    {
+      "key": "react-app/src/modules/Navigation.mdx",
+      "value": {
+        "name": "Navigation",
+        "menu": "React-App",
+        "id": "37aeb1e1b70378c97fc7e688d083ab3c",
+        "filepath": "react-app/src/modules/Navigation.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-navigation",
+        "route": "/react-app-src-modules-navigation",
+        "headings": []
+      }
+    },
+    {
+      "key": "react-app/src/modules/Routes.mdx",
+      "value": {
+        "name": "Routes",
+        "menu": "React-App",
+        "id": "5ffbe45ea40e5777dd326dfe54294840",
+        "filepath": "react-app/src/modules/Routes.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-routes",
+        "route": "/react-app-src-modules-routes",
+        "headings": [
+          {
+            "slug": "routesjs",
+            "depth": 1,
+            "value": "Routes.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Signup.mdx",
+      "value": {
+        "name": "Signup",
+        "menu": "React-App",
+        "id": "c26b8cb5bcb02dcd50dce4657e4a5506",
+        "filepath": "react-app/src/modules/Signup.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-signup",
+        "route": "/react-app-src-modules-signup",
+        "headings": [
+          {
+            "slug": "signupjs",
+            "depth": 1,
+            "value": "Signup.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Stats.mdx",
+      "value": {
+        "name": "Stats",
+        "menu": "React-App",
+        "id": "4cd03e3a00e874389649661c4089bdb6",
+        "filepath": "react-app/src/modules/Stats.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-stats",
+        "route": "/react-app-src-modules-stats",
+        "headings": [
+          {
+            "slug": "statsjs",
+            "depth": 1,
+            "value": "Stats.js"
+          }
+        ]
+      }
     }
   ]
 }

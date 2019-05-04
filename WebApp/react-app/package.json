@@ -29,6 +29,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "docz": "^1.1.0",
+    "docz-theme-default": "^1.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "jest-enzyme": "^7.0.2"

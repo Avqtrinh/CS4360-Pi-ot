@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Basic.css';
 import { MDBDataTable } from 'mdbreact';
 
   const data = {
@@ -45,7 +44,7 @@ import { MDBDataTable } from 'mdbreact';
 class Log extends Component {
   render() {
     return (
-      <div data-test="log">
+      <div className = "basic" data-test="log">
           <MDBDataTable
             striped
             bordered

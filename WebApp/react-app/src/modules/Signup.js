@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
-import './Basic.css';
 import { Auth } from 'aws-amplify';
 
 class Signup extends Component{

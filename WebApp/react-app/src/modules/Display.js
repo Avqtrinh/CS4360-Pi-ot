@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Basic.css';
+
 class Display extends Component {
   state = {
     text: "Display"

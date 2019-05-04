@@ -10,8 +10,287 @@
     "themeConfig": {},
     "separator": "-"
   },
-  "entries": [],
+  "entries": [
+    {
+      "key": "Docz/libraries.mdx",
+      "value": {
+        "name": "Libraries",
+        "id": "d28ea8d68457b02d64a8f0ecffc9b050",
+        "filepath": "Docz/libraries.mdx",
+        "link": "",
+        "slug": "docz-libraries",
+        "route": "/docz-libraries",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "libraries-used",
+            "depth": 1,
+            "value": "Libraries Used"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Docz/about.mdx",
+      "value": {
+        "name": "About",
+        "route": "/",
+        "id": "e0f500b942a80248327bff69d5979e30",
+        "filepath": "Docz/about.mdx",
+        "link": "",
+        "slug": "docz-about",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "welcome",
+            "depth": 1,
+            "value": "Welcome!"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Docz/mqtt.mdx",
+      "value": {
+        "name": "About",
+        "menu": "MQTTCon",
+        "id": "a06cde69a6cf1b6ed0ccd7ad5c2b7fa9",
+        "filepath": "Docz/mqtt.mdx",
+        "link": "",
+        "slug": "docz-mqtt",
+        "route": "/docz-mqtt",
+        "headings": [
+          {
+            "slug": "mqttcon",
+            "depth": 1,
+            "value": "MQTTcon"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Docz/mqtt_service.mdx",
+      "value": {
+        "name": "mqtt_service.js",
+        "menu": "MQTTCon",
+        "id": "a2ff2b812c452d38a09c2467cac11679",
+        "filepath": "Docz/mqtt_service.mdx",
+        "link": "",
+        "slug": "docz-mqtt-service",
+        "route": "/docz-mqtt-service",
+        "headings": [
+          {
+            "slug": "mqtt_service",
+            "depth": 1,
+            "value": "mqtt_service"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Docz/react-app.mdx",
+      "value": {
+        "name": "About",
+        "menu": "React-App",
+        "id": "8d4cf16fe478d835012e4c9f582e6870",
+        "filepath": "Docz/react-app.mdx",
+        "link": "",
+        "slug": "docz-react-app",
+        "route": "/docz-react-app",
+        "headings": [
+          {
+            "slug": "react-app",
+            "depth": 1,
+            "value": "react-app"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Dashboard.mdx",
+      "value": {
+        "name": "Dashboard",
+        "menu": "React-App",
+        "id": "23609cd64872f1c0846b9494456c950b",
+        "filepath": "src/modules/Dashboard.mdx",
+        "link": "",
+        "slug": "src-modules-dashboard",
+        "route": "/src-modules-dashboard",
+        "headings": [
+          {
+            "slug": "dashboardjs",
+            "depth": 1,
+            "value": "Dashboard.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Home.mdx",
+      "value": {
+        "name": "Home",
+        "menu": "React-App",
+        "id": "06dbed6c39e80ce6eb01277e3977c7ab",
+        "filepath": "src/modules/Home.mdx",
+        "link": "",
+        "slug": "src-modules-home",
+        "route": "/src-modules-home",
+        "headings": [
+          {
+            "slug": "homejs",
+            "depth": 1,
+            "value": "Home.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Log.mdx",
+      "value": {
+        "name": "Log",
+        "menu": "React-App",
+        "id": "66a5ef9ee6dbf671fbdb4356a686e400",
+        "filepath": "src/modules/Log.mdx",
+        "link": "",
+        "slug": "src-modules-log",
+        "route": "/src-modules-log",
+        "headings": [
+          {
+            "slug": "logjs",
+            "depth": 1,
+            "value": "Log.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Login.mdx",
+      "value": {
+        "name": "Login",
+        "menu": "React-App",
+        "id": "ac4d9b72a027ef2662be401dbb55c894",
+        "filepath": "src/modules/Login.mdx",
+        "link": "",
+        "slug": "src-modules-login",
+        "route": "/src-modules-login",
+        "headings": [
+          {
+            "slug": "loginjs",
+            "depth": 1,
+            "value": "Login.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Logout.mdx",
+      "value": {
+        "name": "Logout",
+        "menu": "React-App",
+        "id": "cf8288d225fd4a6e1f2c7fac86d2ab11",
+        "filepath": "src/modules/Logout.mdx",
+        "link": "",
+        "slug": "src-modules-logout",
+        "route": "/src-modules-logout",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/modules/Navigation.mdx",
+      "value": {
+        "name": "Navigation",
+        "menu": "React-App",
+        "id": "b40dccee33bd28ca75a7829bb3fcc5a0",
+        "filepath": "src/modules/Navigation.mdx",
+        "link": "",
+        "slug": "src-modules-navigation",
+        "route": "/src-modules-navigation",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/modules/Routes.mdx",
+      "value": {
+        "name": "Routes",
+        "menu": "React-App",
+        "id": "9d4aebdd37af65762565fa511d4aadb9",
+        "filepath": "src/modules/Routes.mdx",
+        "link": "",
+        "slug": "src-modules-routes",
+        "route": "/src-modules-routes",
+        "headings": [
+          {
+            "slug": "routesjs",
+            "depth": 1,
+            "value": "Routes.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Signup.mdx",
+      "value": {
+        "name": "Signup",
+        "menu": "React-App",
+        "id": "6359d45c4f295a93fa996f1ae460d641",
+        "filepath": "src/modules/Signup.mdx",
+        "link": "",
+        "slug": "src-modules-signup",
+        "route": "/src-modules-signup",
+        "headings": [
+          {
+            "slug": "signupjs",
+            "depth": 1,
+            "value": "Signup.js"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/modules/Stats.mdx",
+      "value": {
+        "name": "Stats",
+        "menu": "React-App",
+        "id": "abc87188e27eeeaea0a0d6d00d41e23c",
+        "filepath": "src/modules/Stats.mdx",
+        "link": "",
+        "slug": "src-modules-stats",
+        "route": "/src-modules-stats",
+        "headings": [
+          {
+            "slug": "statsjs",
+            "depth": 1,
+            "value": "Stats.js"
+          }
+        ]
+      }
+    }
+  ],
   "props": [
+    {
+      "key": "src\\components\\AppliedRoute.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
     {
       "key": "src\\modules\\App.js",
       "value": [
@@ -43,7 +322,47 @@
           "description": "",
           "displayName": "Dashboard",
           "methods": [],
-          "actualName": "Dashboard"
+          "actualName": "Dashboard",
+          "props": {
+            "stateVariables": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'didLoad'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'text'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'load'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            },
+            "methods": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'componentDidMount'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'componentWillUnmount'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            }
+          }
         }
       ]
     },
@@ -137,15 +456,6 @@
       ]
     },
     {
-      "key": "src\\modules\\Routes.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
       "key": "src\\modules\\Navigation.js",
       "value": [
         {
@@ -175,6 +485,15 @@
             }
           ],
           "actualName": "Navigation"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
         }
       ]
     },
@@ -255,15 +574,6 @@
             }
           ],
           "actualName": "Signup"
-        }
-      ]
-    },
-    {
-      "key": "src\\components\\AppliedRoute.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
         }
       ]
     },

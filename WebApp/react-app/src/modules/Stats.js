@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Basic.css';
 import { Line } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
 
@@ -37,7 +36,7 @@ class Stats extends Component {
   render() {
     return (
       <MDBContainer>
-        <div className="stat" data-test="stats">
+        <div className="basic" data-test="stats">
           <Line data={this.state.dataLine} options={{ responsive: true }} />
         </div>
       </MDBContainer>

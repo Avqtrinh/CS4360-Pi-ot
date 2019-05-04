@@ -10,314 +10,6 @@
     "themeConfig": {},
     "separator": "-"
   },
-  "props": [
-    {
-      "key": "react-app\\src\\components\\AppliedRoute.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\App.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "App",
-          "methods": [
-            {
-              "name": "userHasAuthenticated",
-              "docblock": null,
-              "modifiers": [],
-              "params": [
-                {
-                  "name": "authenticated",
-                  "type": null
-                }
-              ],
-              "returns": null
-            }
-          ],
-          "actualName": "App"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Home.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Home",
-          "methods": [],
-          "actualName": "Home"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Display.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Display",
-          "methods": [],
-          "actualName": "Display"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Log.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Log",
-          "methods": [],
-          "actualName": "Log"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Login.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Login",
-          "methods": [
-            {
-              "name": "validateForm",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            },
-            {
-              "name": "handleChange",
-              "docblock": null,
-              "modifiers": [],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            },
-            {
-              "name": "handleSubmit",
-              "docblock": null,
-              "modifiers": [
-                "async"
-              ],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            }
-          ],
-          "actualName": "Login"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Navigation.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Navigation",
-          "methods": [
-            {
-              "name": "toggleCollapse",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            },
-            {
-              "name": "handleLogout",
-              "docblock": null,
-              "modifiers": [
-                "async"
-              ],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            }
-          ],
-          "actualName": "Navigation"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Routes.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Logout.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Logout",
-          "methods": [],
-          "actualName": "Logout"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Stats.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Stats",
-          "methods": [],
-          "actualName": "Stats"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Signup.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Signup",
-          "methods": [
-            {
-              "name": "validateForm",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            },
-            {
-              "name": "validateConfirmationForm",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            },
-            {
-              "name": "handleChange",
-              "docblock": null,
-              "modifiers": [],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            },
-            {
-              "name": "handleSubmit",
-              "docblock": null,
-              "modifiers": [
-                "async"
-              ],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            },
-            {
-              "name": "handleConfirmation",
-              "docblock": null,
-              "modifiers": [
-                "async"
-              ],
-              "params": [
-                {
-                  "name": "event",
-                  "type": null
-                }
-              ],
-              "returns": null
-            },
-            {
-              "name": "renderConfirmationForm",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            },
-            {
-              "name": "renderForm",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Signup"
-        }
-      ]
-    },
-    {
-      "key": "react-app\\src\\modules\\Dashboard.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Dashboard",
-          "methods": [],
-          "actualName": "Dashboard",
-          "props": {
-            "stateVariables": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'didLoad'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'text'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'load'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": ""
-            },
-            "methods": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'componentDidMount'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'componentWillUnmount'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": ""
-            }
-          }
-        }
-      ]
-    }
-  ],
   "entries": [
     {
       "key": "about.mdx",
@@ -410,44 +102,6 @@
             "slug": "react-app",
             "depth": 1,
             "value": "react-app"
-          }
-        ]
-      }
-    },
-    {
-      "key": "react-app/src/index.mdx",
-      "value": {
-        "name": "Index",
-        "menu": "React-App",
-        "id": "f9efe9232ff80b7bd97f51c0ef413ed2",
-        "filepath": "react-app/src/index.mdx",
-        "link": "",
-        "slug": "react-app-src-index",
-        "route": "/react-app-src-index",
-        "headings": [
-          {
-            "slug": "indexjs",
-            "depth": 1,
-            "value": "index.js"
-          }
-        ]
-      }
-    },
-    {
-      "key": "react-app/src/modules/App.mdx",
-      "value": {
-        "name": "App",
-        "menu": "React-App",
-        "id": "3cebb4ccad7b62c3b446267e04d07f28",
-        "filepath": "react-app/src/modules/App.mdx",
-        "link": "",
-        "slug": "react-app-src-modules-app",
-        "route": "/react-app-src-modules-app",
-        "headings": [
-          {
-            "slug": "appjs",
-            "depth": 1,
-            "value": "App.js"
           }
         ]
       }
@@ -557,19 +211,6 @@
       }
     },
     {
-      "key": "react-app/src/modules/Navigation.mdx",
-      "value": {
-        "name": "Navigation",
-        "menu": "React-App",
-        "id": "37aeb1e1b70378c97fc7e688d083ab3c",
-        "filepath": "react-app/src/modules/Navigation.mdx",
-        "link": "",
-        "slug": "react-app-src-modules-navigation",
-        "route": "/react-app-src-modules-navigation",
-        "headings": []
-      }
-    },
-    {
       "key": "react-app/src/modules/Routes.mdx",
       "value": {
         "name": "Routes",
@@ -586,6 +227,19 @@
             "value": "Routes.js"
           }
         ]
+      }
+    },
+    {
+      "key": "react-app/src/modules/Navigation.mdx",
+      "value": {
+        "name": "Navigation",
+        "menu": "React-App",
+        "id": "37aeb1e1b70378c97fc7e688d083ab3c",
+        "filepath": "react-app/src/modules/Navigation.mdx",
+        "link": "",
+        "slug": "react-app-src-modules-navigation",
+        "route": "/react-app-src-modules-navigation",
+        "headings": []
       }
     },
     {
@@ -625,6 +279,314 @@
           }
         ]
       }
+    }
+  ],
+  "props": [
+    {
+      "key": "react-app\\src\\components\\AppliedRoute.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [
+            {
+              "name": "userHasAuthenticated",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "authenticated",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Dashboard.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Dashboard",
+          "methods": [],
+          "actualName": "Dashboard",
+          "props": {
+            "stateVariables": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'didLoad'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'text'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'load'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            },
+            "methods": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'componentDidMount'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'componentWillUnmount'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Display.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Display",
+          "methods": [],
+          "actualName": "Display"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Home.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "actualName": "Home"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Log.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Log",
+          "methods": [],
+          "actualName": "Log"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Login.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Login",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Login"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Logout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logout",
+          "methods": [],
+          "actualName": "Logout"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Navigation.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Navigation",
+          "methods": [
+            {
+              "name": "toggleCollapse",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleLogout",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Navigation"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Signup.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Signup",
+          "methods": [
+            {
+              "name": "validateForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "validateConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleSubmit",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleConfirmation",
+              "docblock": null,
+              "modifiers": [
+                "async"
+              ],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "renderConfirmationForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "renderForm",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Signup"
+        }
+      ]
+    },
+    {
+      "key": "react-app\\src\\modules\\Stats.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Stats",
+          "methods": [],
+          "actualName": "Stats"
+        }
+      ]
     }
   ]
 }

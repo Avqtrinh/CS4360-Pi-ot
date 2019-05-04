@@ -36,7 +36,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-        <div className="cards" data-test="dashboard">
+        <div className="cards" data-test="dashboard"> 
           <MDBContainer>
             <MDBRow>
             <MDBCol md="6">

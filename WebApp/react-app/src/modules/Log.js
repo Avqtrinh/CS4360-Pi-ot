@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MDBDataTable } from 'mdbreact';
+import t from 'prop-types';
 
   const data = {
     columns: [
@@ -54,6 +55,11 @@ class Log extends Component {
       </div>
     );
   }
+}
+
+Log.propTypes = {
+  data: t.oneOf(['label', 'field', 'sort', 'width']),
+  rows: t.oneOf(['time', 'date', 'gps_coordinates'])
 }
 
 export default Log;

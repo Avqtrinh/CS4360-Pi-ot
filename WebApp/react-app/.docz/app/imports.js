@@ -1,11 +1,11 @@
 export const imports = {
-  'Docz/libraries.mdx': () =>
-    import(
-      /* webpackPrefetch: true, webpackChunkName: "docz-libraries" */ 'Docz/libraries.mdx'
-    ),
   'Docz/about.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docz-about" */ 'Docz/about.mdx'
+    ),
+  'Docz/libraries.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docz-libraries" */ 'Docz/libraries.mdx'
     ),
   'Docz/mqtt.mdx': () =>
     import(

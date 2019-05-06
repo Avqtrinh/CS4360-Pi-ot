@@ -9,7 +9,7 @@ import Logout from './Logout';
 import Display from './Display';
 import Signup from './Signup'
 import AppliedRoute from '../components/AppliedRoute';
-
+import t from 'prop-types';
 
 export default ({ childProps }) =>
     <Switch>
@@ -32,4 +32,6 @@ export default ({ childProps }) =>
         { childProps.isAuthenticated &&
             <AppliedRoute path="/display" component={Display} props={childProps} />
         }
-    </Switch>;
+    </Switch>
+
+

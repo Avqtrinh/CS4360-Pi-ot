@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import { Auth } from 'aws-amplify';
-
+import t from 'prop-types';
 
 class Login extends Component {
   constructor(props) {
@@ -16,11 +16,11 @@ class Login extends Component {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
-    handleChange = event => {
+  handleChange = event => {
       this.setState({
         [event.target.id]: event.target.value
       });
-    }
+  }
 
   handleSubmit = async event => {
     event.preventDefault();
@@ -80,6 +80,11 @@ class Login extends Component {
       </div>
     );
   }
+}
+
+Login.propTypes = {
+  stateVariables: t.oneOf(['email', 'password']),
+  methods: t.oneOf(['validateForm', 'handleChange', 'handleSubmit'])
 }
 
 export default Login;

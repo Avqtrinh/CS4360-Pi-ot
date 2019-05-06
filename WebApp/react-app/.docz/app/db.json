@@ -213,6 +213,21 @@
             "slug": "loginjs",
             "depth": 1,
             "value": "Login.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -227,7 +242,18 @@
         "link": "",
         "slug": "src-modules-logout",
         "route": "/src-modules-logout",
-        "headings": []
+        "headings": [
+          {
+            "slug": "logoutjs",
+            "depth": 1,
+            "value": "Logout.js"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
+          }
+        ]
       }
     },
     {
@@ -258,6 +284,21 @@
             "slug": "routesjs",
             "depth": 1,
             "value": "Routes.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -296,6 +337,16 @@
             "slug": "statsjs",
             "depth": 1,
             "value": "Stats.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -398,6 +449,76 @@
       ]
     },
     {
+      "key": "src\\modules\\Home.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "actualName": "Home"
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Log.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Log",
+          "methods": [],
+          "actualName": "Log",
+          "props": {
+            "data": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'label'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'field'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'sort'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'width'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            },
+            "rows": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'time'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'date'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'gps_coordinates'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "src\\modules\\Login.js",
       "value": [
         {
@@ -438,7 +559,47 @@
               "returns": null
             }
           ],
-          "actualName": "Login"
+          "actualName": "Login",
+          "props": {
+            "stateVariables": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'email'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'password'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            },
+            "methods": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'validateForm'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'handleChange'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'handleSubmit'",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": ""
+            }
+          }
         }
       ]
     },
@@ -483,15 +644,6 @@
             }
           ],
           "actualName": "Navigation"
-        }
-      ]
-    },
-    {
-      "key": "src\\modules\\Routes.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
         }
       ]
     },
@@ -582,69 +734,22 @@
           "description": "",
           "displayName": "Stats",
           "methods": [],
-          "actualName": "Stats"
-        }
-      ]
-    },
-    {
-      "key": "src\\modules\\Home.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Home",
-          "methods": [],
-          "actualName": "Home"
-        }
-      ]
-    },
-    {
-      "key": "src\\modules\\Log.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Log",
-          "methods": [],
-          "actualName": "Log",
+          "actualName": "Stats",
           "props": {
-            "data": {
+            "stateVariables": {
               "type": {
                 "name": "enum",
                 "value": [
                   {
-                    "value": "'label'",
+                    "value": "'dataLine'",
                     "computed": false
                   },
                   {
-                    "value": "'field'",
+                    "value": "'labels'",
                     "computed": false
                   },
                   {
-                    "value": "'sort'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'width'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": ""
-            },
-            "rows": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'time'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'date'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'gps_coordinates'",
+                    "value": "'datasets'",
                     "computed": false
                   }
                 ]
@@ -653,6 +758,15 @@
               "description": ""
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
         }
       ]
     }

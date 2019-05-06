@@ -3,4 +3,29 @@ name: Login
 menu: React-App
 ---
 
+import { Props } from 'docz'
+import Login from './Login'
+
 # Login.js
+
+## Properties
+
+<Props of ={Login} />
+
+## Method Descriptions
+
+validateForm()
+> Ensures that the email and password string length are larger
+than 0.
+
+handleChange()
+> Changes state -> [event.target.id]: event.target.value
+
+handleSubmit()
+> Calls AWS Amplify and sends the entered email and password,
+and if the user has been authenticated, redirects them to the dashboard.
+
+## Notes
+> This login page uses HTML forms with email and password variables,
+where a submit button triggers the handleSubmit method to communicate with AWS Amplify.
+Uses HTML, MDB Bootstrap, AWS Amplify.

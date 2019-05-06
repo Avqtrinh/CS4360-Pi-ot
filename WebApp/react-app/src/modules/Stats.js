@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Line } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
+import t from 'prop-types';
 
 class Stats extends Component {
 
@@ -42,6 +43,10 @@ class Stats extends Component {
       </MDBContainer>
     );
   }
+}
+
+Stats.propTypes = {
+  stateVariables: t.oneOf(['dataLine', 'labels', 'datasets'])
 }
 
 export default Stats;

@@ -1,5 +1,5 @@
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
-
+from uuid import getnode as get_mac
 
 class CommunicationHandler():
     """
@@ -40,7 +40,7 @@ class CommunicationHandler():
         Handles the sending of the data to AWS in a Json format.
         Args:
             -self - this object
-            -data - the string object that is to be formated and sent to aws
+            -data - the object that is to be formated into a json (will be gps data)
 
         Attributes:
             -PAYLOAD - the json object that is sent to aws
@@ -48,16 +48,29 @@ class CommunicationHandler():
         if data in("", '', None):
             print("Error: Message Empty.")
             return False
-        payload = '{"ID": "Success", "Data": "'+str(data)+'" }'
+        payload = {"deviceid": getSerial(), "data":data}
         try:
             self.mqtt_client.connect()
-            self.mqtt_client.publish("testConnection", payload, 0)
+            self.mqtt_client.publish("pi", payload, 0)
             print("Publish Success.")
             return True
         except FailedToSendError:
             print("Publish Failed.")
             return False
 
+    ##https://www.raspberrypi-spy.co.uk/2012/09/getting-your-raspberry-pi-serial-number-using-python/
+    def getSerial():
+        cpuserial = "0000000000000000"
+        try:
+            f = open('/proc/cpuinfo','r')
+            for line in f:
+                if line[0:6]=='Serial':
+                    cpuserial = line[10:26]
+            f.close()
+        except:
+            cpuserial = "ERROR000000000"
+
+  return cpuserial
 class Error(Exception):
     """Base class for other exceptions"""
 

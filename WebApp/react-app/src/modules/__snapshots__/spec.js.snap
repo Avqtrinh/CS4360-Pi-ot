@@ -1,0 +1,6274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Navigation />,
+      "data-test": "app",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Navigation />,
+        "data-test": "app",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Dashboard component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Dashboard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Container
+        fluid={false}
+        tag="div"
+      >
+        <Row
+          tag="div"
+        >
+          <Col
+            lg={null}
+            md="6"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <Card
+              style={
+                Object {
+                  "width": "22rem",
+                }
+              }
+              tag="div"
+            >
+              <CardImage
+                cascade={false}
+                className="img-fluid"
+                hover={false}
+                overlay="white-slight"
+                src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                tag="img"
+                waves={true}
+                zoom={false}
+              />
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  sub={false}
+                  tag="h4"
+                >
+                  User's Pi
+                </CardTitle>
+                <CardText
+                  tag="p"
+                />
+                <Button
+                  color="default"
+                  href="#"
+                  tag="button"
+                >
+                  More Info
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col
+            lg={null}
+            md="6"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <ul
+              class="list-group"
+            >
+              <li
+                class="list-group-item active"
+              >
+                Components
+              </li>
+              <li
+                class="list-group-item"
+              >
+                GPS: Inactive
+              </li>
+              <li
+                class="list-group-item"
+              >
+                Motion Sensor: Active
+              </li>
+              <li
+                class="list-group-item"
+              >
+                Camera: Inactive
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>,
+      "className": "cards",
+      "data-test": "dashboard",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Row
+          tag="div"
+        >
+          <Col
+            lg={null}
+            md="6"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <Card
+              style={
+                Object {
+                  "width": "22rem",
+                }
+              }
+              tag="div"
+            >
+              <CardImage
+                cascade={false}
+                className="img-fluid"
+                hover={false}
+                overlay="white-slight"
+                src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                tag="img"
+                waves={true}
+                zoom={false}
+              />
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  sub={false}
+                  tag="h4"
+                >
+                  User's Pi
+                </CardTitle>
+                <CardText
+                  tag="p"
+                />
+                <Button
+                  color="default"
+                  href="#"
+                  tag="button"
+                >
+                  More Info
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col
+            lg={null}
+            md="6"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <ul
+              class="list-group"
+            >
+              <li
+                class="list-group-item active"
+              >
+                Components
+              </li>
+              <li
+                class="list-group-item"
+              >
+                GPS: Inactive
+              </li>
+              <li
+                class="list-group-item"
+              >
+                Motion Sensor: Active
+              </li>
+              <li
+                class="list-group-item"
+              >
+                Camera: Inactive
+              </li>
+            </ul>
+          </Col>
+        </Row>,
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <Card
+                style={
+                  Object {
+                    "width": "22rem",
+                  }
+                }
+                tag="div"
+              >
+                <CardImage
+                  cascade={false}
+                  className="img-fluid"
+                  hover={false}
+                  overlay="white-slight"
+                  src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                  tag="img"
+                  waves={true}
+                  zoom={false}
+                />
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    sub={false}
+                    tag="h4"
+                  >
+                    User's Pi
+                  </CardTitle>
+                  <CardText
+                    tag="p"
+                  />
+                  <Button
+                    color="default"
+                    href="#"
+                    tag="button"
+                  >
+                    More Info
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>,
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <ul
+                class="list-group"
+              >
+                <li
+                  class="list-group-item active"
+                >
+                  Components
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  GPS: Inactive
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Motion Sensor: Active
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Camera: Inactive
+                </li>
+              </ul>
+            </Col>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Card
+                style={
+                  Object {
+                    "width": "22rem",
+                  }
+                }
+                tag="div"
+              >
+                <CardImage
+                  cascade={false}
+                  className="img-fluid"
+                  hover={false}
+                  overlay="white-slight"
+                  src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                  tag="img"
+                  waves={true}
+                  zoom={false}
+                />
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    sub={false}
+                    tag="h4"
+                  >
+                    User's Pi
+                  </CardTitle>
+                  <CardText
+                    tag="p"
+                  />
+                  <Button
+                    color="default"
+                    href="#"
+                    tag="button"
+                  >
+                    More Info
+                  </Button>
+                </CardBody>
+              </Card>,
+              "lg": null,
+              "md": "6",
+              "sm": null,
+              "tag": "div",
+              "xl": null,
+              "xs": null,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <CardImage
+                    cascade={false}
+                    className="img-fluid"
+                    hover={false}
+                    overlay="white-slight"
+                    src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                    tag="img"
+                    waves={true}
+                    zoom={false}
+                  />,
+                  <CardBody
+                    tag="div"
+                  >
+                    <CardTitle
+                      sub={false}
+                      tag="h4"
+                    >
+                      User's Pi
+                    </CardTitle>
+                    <CardText
+                      tag="p"
+                    />
+                    <Button
+                      color="default"
+                      href="#"
+                      tag="button"
+                    >
+                      More Info
+                    </Button>
+                  </CardBody>,
+                ],
+                "style": Object {
+                  "width": "22rem",
+                },
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "cascade": false,
+                    "className": "img-fluid",
+                    "hover": false,
+                    "overlay": "white-slight",
+                    "src": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1",
+                    "tag": "img",
+                    "waves": true,
+                    "zoom": false,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <CardTitle
+                        sub={false}
+                        tag="h4"
+                      >
+                        User's Pi
+                      </CardTitle>,
+                      <CardText
+                        tag="p"
+                      />,
+                      <Button
+                        color="default"
+                        href="#"
+                        tag="button"
+                      >
+                        More Info
+                      </Button>,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "User's Pi",
+                        "sub": false,
+                        "tag": "h4",
+                      },
+                      "ref": null,
+                      "rendered": "User's Pi",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          undefined,
+                          undefined,
+                        ],
+                        "tag": "p",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                        undefined,
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "More Info",
+                        "color": "default",
+                        "href": "#",
+                        "tag": "button",
+                      },
+                      "ref": null,
+                      "rendered": "More Info",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <ul
+                class="list-group"
+              >
+                <li
+                  class="list-group-item active"
+                >
+                  Components
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  GPS: Inactive
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Motion Sensor: Active
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Camera: Inactive
+                </li>
+              </ul>,
+              "lg": null,
+              "md": "6",
+              "sm": null,
+              "tag": "div",
+              "xl": null,
+              "xs": null,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    class="list-group-item active"
+                  >
+                    Components
+                  </li>,
+                  <li
+                    class="list-group-item"
+                  >
+                    GPS: Inactive
+                  </li>,
+                  <li
+                    class="list-group-item"
+                  >
+                    Motion Sensor: Active
+                  </li>,
+                  <li
+                    class="list-group-item"
+                  >
+                    Camera: Inactive
+                  </li>,
+                ],
+                "class": "list-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Components",
+                    "class": "list-group-item active",
+                  },
+                  "ref": null,
+                  "rendered": "Components",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GPS: Inactive",
+                    "class": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": "GPS: Inactive",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Motion Sensor: Active",
+                    "class": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": "Motion Sensor: Active",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Camera: Inactive",
+                    "class": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": "Camera: Inactive",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Container
+          fluid={false}
+          tag="div"
+        >
+          <Row
+            tag="div"
+          >
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <Card
+                style={
+                  Object {
+                    "width": "22rem",
+                  }
+                }
+                tag="div"
+              >
+                <CardImage
+                  cascade={false}
+                  className="img-fluid"
+                  hover={false}
+                  overlay="white-slight"
+                  src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                  tag="img"
+                  waves={true}
+                  zoom={false}
+                />
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    sub={false}
+                    tag="h4"
+                  >
+                    User's Pi
+                  </CardTitle>
+                  <CardText
+                    tag="p"
+                  />
+                  <Button
+                    color="default"
+                    href="#"
+                    tag="button"
+                  >
+                    More Info
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <ul
+                class="list-group"
+              >
+                <li
+                  class="list-group-item active"
+                >
+                  Components
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  GPS: Inactive
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Motion Sensor: Active
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Camera: Inactive
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>,
+        "className": "cards",
+        "data-test": "dashboard",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Row
+            tag="div"
+          >
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <Card
+                style={
+                  Object {
+                    "width": "22rem",
+                  }
+                }
+                tag="div"
+              >
+                <CardImage
+                  cascade={false}
+                  className="img-fluid"
+                  hover={false}
+                  overlay="white-slight"
+                  src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                  tag="img"
+                  waves={true}
+                  zoom={false}
+                />
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    sub={false}
+                    tag="h4"
+                  >
+                    User's Pi
+                  </CardTitle>
+                  <CardText
+                    tag="p"
+                  />
+                  <Button
+                    color="default"
+                    href="#"
+                    tag="button"
+                  >
+                    More Info
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col
+              lg={null}
+              md="6"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <ul
+                class="list-group"
+              >
+                <li
+                  class="list-group-item active"
+                >
+                  Components
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  GPS: Inactive
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Motion Sensor: Active
+                </li>
+                <li
+                  class="list-group-item"
+                >
+                  Camera: Inactive
+                </li>
+              </ul>
+            </Col>
+          </Row>,
+          "fluid": false,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Col
+                lg={null}
+                md="6"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <Card
+                  style={
+                    Object {
+                      "width": "22rem",
+                    }
+                  }
+                  tag="div"
+                >
+                  <CardImage
+                    cascade={false}
+                    className="img-fluid"
+                    hover={false}
+                    overlay="white-slight"
+                    src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                    tag="img"
+                    waves={true}
+                    zoom={false}
+                  />
+                  <CardBody
+                    tag="div"
+                  >
+                    <CardTitle
+                      sub={false}
+                      tag="h4"
+                    >
+                      User's Pi
+                    </CardTitle>
+                    <CardText
+                      tag="p"
+                    />
+                    <Button
+                      color="default"
+                      href="#"
+                      tag="button"
+                    >
+                      More Info
+                    </Button>
+                  </CardBody>
+                </Card>
+              </Col>,
+              <Col
+                lg={null}
+                md="6"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <ul
+                  class="list-group"
+                >
+                  <li
+                    class="list-group-item active"
+                  >
+                    Components
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    GPS: Inactive
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    Motion Sensor: Active
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    Camera: Inactive
+                  </li>
+                </ul>
+              </Col>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Card
+                  style={
+                    Object {
+                      "width": "22rem",
+                    }
+                  }
+                  tag="div"
+                >
+                  <CardImage
+                    cascade={false}
+                    className="img-fluid"
+                    hover={false}
+                    overlay="white-slight"
+                    src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                    tag="img"
+                    waves={true}
+                    zoom={false}
+                  />
+                  <CardBody
+                    tag="div"
+                  >
+                    <CardTitle
+                      sub={false}
+                      tag="h4"
+                    >
+                      User's Pi
+                    </CardTitle>
+                    <CardText
+                      tag="p"
+                    />
+                    <Button
+                      color="default"
+                      href="#"
+                      tag="button"
+                    >
+                      More Info
+                    </Button>
+                  </CardBody>
+                </Card>,
+                "lg": null,
+                "md": "6",
+                "sm": null,
+                "tag": "div",
+                "xl": null,
+                "xs": null,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <CardImage
+                      cascade={false}
+                      className="img-fluid"
+                      hover={false}
+                      overlay="white-slight"
+                      src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1"
+                      tag="img"
+                      waves={true}
+                      zoom={false}
+                    />,
+                    <CardBody
+                      tag="div"
+                    >
+                      <CardTitle
+                        sub={false}
+                        tag="h4"
+                      >
+                        User's Pi
+                      </CardTitle>
+                      <CardText
+                        tag="p"
+                      />
+                      <Button
+                        color="default"
+                        href="#"
+                        tag="button"
+                      >
+                        More Info
+                      </Button>
+                    </CardBody>,
+                  ],
+                  "style": Object {
+                    "width": "22rem",
+                  },
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "cascade": false,
+                      "className": "img-fluid",
+                      "hover": false,
+                      "overlay": "white-slight",
+                      "src": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zuehlke.com%2Fblog%2Fapp%2Fuploads%2F2016%2F07%2FCircuit-board-picture-.jpg&f=1",
+                      "tag": "img",
+                      "waves": true,
+                      "zoom": false,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <CardTitle
+                          sub={false}
+                          tag="h4"
+                        >
+                          User's Pi
+                        </CardTitle>,
+                        <CardText
+                          tag="p"
+                        />,
+                        <Button
+                          color="default"
+                          href="#"
+                          tag="button"
+                        >
+                          More Info
+                        </Button>,
+                      ],
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "User's Pi",
+                          "sub": false,
+                          "tag": "h4",
+                        },
+                        "ref": null,
+                        "rendered": "User's Pi",
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            undefined,
+                            undefined,
+                          ],
+                          "tag": "p",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                          undefined,
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "More Info",
+                          "color": "default",
+                          "href": "#",
+                          "tag": "button",
+                        },
+                        "ref": null,
+                        "rendered": "More Info",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <ul
+                  class="list-group"
+                >
+                  <li
+                    class="list-group-item active"
+                  >
+                    Components
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    GPS: Inactive
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    Motion Sensor: Active
+                  </li>
+                  <li
+                    class="list-group-item"
+                  >
+                    Camera: Inactive
+                  </li>
+                </ul>,
+                "lg": null,
+                "md": "6",
+                "sm": null,
+                "tag": "div",
+                "xl": null,
+                "xs": null,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      class="list-group-item active"
+                    >
+                      Components
+                    </li>,
+                    <li
+                      class="list-group-item"
+                    >
+                      GPS: Inactive
+                    </li>,
+                    <li
+                      class="list-group-item"
+                    >
+                      Motion Sensor: Active
+                    </li>,
+                    <li
+                      class="list-group-item"
+                    >
+                      Camera: Inactive
+                    </li>,
+                  ],
+                  "class": "list-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Components",
+                      "class": "list-group-item active",
+                    },
+                    "ref": null,
+                    "rendered": "Components",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "GPS: Inactive",
+                      "class": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": "GPS: Inactive",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Motion Sensor: Active",
+                      "class": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": "Motion Sensor: Active",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Camera: Inactive",
+                      "class": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": "Camera: Inactive",
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Home component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+           Welcome to Pi-oT.
+        </h1>,
+        <p>
+           Please login to access the dashboard. 
+        </p>,
+        <p>
+           This web application was written for Dr. Beaty's CS4360 Senior Project class.
+        </p>,
+      ],
+      "className": "basic",
+      "data-test": "home",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Welcome to Pi-oT.",
+        },
+        "ref": null,
+        "rendered": " Welcome to Pi-oT.",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Please login to access the dashboard. ",
+        },
+        "ref": null,
+        "rendered": " Please login to access the dashboard. ",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
+        },
+        "ref": null,
+        "rendered": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+             Welcome to Pi-oT.
+          </h1>,
+          <p>
+             Please login to access the dashboard. 
+          </p>,
+          <p>
+             This web application was written for Dr. Beaty's CS4360 Senior Project class.
+          </p>,
+        ],
+        "className": "basic",
+        "data-test": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Welcome to Pi-oT.",
+          },
+          "ref": null,
+          "rendered": " Welcome to Pi-oT.",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Please login to access the dashboard. ",
+          },
+          "ref": null,
+          "rendered": " Please login to access the dashboard. ",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
+          },
+          "ref": null,
+          "rendered": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Log component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Log />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <DataTable
+        autoWidth={false}
+        bordered={true}
+        borderless={false}
+        btn={false}
+        dark={false}
+        data={
+          Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          }
+        }
+        displayEntries={true}
+        entries={10}
+        entriesLabel="Show entries"
+        entriesOptions={
+          Array [
+            10,
+            20,
+            50,
+            100,
+          ]
+        }
+        exportToCSV={false}
+        fixed={false}
+        hover={true}
+        info={true}
+        infoLabel={
+          Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ]
+        }
+        order={Array []}
+        pagesAmount={8}
+        paginationLabel={
+          Array [
+            "Previous",
+            "Next",
+          ]
+        }
+        paging={true}
+        responsive={false}
+        responsiveLg={false}
+        responsiveMd={false}
+        responsiveSm={false}
+        responsiveXl={false}
+        scrollX={false}
+        scrollY={false}
+        searchLabel="Search"
+        searching={true}
+        small={false}
+        sortable={true}
+        striped={true}
+        tbodyColor=""
+        tbodyTextWhite={false}
+        theadColor=""
+        theadTextWhite={false}
+      />,
+      "data-test": "log",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "autoWidth": false,
+        "bordered": true,
+        "borderless": false,
+        "btn": false,
+        "dark": false,
+        "data": Object {
+          "columns": Array [
+            Object {
+              "field": "date",
+              "label": "Date",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "time",
+              "label": "Time",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "gps_coordinates",
+              "label": "GPS coordinates",
+              "sort": "asc",
+              "width": 125,
+            },
+          ],
+          "rows": Array [
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+          ],
+        },
+        "displayEntries": true,
+        "entries": 10,
+        "entriesLabel": "Show entries",
+        "entriesOptions": Array [
+          10,
+          20,
+          50,
+          100,
+        ],
+        "exportToCSV": false,
+        "fixed": false,
+        "hover": true,
+        "info": true,
+        "infoLabel": Array [
+          "Showing",
+          "to",
+          "of",
+          "entries",
+        ],
+        "order": Array [],
+        "pagesAmount": 8,
+        "paginationLabel": Array [
+          "Previous",
+          "Next",
+        ],
+        "paging": true,
+        "responsive": false,
+        "responsiveLg": false,
+        "responsiveMd": false,
+        "responsiveSm": false,
+        "responsiveXl": false,
+        "scrollX": false,
+        "scrollY": false,
+        "searchLabel": "Search",
+        "searching": true,
+        "small": false,
+        "sortable": true,
+        "striped": true,
+        "tbodyColor": "",
+        "tbodyTextWhite": false,
+        "theadColor": "",
+        "theadTextWhite": false,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <DataTable
+          autoWidth={false}
+          bordered={true}
+          borderless={false}
+          btn={false}
+          dark={false}
+          data={
+            Object {
+              "columns": Array [
+                Object {
+                  "field": "date",
+                  "label": "Date",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "time",
+                  "label": "Time",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "gps_coordinates",
+                  "label": "GPS coordinates",
+                  "sort": "asc",
+                  "width": 125,
+                },
+              ],
+              "rows": Array [
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+              ],
+            }
+          }
+          displayEntries={true}
+          entries={10}
+          entriesLabel="Show entries"
+          entriesOptions={
+            Array [
+              10,
+              20,
+              50,
+              100,
+            ]
+          }
+          exportToCSV={false}
+          fixed={false}
+          hover={true}
+          info={true}
+          infoLabel={
+            Array [
+              "Showing",
+              "to",
+              "of",
+              "entries",
+            ]
+          }
+          order={Array []}
+          pagesAmount={8}
+          paginationLabel={
+            Array [
+              "Previous",
+              "Next",
+            ]
+          }
+          paging={true}
+          responsive={false}
+          responsiveLg={false}
+          responsiveMd={false}
+          responsiveSm={false}
+          responsiveXl={false}
+          scrollX={false}
+          scrollY={false}
+          searchLabel="Search"
+          searching={true}
+          small={false}
+          sortable={true}
+          striped={true}
+          tbodyColor=""
+          tbodyTextWhite={false}
+          theadColor=""
+          theadTextWhite={false}
+        />,
+        "data-test": "log",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoWidth": false,
+          "bordered": true,
+          "borderless": false,
+          "btn": false,
+          "dark": false,
+          "data": Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          },
+          "displayEntries": true,
+          "entries": 10,
+          "entriesLabel": "Show entries",
+          "entriesOptions": Array [
+            10,
+            20,
+            50,
+            100,
+          ],
+          "exportToCSV": false,
+          "fixed": false,
+          "hover": true,
+          "info": true,
+          "infoLabel": Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ],
+          "order": Array [],
+          "pagesAmount": 8,
+          "paginationLabel": Array [
+            "Previous",
+            "Next",
+          ],
+          "paging": true,
+          "responsive": false,
+          "responsiveLg": false,
+          "responsiveMd": false,
+          "responsiveSm": false,
+          "responsiveXl": false,
+          "scrollX": false,
+          "scrollY": false,
+          "searchLabel": "Search",
+          "searching": true,
+          "small": false,
+          "sortable": true,
+          "striped": true,
+          "tbodyColor": "",
+          "tbodyTextWhite": false,
+          "theadColor": "",
+          "theadTextWhite": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Log component DidReturnData 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Log
+    data={
+      Object {
+        "columns": Array [
+          Object {
+            "field": "date",
+            "label": "Date",
+            "sort": "asc",
+            "width": 75,
+          },
+          Object {
+            "field": "time",
+            "label": "Time",
+            "sort": "asc",
+            "width": 75,
+          },
+          Object {
+            "field": "gps_coordinates",
+            "label": "GPS coordinates",
+            "sort": "asc",
+            "width": 125,
+          },
+        ],
+        "rows": Array [
+          Object {
+            "date": "3-19-19",
+            "gps_coordinates": "39.744, -105.008",
+            "time": "12:34 PM",
+          },
+          Object {
+            "date": "3-19-19",
+            "gps_coordinates": "39.744, -105.008",
+            "time": "12:34 PM",
+          },
+          Object {
+            "date": "3-19-19",
+            "gps_coordinates": "39.744, -105.008",
+            "time": "12:34 PM",
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <DataTable
+        autoWidth={false}
+        bordered={true}
+        borderless={false}
+        btn={false}
+        dark={false}
+        data={
+          Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          }
+        }
+        displayEntries={true}
+        entries={10}
+        entriesLabel="Show entries"
+        entriesOptions={
+          Array [
+            10,
+            20,
+            50,
+            100,
+          ]
+        }
+        exportToCSV={false}
+        fixed={false}
+        hover={true}
+        info={true}
+        infoLabel={
+          Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ]
+        }
+        order={Array []}
+        pagesAmount={8}
+        paginationLabel={
+          Array [
+            "Previous",
+            "Next",
+          ]
+        }
+        paging={true}
+        responsive={false}
+        responsiveLg={false}
+        responsiveMd={false}
+        responsiveSm={false}
+        responsiveXl={false}
+        scrollX={false}
+        scrollY={false}
+        searchLabel="Search"
+        searching={true}
+        small={false}
+        sortable={true}
+        striped={true}
+        tbodyColor=""
+        tbodyTextWhite={false}
+        theadColor=""
+        theadTextWhite={false}
+      />,
+      "data-test": "log",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "autoWidth": false,
+        "bordered": true,
+        "borderless": false,
+        "btn": false,
+        "dark": false,
+        "data": Object {
+          "columns": Array [
+            Object {
+              "field": "date",
+              "label": "Date",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "time",
+              "label": "Time",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "gps_coordinates",
+              "label": "GPS coordinates",
+              "sort": "asc",
+              "width": 125,
+            },
+          ],
+          "rows": Array [
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+          ],
+        },
+        "displayEntries": true,
+        "entries": 10,
+        "entriesLabel": "Show entries",
+        "entriesOptions": Array [
+          10,
+          20,
+          50,
+          100,
+        ],
+        "exportToCSV": false,
+        "fixed": false,
+        "hover": true,
+        "info": true,
+        "infoLabel": Array [
+          "Showing",
+          "to",
+          "of",
+          "entries",
+        ],
+        "order": Array [],
+        "pagesAmount": 8,
+        "paginationLabel": Array [
+          "Previous",
+          "Next",
+        ],
+        "paging": true,
+        "responsive": false,
+        "responsiveLg": false,
+        "responsiveMd": false,
+        "responsiveSm": false,
+        "responsiveXl": false,
+        "scrollX": false,
+        "scrollY": false,
+        "searchLabel": "Search",
+        "searching": true,
+        "small": false,
+        "sortable": true,
+        "striped": true,
+        "tbodyColor": "",
+        "tbodyTextWhite": false,
+        "theadColor": "",
+        "theadTextWhite": false,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <DataTable
+          autoWidth={false}
+          bordered={true}
+          borderless={false}
+          btn={false}
+          dark={false}
+          data={
+            Object {
+              "columns": Array [
+                Object {
+                  "field": "date",
+                  "label": "Date",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "time",
+                  "label": "Time",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "gps_coordinates",
+                  "label": "GPS coordinates",
+                  "sort": "asc",
+                  "width": 125,
+                },
+              ],
+              "rows": Array [
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+              ],
+            }
+          }
+          displayEntries={true}
+          entries={10}
+          entriesLabel="Show entries"
+          entriesOptions={
+            Array [
+              10,
+              20,
+              50,
+              100,
+            ]
+          }
+          exportToCSV={false}
+          fixed={false}
+          hover={true}
+          info={true}
+          infoLabel={
+            Array [
+              "Showing",
+              "to",
+              "of",
+              "entries",
+            ]
+          }
+          order={Array []}
+          pagesAmount={8}
+          paginationLabel={
+            Array [
+              "Previous",
+              "Next",
+            ]
+          }
+          paging={true}
+          responsive={false}
+          responsiveLg={false}
+          responsiveMd={false}
+          responsiveSm={false}
+          responsiveXl={false}
+          scrollX={false}
+          scrollY={false}
+          searchLabel="Search"
+          searching={true}
+          small={false}
+          sortable={true}
+          striped={true}
+          tbodyColor=""
+          tbodyTextWhite={false}
+          theadColor=""
+          theadTextWhite={false}
+        />,
+        "data-test": "log",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoWidth": false,
+          "bordered": true,
+          "borderless": false,
+          "btn": false,
+          "dark": false,
+          "data": Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          },
+          "displayEntries": true,
+          "entries": 10,
+          "entriesLabel": "Show entries",
+          "entriesOptions": Array [
+            10,
+            20,
+            50,
+            100,
+          ],
+          "exportToCSV": false,
+          "fixed": false,
+          "hover": true,
+          "info": true,
+          "infoLabel": Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ],
+          "order": Array [],
+          "pagesAmount": 8,
+          "paginationLabel": Array [
+            "Previous",
+            "Next",
+          ],
+          "paging": true,
+          "responsive": false,
+          "responsiveLg": false,
+          "responsiveMd": false,
+          "responsiveSm": false,
+          "responsiveXl": false,
+          "scrollX": false,
+          "scrollY": false,
+          "searchLabel": "Search",
+          "searching": true,
+          "small": false,
+          "sortable": true,
+          "striped": true,
+          "tbodyColor": "",
+          "tbodyTextWhite": false,
+          "theadColor": "",
+          "theadTextWhite": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Log component DidReturnEmptyData 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Log
+    data={
+      Object {
+        "columns": Array [],
+        "rows": Array [],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <DataTable
+        autoWidth={false}
+        bordered={true}
+        borderless={false}
+        btn={false}
+        dark={false}
+        data={
+          Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          }
+        }
+        displayEntries={true}
+        entries={10}
+        entriesLabel="Show entries"
+        entriesOptions={
+          Array [
+            10,
+            20,
+            50,
+            100,
+          ]
+        }
+        exportToCSV={false}
+        fixed={false}
+        hover={true}
+        info={true}
+        infoLabel={
+          Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ]
+        }
+        order={Array []}
+        pagesAmount={8}
+        paginationLabel={
+          Array [
+            "Previous",
+            "Next",
+          ]
+        }
+        paging={true}
+        responsive={false}
+        responsiveLg={false}
+        responsiveMd={false}
+        responsiveSm={false}
+        responsiveXl={false}
+        scrollX={false}
+        scrollY={false}
+        searchLabel="Search"
+        searching={true}
+        small={false}
+        sortable={true}
+        striped={true}
+        tbodyColor=""
+        tbodyTextWhite={false}
+        theadColor=""
+        theadTextWhite={false}
+      />,
+      "data-test": "log",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "autoWidth": false,
+        "bordered": true,
+        "borderless": false,
+        "btn": false,
+        "dark": false,
+        "data": Object {
+          "columns": Array [
+            Object {
+              "field": "date",
+              "label": "Date",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "time",
+              "label": "Time",
+              "sort": "asc",
+              "width": 75,
+            },
+            Object {
+              "field": "gps_coordinates",
+              "label": "GPS coordinates",
+              "sort": "asc",
+              "width": 125,
+            },
+          ],
+          "rows": Array [
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+            Object {
+              "date": "3-19-19",
+              "gps_coordinates": "39.744, -105.008",
+              "time": "12:34 PM",
+            },
+          ],
+        },
+        "displayEntries": true,
+        "entries": 10,
+        "entriesLabel": "Show entries",
+        "entriesOptions": Array [
+          10,
+          20,
+          50,
+          100,
+        ],
+        "exportToCSV": false,
+        "fixed": false,
+        "hover": true,
+        "info": true,
+        "infoLabel": Array [
+          "Showing",
+          "to",
+          "of",
+          "entries",
+        ],
+        "order": Array [],
+        "pagesAmount": 8,
+        "paginationLabel": Array [
+          "Previous",
+          "Next",
+        ],
+        "paging": true,
+        "responsive": false,
+        "responsiveLg": false,
+        "responsiveMd": false,
+        "responsiveSm": false,
+        "responsiveXl": false,
+        "scrollX": false,
+        "scrollY": false,
+        "searchLabel": "Search",
+        "searching": true,
+        "small": false,
+        "sortable": true,
+        "striped": true,
+        "tbodyColor": "",
+        "tbodyTextWhite": false,
+        "theadColor": "",
+        "theadTextWhite": false,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <DataTable
+          autoWidth={false}
+          bordered={true}
+          borderless={false}
+          btn={false}
+          dark={false}
+          data={
+            Object {
+              "columns": Array [
+                Object {
+                  "field": "date",
+                  "label": "Date",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "time",
+                  "label": "Time",
+                  "sort": "asc",
+                  "width": 75,
+                },
+                Object {
+                  "field": "gps_coordinates",
+                  "label": "GPS coordinates",
+                  "sort": "asc",
+                  "width": 125,
+                },
+              ],
+              "rows": Array [
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+                Object {
+                  "date": "3-19-19",
+                  "gps_coordinates": "39.744, -105.008",
+                  "time": "12:34 PM",
+                },
+              ],
+            }
+          }
+          displayEntries={true}
+          entries={10}
+          entriesLabel="Show entries"
+          entriesOptions={
+            Array [
+              10,
+              20,
+              50,
+              100,
+            ]
+          }
+          exportToCSV={false}
+          fixed={false}
+          hover={true}
+          info={true}
+          infoLabel={
+            Array [
+              "Showing",
+              "to",
+              "of",
+              "entries",
+            ]
+          }
+          order={Array []}
+          pagesAmount={8}
+          paginationLabel={
+            Array [
+              "Previous",
+              "Next",
+            ]
+          }
+          paging={true}
+          responsive={false}
+          responsiveLg={false}
+          responsiveMd={false}
+          responsiveSm={false}
+          responsiveXl={false}
+          scrollX={false}
+          scrollY={false}
+          searchLabel="Search"
+          searching={true}
+          small={false}
+          sortable={true}
+          striped={true}
+          tbodyColor=""
+          tbodyTextWhite={false}
+          theadColor=""
+          theadTextWhite={false}
+        />,
+        "data-test": "log",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoWidth": false,
+          "bordered": true,
+          "borderless": false,
+          "btn": false,
+          "dark": false,
+          "data": Object {
+            "columns": Array [
+              Object {
+                "field": "date",
+                "label": "Date",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "time",
+                "label": "Time",
+                "sort": "asc",
+                "width": 75,
+              },
+              Object {
+                "field": "gps_coordinates",
+                "label": "GPS coordinates",
+                "sort": "asc",
+                "width": 125,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+              Object {
+                "date": "3-19-19",
+                "gps_coordinates": "39.744, -105.008",
+                "time": "12:34 PM",
+              },
+            ],
+          },
+          "displayEntries": true,
+          "entries": 10,
+          "entriesLabel": "Show entries",
+          "entriesOptions": Array [
+            10,
+            20,
+            50,
+            100,
+          ],
+          "exportToCSV": false,
+          "fixed": false,
+          "hover": true,
+          "info": true,
+          "infoLabel": Array [
+            "Showing",
+            "to",
+            "of",
+            "entries",
+          ],
+          "order": Array [],
+          "pagesAmount": 8,
+          "paginationLabel": Array [
+            "Previous",
+            "Next",
+          ],
+          "paging": true,
+          "responsive": false,
+          "responsiveLg": false,
+          "responsiveMd": false,
+          "responsiveSm": false,
+          "responsiveXl": false,
+          "scrollX": false,
+          "scrollY": false,
+          "searchLabel": "Search",
+          "searching": true,
+          "small": false,
+          "sortable": true,
+          "striped": true,
+          "tbodyColor": "",
+          "tbodyTextWhite": false,
+          "theadColor": "",
+          "theadTextWhite": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Login component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Log In
+        </h2>,
+        <Container
+          fluid={false}
+          tag="div"
+        >
+          <Row
+            tag="div"
+          >
+            <Col
+              lg={null}
+              md={null}
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <form>
+                <h1 />
+                <p
+                  className="h4 text-center mb-7"
+                />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginEmailEx"
+                >
+                  Your email
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginEmailEx"
+                  type="email"
+                />
+                <br />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginPasswordEx"
+                >
+                  Your password
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginPasswordEx"
+                  type="password"
+                />
+                <div
+                  className="text-center mt-4"
+                  data-test="loginSubmit"
+                >
+                  <Button
+                    color="indigo"
+                    tag="button"
+                    type="submit"
+                  >
+                    Login
+                  </Button>
+                </div>
+              </form>
+            </Col>
+          </Row>
+        </Container>,
+      ],
+      "className": "basic",
+      "data-test": "login",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Log In",
+        },
+        "ref": null,
+        "rendered": "Log In",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Row
+            tag="div"
+          >
+            <Col
+              lg={null}
+              md={null}
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <form>
+                <h1 />
+                <p
+                  className="h4 text-center mb-7"
+                />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginEmailEx"
+                >
+                  Your email
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginEmailEx"
+                  type="email"
+                />
+                <br />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginPasswordEx"
+                >
+                  Your password
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginPasswordEx"
+                  type="password"
+                />
+                <div
+                  className="text-center mt-4"
+                  data-test="loginSubmit"
+                >
+                  <Button
+                    color="indigo"
+                    tag="button"
+                    type="submit"
+                  >
+                    Login
+                  </Button>
+                </div>
+              </form>
+            </Col>
+          </Row>,
+          "fluid": false,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Col
+              lg={null}
+              md={null}
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <form>
+                <h1 />
+                <p
+                  className="h4 text-center mb-7"
+                />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginEmailEx"
+                >
+                  Your email
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginEmailEx"
+                  type="email"
+                />
+                <br />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginPasswordEx"
+                >
+                  Your password
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginPasswordEx"
+                  type="password"
+                />
+                <div
+                  className="text-center mt-4"
+                  data-test="loginSubmit"
+                >
+                  <Button
+                    color="indigo"
+                    tag="button"
+                    type="submit"
+                  >
+                    Login
+                  </Button>
+                </div>
+              </form>
+            </Col>,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <form>
+                <h1 />
+                <p
+                  className="h4 text-center mb-7"
+                />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginEmailEx"
+                >
+                  Your email
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginEmailEx"
+                  type="email"
+                />
+                <br />
+                <label
+                  className="grey-text"
+                  htmlFor="defaultFormLoginPasswordEx"
+                >
+                  Your password
+                </label>
+                <input
+                  className="form-control"
+                  id="defaultFormLoginPasswordEx"
+                  type="password"
+                />
+                <div
+                  className="text-center mt-4"
+                  data-test="loginSubmit"
+                >
+                  <Button
+                    color="indigo"
+                    tag="button"
+                    type="submit"
+                  >
+                    Login
+                  </Button>
+                </div>
+              </form>,
+              "lg": null,
+              "md": null,
+              "sm": null,
+              "tag": "div",
+              "xl": null,
+              "xs": null,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1 />,
+                  <p
+                    className="h4 text-center mb-7"
+                  />,
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginEmailEx"
+                  >
+                    Your email
+                  </label>,
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginEmailEx"
+                    type="email"
+                  />,
+                  <br />,
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginPasswordEx"
+                  >
+                    Your password
+                  </label>,
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginPasswordEx"
+                    type="password"
+                  />,
+                  <div
+                    className="text-center mt-4"
+                    data-test="loginSubmit"
+                  >
+                    <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                  </div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "h4 text-center mb-7",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Your email",
+                    "className": "grey-text",
+                    "htmlFor": "defaultFormLoginEmailEx",
+                  },
+                  "ref": null,
+                  "rendered": "Your email",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control",
+                    "id": "defaultFormLoginEmailEx",
+                    "type": "email",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Your password",
+                    "className": "grey-text",
+                    "htmlFor": "defaultFormLoginPasswordEx",
+                  },
+                  "ref": null,
+                  "rendered": "Your password",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control",
+                    "id": "defaultFormLoginPasswordEx",
+                    "type": "password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>,
+                    "className": "text-center mt-4",
+                    "data-test": "loginSubmit",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Login",
+                      "color": "indigo",
+                      "tag": "button",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "Login",
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "form",
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Log In
+          </h2>,
+          <Container
+            fluid={false}
+            tag="div"
+          >
+            <Row
+              tag="div"
+            >
+              <Col
+                lg={null}
+                md={null}
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <form>
+                  <h1 />
+                  <p
+                    className="h4 text-center mb-7"
+                  />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginEmailEx"
+                  >
+                    Your email
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginEmailEx"
+                    type="email"
+                  />
+                  <br />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginPasswordEx"
+                  >
+                    Your password
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginPasswordEx"
+                    type="password"
+                  />
+                  <div
+                    className="text-center mt-4"
+                    data-test="loginSubmit"
+                  >
+                    <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                  </div>
+                </form>
+              </Col>
+            </Row>
+          </Container>,
+        ],
+        "className": "basic",
+        "data-test": "login",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Log In",
+          },
+          "ref": null,
+          "rendered": "Log In",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Row
+              tag="div"
+            >
+              <Col
+                lg={null}
+                md={null}
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <form>
+                  <h1 />
+                  <p
+                    className="h4 text-center mb-7"
+                  />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginEmailEx"
+                  >
+                    Your email
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginEmailEx"
+                    type="email"
+                  />
+                  <br />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginPasswordEx"
+                  >
+                    Your password
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginPasswordEx"
+                    type="password"
+                  />
+                  <div
+                    className="text-center mt-4"
+                    data-test="loginSubmit"
+                  >
+                    <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                  </div>
+                </form>
+              </Col>
+            </Row>,
+            "fluid": false,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Col
+                lg={null}
+                md={null}
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <form>
+                  <h1 />
+                  <p
+                    className="h4 text-center mb-7"
+                  />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginEmailEx"
+                  >
+                    Your email
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginEmailEx"
+                    type="email"
+                  />
+                  <br />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginPasswordEx"
+                  >
+                    Your password
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginPasswordEx"
+                    type="password"
+                  />
+                  <div
+                    className="text-center mt-4"
+                    data-test="loginSubmit"
+                  >
+                    <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                  </div>
+                </form>
+              </Col>,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <form>
+                  <h1 />
+                  <p
+                    className="h4 text-center mb-7"
+                  />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginEmailEx"
+                  >
+                    Your email
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginEmailEx"
+                    type="email"
+                  />
+                  <br />
+                  <label
+                    className="grey-text"
+                    htmlFor="defaultFormLoginPasswordEx"
+                  >
+                    Your password
+                  </label>
+                  <input
+                    className="form-control"
+                    id="defaultFormLoginPasswordEx"
+                    type="password"
+                  />
+                  <div
+                    className="text-center mt-4"
+                    data-test="loginSubmit"
+                  >
+                    <Button
+                      color="indigo"
+                      tag="button"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                  </div>
+                </form>,
+                "lg": null,
+                "md": null,
+                "sm": null,
+                "tag": "div",
+                "xl": null,
+                "xs": null,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1 />,
+                    <p
+                      className="h4 text-center mb-7"
+                    />,
+                    <label
+                      className="grey-text"
+                      htmlFor="defaultFormLoginEmailEx"
+                    >
+                      Your email
+                    </label>,
+                    <input
+                      className="form-control"
+                      id="defaultFormLoginEmailEx"
+                      type="email"
+                    />,
+                    <br />,
+                    <label
+                      className="grey-text"
+                      htmlFor="defaultFormLoginPasswordEx"
+                    >
+                      Your password
+                    </label>,
+                    <input
+                      className="form-control"
+                      id="defaultFormLoginPasswordEx"
+                      type="password"
+                    />,
+                    <div
+                      className="text-center mt-4"
+                      data-test="loginSubmit"
+                    >
+                      <Button
+                        color="indigo"
+                        tag="button"
+                        type="submit"
+                      >
+                        Login
+                      </Button>
+                    </div>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "h4 text-center mb-7",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Your email",
+                      "className": "grey-text",
+                      "htmlFor": "defaultFormLoginEmailEx",
+                    },
+                    "ref": null,
+                    "rendered": "Your email",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control",
+                      "id": "defaultFormLoginEmailEx",
+                      "type": "email",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Your password",
+                      "className": "grey-text",
+                      "htmlFor": "defaultFormLoginPasswordEx",
+                    },
+                    "ref": null,
+                    "rendered": "Your password",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control",
+                      "id": "defaultFormLoginPasswordEx",
+                      "type": "password",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Button
+                        color="indigo"
+                        tag="button"
+                        type="submit"
+                      >
+                        Login
+                      </Button>,
+                      "className": "text-center mt-4",
+                      "data-test": "loginSubmit",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Login",
+                        "color": "indigo",
+                        "tag": "button",
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "Login",
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "form",
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Logout component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Logout />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1 />,
+        <h2>
+          You are now logged out of Pi-oT.
+        </h2>,
+      ],
+      "className": "basic",
+      "data-test": "logout",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "You are now logged out of Pi-oT.",
+        },
+        "ref": null,
+        "rendered": "You are now logged out of Pi-oT.",
+        "type": "h2",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1 />,
+          <h2>
+            You are now logged out of Pi-oT.
+          </h2>,
+        ],
+        "className": "basic",
+        "data-test": "logout",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "You are now logged out of Pi-oT.",
+          },
+          "ref": null,
+          "rendered": "You are now logged out of Pi-oT.",
+          "type": "h2",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Navigation component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navigation />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Navbar
+        color="indigo"
+        dark={true}
+        data-test="navigation"
+        expand="md"
+        scrolling={false}
+        tag="nav"
+      >
+        <NavbarBrand>
+          <strong
+            className="white-text"
+          >
+            Pi_oT
+          </strong>
+        </NavbarBrand>
+        <NavbarToggler
+          onClick={[Function]}
+          tag="button"
+          type="button"
+        />
+        <Collapse
+          delay={
+            Object {
+              "hide": 350,
+              "show": 350,
+            }
+          }
+          id="navbarCollapse3"
+          isOpen={false}
+          navbar={true}
+          onClosed={[Function]}
+          onOpened={[Function]}
+        >
+          <NavbarNav
+            left={true}
+            tag="ul"
+          >
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                active={false}
+                className=""
+                disabled={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </NavLink>
+            </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                active={false}
+                className=""
+                disabled={false}
+                to="/stats"
+              >
+                Stats
+              </NavLink>
+            </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                active={false}
+                className=""
+                disabled={false}
+                to="/log"
+              >
+                Log
+              </NavLink>
+            </NavItem>
+          </NavbarNav>
+          <NavbarNav
+            right={true}
+            tag="ul"
+          >
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                active={false}
+                className=""
+                disabled={false}
+                to="/login"
+              >
+                Login
+              </NavLink>
+            </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <Dropdown
+                dropup={false}
+                tag="div"
+              >
+                <DropdownToggle
+                  aria-haspopup={true}
+                  caret={true}
+                  color="secondary"
+                  nav={true}
+                >
+                  <Fa
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="user"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </DropdownToggle>
+                <DropdownMenu
+                  basic={false}
+                  className="dropdown-default"
+                  color="dark"
+                  flip={false}
+                  right={true}
+                  tag="div"
+                >
+                  <DropdownItem
+                    tag="button"
+                    toggle={true}
+                  >
+                    Account Details
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </NavItem>
+          </NavbarNav>
+        </Collapse>
+      </Navbar>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <NavbarBrand>
+            <strong
+              className="white-text"
+            >
+              Pi_oT
+            </strong>
+          </NavbarBrand>,
+          <NavbarToggler
+            onClick={[Function]}
+            tag="button"
+            type="button"
+          />,
+          <Collapse
+            delay={
+              Object {
+                "hide": 350,
+                "show": 350,
+              }
+            }
+            id="navbarCollapse3"
+            isOpen={false}
+            navbar={true}
+            onClosed={[Function]}
+            onOpened={[Function]}
+          >
+            <NavbarNav
+              left={true}
+              tag="ul"
+            >
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/stats"
+                >
+                  Stats
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/log"
+                >
+                  Log
+                </NavLink>
+              </NavItem>
+            </NavbarNav>
+            <NavbarNav
+              right={true}
+              tag="ul"
+            >
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/login"
+                >
+                  Login
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <Dropdown
+                  dropup={false}
+                  tag="div"
+                >
+                  <DropdownToggle
+                    aria-haspopup={true}
+                    caret={true}
+                    color="secondary"
+                    nav={true}
+                  >
+                    <Fa
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="user"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </DropdownToggle>
+                  <DropdownMenu
+                    basic={false}
+                    className="dropdown-default"
+                    color="dark"
+                    flip={false}
+                    right={true}
+                    tag="div"
+                  >
+                    <DropdownItem
+                      tag="button"
+                      toggle={true}
+                    >
+                      Account Details
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+              </NavItem>
+            </NavbarNav>
+          </Collapse>,
+        ],
+        "color": "indigo",
+        "dark": true,
+        "data-test": "navigation",
+        "expand": "md",
+        "scrolling": false,
+        "tag": "nav",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <strong
+              className="white-text"
+            >
+              Pi_oT
+            </strong>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Pi_oT",
+              "className": "white-text",
+            },
+            "ref": null,
+            "rendered": "Pi_oT",
+            "type": "strong",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onClick": [Function],
+            "tag": "button",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <NavbarNav
+                left={true}
+                tag="ul"
+              >
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/dashboard"
+                  >
+                    Dashboard
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/stats"
+                  >
+                    Stats
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/log"
+                  >
+                    Log
+                  </NavLink>
+                </NavItem>
+              </NavbarNav>,
+              <NavbarNav
+                right={true}
+                tag="ul"
+              >
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/login"
+                  >
+                    Login
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <Dropdown
+                    dropup={false}
+                    tag="div"
+                  >
+                    <DropdownToggle
+                      aria-haspopup={true}
+                      caret={true}
+                      color="secondary"
+                      nav={true}
+                    >
+                      <Fa
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="user"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </DropdownToggle>
+                    <DropdownMenu
+                      basic={false}
+                      className="dropdown-default"
+                      color="dark"
+                      flip={false}
+                      right={true}
+                      tag="div"
+                    >
+                      <DropdownItem
+                        tag="button"
+                        toggle={true}
+                      >
+                        Account Details
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </Dropdown>
+                </NavItem>
+              </NavbarNav>,
+            ],
+            "delay": Object {
+              "hide": 350,
+              "show": 350,
+            },
+            "id": "navbarCollapse3",
+            "isOpen": false,
+            "navbar": true,
+            "onClosed": [Function],
+            "onOpened": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/dashboard"
+                    >
+                      Dashboard
+                    </NavLink>
+                  </NavItem>,
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/stats"
+                    >
+                      Stats
+                    </NavLink>
+                  </NavItem>,
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/log"
+                    >
+                      Log
+                    </NavLink>
+                  </NavItem>,
+                ],
+                "left": true,
+                "tag": "ul",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/dashboard"
+                    >
+                      Dashboard
+                    </NavLink>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "active": false,
+                      "children": "Dashboard",
+                      "className": "",
+                      "disabled": false,
+                      "to": "/dashboard",
+                    },
+                    "ref": null,
+                    "rendered": "Dashboard",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/stats"
+                    >
+                      Stats
+                    </NavLink>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "active": false,
+                      "children": "Stats",
+                      "className": "",
+                      "disabled": false,
+                      "to": "/stats",
+                    },
+                    "ref": null,
+                    "rendered": "Stats",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/log"
+                    >
+                      Log
+                    </NavLink>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "active": false,
+                      "children": "Log",
+                      "className": "",
+                      "disabled": false,
+                      "to": "/log",
+                    },
+                    "ref": null,
+                    "rendered": "Log",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/login"
+                    >
+                      Login
+                    </NavLink>
+                  </NavItem>,
+                  <NavItem
+                    tag="li"
+                  >
+                    <Dropdown
+                      dropup={false}
+                      tag="div"
+                    >
+                      <DropdownToggle
+                        aria-haspopup={true}
+                        caret={true}
+                        color="secondary"
+                        nav={true}
+                      >
+                        <Fa
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="user"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </DropdownToggle>
+                      <DropdownMenu
+                        basic={false}
+                        className="dropdown-default"
+                        color="dark"
+                        flip={false}
+                        right={true}
+                        tag="div"
+                      >
+                        <DropdownItem
+                          tag="button"
+                          toggle={true}
+                        >
+                          Account Details
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </Dropdown>
+                  </NavItem>,
+                ],
+                "right": true,
+                "tag": "ul",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/login"
+                    >
+                      Login
+                    </NavLink>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "active": false,
+                      "children": "Login",
+                      "className": "",
+                      "disabled": false,
+                      "to": "/login",
+                    },
+                    "ref": null,
+                    "rendered": "Login",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Dropdown
+                      dropup={false}
+                      tag="div"
+                    >
+                      <DropdownToggle
+                        aria-haspopup={true}
+                        caret={true}
+                        color="secondary"
+                        nav={true}
+                      >
+                        <Fa
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="user"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </DropdownToggle>
+                      <DropdownMenu
+                        basic={false}
+                        className="dropdown-default"
+                        color="dark"
+                        flip={false}
+                        right={true}
+                        tag="div"
+                      >
+                        <DropdownItem
+                          tag="button"
+                          toggle={true}
+                        >
+                          Account Details
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </Dropdown>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <DropdownToggle
+                          aria-haspopup={true}
+                          caret={true}
+                          color="secondary"
+                          nav={true}
+                        >
+                          <Fa
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="user"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </DropdownToggle>,
+                        <DropdownMenu
+                          basic={false}
+                          className="dropdown-default"
+                          color="dark"
+                          flip={false}
+                          right={true}
+                          tag="div"
+                        >
+                          <DropdownItem
+                            tag="button"
+                            toggle={true}
+                          >
+                            Account Details
+                          </DropdownItem>
+                        </DropdownMenu>,
+                      ],
+                      "dropup": false,
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "aria-haspopup": true,
+                          "caret": true,
+                          "children": <Fa
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="user"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />,
+                          "color": "secondary",
+                          "nav": true,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "border": false,
+                            "brand": false,
+                            "className": "",
+                            "fab": false,
+                            "fal": false,
+                            "far": false,
+                            "fixed": false,
+                            "flip": "",
+                            "icon": "user",
+                            "inverse": "",
+                            "light": false,
+                            "list": false,
+                            "pull": "",
+                            "pulse": false,
+                            "regular": false,
+                            "rotate": "",
+                            "size": "",
+                            "spin": false,
+                            "stack": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "basic": false,
+                          "children": <DropdownItem
+                            tag="button"
+                            toggle={true}
+                          >
+                            Account Details
+                          </DropdownItem>,
+                          "className": "dropdown-default",
+                          "color": "dark",
+                          "flip": false,
+                          "right": true,
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Account Details",
+                            "tag": "button",
+                            "toggle": true,
+                          },
+                          "ref": null,
+                          "rendered": "Account Details",
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Navbar
+          color="indigo"
+          dark={true}
+          data-test="navigation"
+          expand="md"
+          scrolling={false}
+          tag="nav"
+        >
+          <NavbarBrand>
+            <strong
+              className="white-text"
+            >
+              Pi_oT
+            </strong>
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={[Function]}
+            tag="button"
+            type="button"
+          />
+          <Collapse
+            delay={
+              Object {
+                "hide": 350,
+                "show": 350,
+              }
+            }
+            id="navbarCollapse3"
+            isOpen={false}
+            navbar={true}
+            onClosed={[Function]}
+            onOpened={[Function]}
+          >
+            <NavbarNav
+              left={true}
+              tag="ul"
+            >
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/stats"
+                >
+                  Stats
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/log"
+                >
+                  Log
+                </NavLink>
+              </NavItem>
+            </NavbarNav>
+            <NavbarNav
+              right={true}
+              tag="ul"
+            >
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  active={false}
+                  className=""
+                  disabled={false}
+                  to="/login"
+                >
+                  Login
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <Dropdown
+                  dropup={false}
+                  tag="div"
+                >
+                  <DropdownToggle
+                    aria-haspopup={true}
+                    caret={true}
+                    color="secondary"
+                    nav={true}
+                  >
+                    <Fa
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="user"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </DropdownToggle>
+                  <DropdownMenu
+                    basic={false}
+                    className="dropdown-default"
+                    color="dark"
+                    flip={false}
+                    right={true}
+                    tag="div"
+                  >
+                    <DropdownItem
+                      tag="button"
+                      toggle={true}
+                    >
+                      Account Details
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+              </NavItem>
+            </NavbarNav>
+          </Collapse>
+        </Navbar>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <NavbarBrand>
+              <strong
+                className="white-text"
+              >
+                Pi_oT
+              </strong>
+            </NavbarBrand>,
+            <NavbarToggler
+              onClick={[Function]}
+              tag="button"
+              type="button"
+            />,
+            <Collapse
+              delay={
+                Object {
+                  "hide": 350,
+                  "show": 350,
+                }
+              }
+              id="navbarCollapse3"
+              isOpen={false}
+              navbar={true}
+              onClosed={[Function]}
+              onOpened={[Function]}
+            >
+              <NavbarNav
+                left={true}
+                tag="ul"
+              >
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/dashboard"
+                  >
+                    Dashboard
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/stats"
+                  >
+                    Stats
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/log"
+                  >
+                    Log
+                  </NavLink>
+                </NavItem>
+              </NavbarNav>
+              <NavbarNav
+                right={true}
+                tag="ul"
+              >
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    active={false}
+                    className=""
+                    disabled={false}
+                    to="/login"
+                  >
+                    Login
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <Dropdown
+                    dropup={false}
+                    tag="div"
+                  >
+                    <DropdownToggle
+                      aria-haspopup={true}
+                      caret={true}
+                      color="secondary"
+                      nav={true}
+                    >
+                      <Fa
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="user"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </DropdownToggle>
+                    <DropdownMenu
+                      basic={false}
+                      className="dropdown-default"
+                      color="dark"
+                      flip={false}
+                      right={true}
+                      tag="div"
+                    >
+                      <DropdownItem
+                        tag="button"
+                        toggle={true}
+                      >
+                        Account Details
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </Dropdown>
+                </NavItem>
+              </NavbarNav>
+            </Collapse>,
+          ],
+          "color": "indigo",
+          "dark": true,
+          "data-test": "navigation",
+          "expand": "md",
+          "scrolling": false,
+          "tag": "nav",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <strong
+                className="white-text"
+              >
+                Pi_oT
+              </strong>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Pi_oT",
+                "className": "white-text",
+              },
+              "ref": null,
+              "rendered": "Pi_oT",
+              "type": "strong",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onClick": [Function],
+              "tag": "button",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <NavbarNav
+                  left={true}
+                  tag="ul"
+                >
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/dashboard"
+                    >
+                      Dashboard
+                    </NavLink>
+                  </NavItem>
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/stats"
+                    >
+                      Stats
+                    </NavLink>
+                  </NavItem>
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/log"
+                    >
+                      Log
+                    </NavLink>
+                  </NavItem>
+                </NavbarNav>,
+                <NavbarNav
+                  right={true}
+                  tag="ul"
+                >
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      active={false}
+                      className=""
+                      disabled={false}
+                      to="/login"
+                    >
+                      Login
+                    </NavLink>
+                  </NavItem>
+                  <NavItem
+                    tag="li"
+                  >
+                    <Dropdown
+                      dropup={false}
+                      tag="div"
+                    >
+                      <DropdownToggle
+                        aria-haspopup={true}
+                        caret={true}
+                        color="secondary"
+                        nav={true}
+                      >
+                        <Fa
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="user"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </DropdownToggle>
+                      <DropdownMenu
+                        basic={false}
+                        className="dropdown-default"
+                        color="dark"
+                        flip={false}
+                        right={true}
+                        tag="div"
+                      >
+                        <DropdownItem
+                          tag="button"
+                          toggle={true}
+                        >
+                          Account Details
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </Dropdown>
+                  </NavItem>
+                </NavbarNav>,
+              ],
+              "delay": Object {
+                "hide": 350,
+                "show": 350,
+              },
+              "id": "navbarCollapse3",
+              "isOpen": false,
+              "navbar": true,
+              "onClosed": [Function],
+              "onOpened": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <NavItem
+                      tag="li"
+                    >
+                      <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/dashboard"
+                      >
+                        Dashboard
+                      </NavLink>
+                    </NavItem>,
+                    <NavItem
+                      tag="li"
+                    >
+                      <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/stats"
+                      >
+                        Stats
+                      </NavLink>
+                    </NavItem>,
+                    <NavItem
+                      tag="li"
+                    >
+                      <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/log"
+                      >
+                        Log
+                      </NavLink>
+                    </NavItem>,
+                  ],
+                  "left": true,
+                  "tag": "ul",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/dashboard"
+                      >
+                        Dashboard
+                      </NavLink>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "children": "Dashboard",
+                        "className": "",
+                        "disabled": false,
+                        "to": "/dashboard",
+                      },
+                      "ref": null,
+                      "rendered": "Dashboard",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/stats"
+                      >
+                        Stats
+                      </NavLink>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "children": "Stats",
+                        "className": "",
+                        "disabled": false,
+                        "to": "/stats",
+                      },
+                      "ref": null,
+                      "rendered": "Stats",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/log"
+                      >
+                        Log
+                      </NavLink>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "children": "Log",
+                        "className": "",
+                        "disabled": false,
+                        "to": "/log",
+                      },
+                      "ref": null,
+                      "rendered": "Log",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <NavItem
+                      tag="li"
+                    >
+                      <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/login"
+                      >
+                        Login
+                      </NavLink>
+                    </NavItem>,
+                    <NavItem
+                      tag="li"
+                    >
+                      <Dropdown
+                        dropup={false}
+                        tag="div"
+                      >
+                        <DropdownToggle
+                          aria-haspopup={true}
+                          caret={true}
+                          color="secondary"
+                          nav={true}
+                        >
+                          <Fa
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="user"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </DropdownToggle>
+                        <DropdownMenu
+                          basic={false}
+                          className="dropdown-default"
+                          color="dark"
+                          flip={false}
+                          right={true}
+                          tag="div"
+                        >
+                          <DropdownItem
+                            tag="button"
+                            toggle={true}
+                          >
+                            Account Details
+                          </DropdownItem>
+                        </DropdownMenu>
+                      </Dropdown>
+                    </NavItem>,
+                  ],
+                  "right": true,
+                  "tag": "ul",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <NavLink
+                        active={false}
+                        className=""
+                        disabled={false}
+                        to="/login"
+                      >
+                        Login
+                      </NavLink>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "children": "Login",
+                        "className": "",
+                        "disabled": false,
+                        "to": "/login",
+                      },
+                      "ref": null,
+                      "rendered": "Login",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Dropdown
+                        dropup={false}
+                        tag="div"
+                      >
+                        <DropdownToggle
+                          aria-haspopup={true}
+                          caret={true}
+                          color="secondary"
+                          nav={true}
+                        >
+                          <Fa
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="user"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </DropdownToggle>
+                        <DropdownMenu
+                          basic={false}
+                          className="dropdown-default"
+                          color="dark"
+                          flip={false}
+                          right={true}
+                          tag="div"
+                        >
+                          <DropdownItem
+                            tag="button"
+                            toggle={true}
+                          >
+                            Account Details
+                          </DropdownItem>
+                        </DropdownMenu>
+                      </Dropdown>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          <DropdownToggle
+                            aria-haspopup={true}
+                            caret={true}
+                            color="secondary"
+                            nav={true}
+                          >
+                            <Fa
+                              border={false}
+                              brand={false}
+                              className=""
+                              fab={false}
+                              fal={false}
+                              far={false}
+                              fixed={false}
+                              flip=""
+                              icon="user"
+                              inverse=""
+                              light={false}
+                              list={false}
+                              pull=""
+                              pulse={false}
+                              regular={false}
+                              rotate=""
+                              size=""
+                              spin={false}
+                              stack=""
+                            />
+                          </DropdownToggle>,
+                          <DropdownMenu
+                            basic={false}
+                            className="dropdown-default"
+                            color="dark"
+                            flip={false}
+                            right={true}
+                            tag="div"
+                          >
+                            <DropdownItem
+                              tag="button"
+                              toggle={true}
+                            >
+                              Account Details
+                            </DropdownItem>
+                          </DropdownMenu>,
+                        ],
+                        "dropup": false,
+                        "tag": "div",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "aria-haspopup": true,
+                            "caret": true,
+                            "children": <Fa
+                              border={false}
+                              brand={false}
+                              className=""
+                              fab={false}
+                              fal={false}
+                              far={false}
+                              fixed={false}
+                              flip=""
+                              icon="user"
+                              inverse=""
+                              light={false}
+                              list={false}
+                              pull=""
+                              pulse={false}
+                              regular={false}
+                              rotate=""
+                              size=""
+                              spin={false}
+                              stack=""
+                            />,
+                            "color": "secondary",
+                            "nav": true,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "border": false,
+                              "brand": false,
+                              "className": "",
+                              "fab": false,
+                              "fal": false,
+                              "far": false,
+                              "fixed": false,
+                              "flip": "",
+                              "icon": "user",
+                              "inverse": "",
+                              "light": false,
+                              "list": false,
+                              "pull": "",
+                              "pulse": false,
+                              "regular": false,
+                              "rotate": "",
+                              "size": "",
+                              "spin": false,
+                              "stack": "",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "basic": false,
+                            "children": <DropdownItem
+                              tag="button"
+                              toggle={true}
+                            >
+                              Account Details
+                            </DropdownItem>,
+                            "className": "dropdown-default",
+                            "color": "dark",
+                            "flip": false,
+                            "right": true,
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "Account Details",
+                              "tag": "button",
+                              "toggle": true,
+                            },
+                            "ref": null,
+                            "rendered": "Account Details",
+                            "type": [Function],
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Stats component DidComponentMount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Stats />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <div
+        className="stat"
+        data-test="stats"
+      >
+        <Line
+          data={
+            Object {
+              "datasets": Array [
+                Object {
+                  "backgroundColor": "rgba(75,192,192,0.4)",
+                  "borderCapStyle": "butt",
+                  "borderColor": "rgba(75,192,192,1)",
+                  "borderDash": Array [],
+                  "borderDashOffset": 0,
+                  "borderJoinStyle": "miter",
+                  "data": Array [
+                    0,
+                    4,
+                    0,
+                    1,
+                    0,
+                    2,
+                    2,
+                  ],
+                  "fill": false,
+                  "label": "Successful Connections",
+                  "lineTension": 0.1,
+                  "pointBackgroundColor": "#fff",
+                  "pointBorderColor": "rgba(75,192,192,1)",
+                  "pointBorderWidth": 1,
+                  "pointHitRadius": 10,
+                  "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                  "pointHoverBorderColor": "rgba(220,220,220,1)",
+                  "pointHoverBorderWidth": 2,
+                  "pointHoverRadius": 5,
+                  "pointRadius": 1,
+                },
+              ],
+              "labels": Array [
+                "3-13-19",
+                "3-14-19",
+                "3-15-19",
+                "3-16-19",
+                "3-17-19",
+                "3-18-19",
+                "3-19-19",
+              ],
+            }
+          }
+          options={
+            Object {
+              "responsive": true,
+            }
+          }
+        />
+      </div>,
+      "fluid": false,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Line
+          data={
+            Object {
+              "datasets": Array [
+                Object {
+                  "backgroundColor": "rgba(75,192,192,0.4)",
+                  "borderCapStyle": "butt",
+                  "borderColor": "rgba(75,192,192,1)",
+                  "borderDash": Array [],
+                  "borderDashOffset": 0,
+                  "borderJoinStyle": "miter",
+                  "data": Array [
+                    0,
+                    4,
+                    0,
+                    1,
+                    0,
+                    2,
+                    2,
+                  ],
+                  "fill": false,
+                  "label": "Successful Connections",
+                  "lineTension": 0.1,
+                  "pointBackgroundColor": "#fff",
+                  "pointBorderColor": "rgba(75,192,192,1)",
+                  "pointBorderWidth": 1,
+                  "pointHitRadius": 10,
+                  "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                  "pointHoverBorderColor": "rgba(220,220,220,1)",
+                  "pointHoverBorderWidth": 2,
+                  "pointHoverRadius": 5,
+                  "pointRadius": 1,
+                },
+              ],
+              "labels": Array [
+                "3-13-19",
+                "3-14-19",
+                "3-15-19",
+                "3-16-19",
+                "3-17-19",
+                "3-18-19",
+                "3-19-19",
+              ],
+            }
+          }
+          options={
+            Object {
+              "responsive": true,
+            }
+          }
+        />,
+        "className": "stat",
+        "data-test": "stats",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "datasets": Array [
+              Object {
+                "backgroundColor": "rgba(75,192,192,0.4)",
+                "borderCapStyle": "butt",
+                "borderColor": "rgba(75,192,192,1)",
+                "borderDash": Array [],
+                "borderDashOffset": 0,
+                "borderJoinStyle": "miter",
+                "data": Array [
+                  0,
+                  4,
+                  0,
+                  1,
+                  0,
+                  2,
+                  2,
+                ],
+                "fill": false,
+                "label": "Successful Connections",
+                "lineTension": 0.1,
+                "pointBackgroundColor": "#fff",
+                "pointBorderColor": "rgba(75,192,192,1)",
+                "pointBorderWidth": 1,
+                "pointHitRadius": 10,
+                "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                "pointHoverBorderColor": "rgba(220,220,220,1)",
+                "pointHoverBorderWidth": 2,
+                "pointHoverRadius": 5,
+                "pointRadius": 1,
+              },
+            ],
+            "labels": Array [
+              "3-13-19",
+              "3-14-19",
+              "3-15-19",
+              "3-16-19",
+              "3-17-19",
+              "3-18-19",
+              "3-19-19",
+            ],
+          },
+          "options": Object {
+            "responsive": true,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="stat"
+          data-test="stats"
+        >
+          <Line
+            data={
+              Object {
+                "datasets": Array [
+                  Object {
+                    "backgroundColor": "rgba(75,192,192,0.4)",
+                    "borderCapStyle": "butt",
+                    "borderColor": "rgba(75,192,192,1)",
+                    "borderDash": Array [],
+                    "borderDashOffset": 0,
+                    "borderJoinStyle": "miter",
+                    "data": Array [
+                      0,
+                      4,
+                      0,
+                      1,
+                      0,
+                      2,
+                      2,
+                    ],
+                    "fill": false,
+                    "label": "Successful Connections",
+                    "lineTension": 0.1,
+                    "pointBackgroundColor": "#fff",
+                    "pointBorderColor": "rgba(75,192,192,1)",
+                    "pointBorderWidth": 1,
+                    "pointHitRadius": 10,
+                    "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                    "pointHoverBorderColor": "rgba(220,220,220,1)",
+                    "pointHoverBorderWidth": 2,
+                    "pointHoverRadius": 5,
+                    "pointRadius": 1,
+                  },
+                ],
+                "labels": Array [
+                  "3-13-19",
+                  "3-14-19",
+                  "3-15-19",
+                  "3-16-19",
+                  "3-17-19",
+                  "3-18-19",
+                  "3-19-19",
+                ],
+              }
+            }
+            options={
+              Object {
+                "responsive": true,
+              }
+            }
+          />
+        </div>,
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Line
+            data={
+              Object {
+                "datasets": Array [
+                  Object {
+                    "backgroundColor": "rgba(75,192,192,0.4)",
+                    "borderCapStyle": "butt",
+                    "borderColor": "rgba(75,192,192,1)",
+                    "borderDash": Array [],
+                    "borderDashOffset": 0,
+                    "borderJoinStyle": "miter",
+                    "data": Array [
+                      0,
+                      4,
+                      0,
+                      1,
+                      0,
+                      2,
+                      2,
+                    ],
+                    "fill": false,
+                    "label": "Successful Connections",
+                    "lineTension": 0.1,
+                    "pointBackgroundColor": "#fff",
+                    "pointBorderColor": "rgba(75,192,192,1)",
+                    "pointBorderWidth": 1,
+                    "pointHitRadius": 10,
+                    "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                    "pointHoverBorderColor": "rgba(220,220,220,1)",
+                    "pointHoverBorderWidth": 2,
+                    "pointHoverRadius": 5,
+                    "pointRadius": 1,
+                  },
+                ],
+                "labels": Array [
+                  "3-13-19",
+                  "3-14-19",
+                  "3-15-19",
+                  "3-16-19",
+                  "3-17-19",
+                  "3-18-19",
+                  "3-19-19",
+                ],
+              }
+            }
+            options={
+              Object {
+                "responsive": true,
+              }
+            }
+          />,
+          "className": "stat",
+          "data-test": "stats",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "datasets": Array [
+                Object {
+                  "backgroundColor": "rgba(75,192,192,0.4)",
+                  "borderCapStyle": "butt",
+                  "borderColor": "rgba(75,192,192,1)",
+                  "borderDash": Array [],
+                  "borderDashOffset": 0,
+                  "borderJoinStyle": "miter",
+                  "data": Array [
+                    0,
+                    4,
+                    0,
+                    1,
+                    0,
+                    2,
+                    2,
+                  ],
+                  "fill": false,
+                  "label": "Successful Connections",
+                  "lineTension": 0.1,
+                  "pointBackgroundColor": "#fff",
+                  "pointBorderColor": "rgba(75,192,192,1)",
+                  "pointBorderWidth": 1,
+                  "pointHitRadius": 10,
+                  "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+                  "pointHoverBorderColor": "rgba(220,220,220,1)",
+                  "pointHoverBorderWidth": 2,
+                  "pointHoverRadius": 5,
+                  "pointRadius": 1,
+                },
+              ],
+              "labels": Array [
+                "3-13-19",
+                "3-14-19",
+                "3-15-19",
+                "3-16-19",
+                "3-17-19",
+                "3-18-19",
+                "3-19-19",
+              ],
+            },
+            "options": Object {
+              "responsive": true,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

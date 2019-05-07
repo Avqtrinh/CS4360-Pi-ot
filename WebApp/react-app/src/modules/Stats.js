@@ -37,7 +37,7 @@ class Stats extends Component {
   render() {
     return (
       <MDBContainer>
-        <div className="stat">
+        <div className="stat" data-test="stats">
           <Line data={this.state.dataLine} options={{ responsive: true }} />
         </div>
       </MDBContainer>

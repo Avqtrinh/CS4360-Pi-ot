@@ -9,7 +9,6 @@ class Navigation extends Component {
     this.state = {
       isOpen:false,
       email :"",
-      password: "",
     };
   }
 

@@ -28,8 +28,7 @@ class Login extends Component {
     try {
       await Auth.signIn(this.state.email, this.state.password);
       this.props.userHasAuthenticated(true);
-      Auth.currentAuthenticatedUser().then(result =>{ this.props.updateUser(result)});
-
+      await Auth.currentAuthenticatedUser().then(result => this.props.updateUser(result));
       this.props.history.push("/dashboard")
       //alert("Login Successful")
     }

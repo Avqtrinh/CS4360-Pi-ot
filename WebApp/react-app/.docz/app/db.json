@@ -83,6 +83,11 @@
             "slug": "mqtt_service",
             "depth": 1,
             "value": "mqtt_service"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -266,7 +271,28 @@
         "link": "",
         "slug": "src-modules-navigation",
         "route": "/src-modules-navigation",
-        "headings": []
+        "headings": [
+          {
+            "slug": "navigationjs",
+            "depth": 1,
+            "value": "Navigation.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
+          }
+        ]
       }
     },
     {
@@ -318,6 +344,21 @@
             "slug": "signupjs",
             "depth": 1,
             "value": "Signup.js"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "method-descriptions",
+            "depth": 2,
+            "value": "Method Descriptions"
+          },
+          {
+            "slug": "notes",
+            "depth": 2,
+            "value": "Notes"
           }
         ]
       }
@@ -648,6 +689,15 @@
       ]
     },
     {
+      "key": "src\\modules\\Routes.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
       "key": "src\\modules\\Signup.js",
       "value": [
         {
@@ -758,15 +808,6 @@
               "description": ""
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "src\\modules\\Routes.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
         }
       ]
     }

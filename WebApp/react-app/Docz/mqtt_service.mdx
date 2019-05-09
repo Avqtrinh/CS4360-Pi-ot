@@ -4,10 +4,11 @@ name: mqtt_service.js
 menu: MQTTCon
 ---
 
-
 # mqtt_service
+> A node backend to access AWS's S3 bucket. Calls to S3's endpoint to retrieve a list of device data then acts as an endpoint
+for the React app to access the information. Starts a local server on port 3001 and retrives data from S3 and responds with a JSON
+object holding messages from the Pi.
 
-> A node backend to access AWS's S3 bucket. Calls to S3's endpoint to retrive a list of device data then acts as an endpoint for the react app to access the information.
-Note: This will be removed in the future in favor of react directly calling to the s3 endpoint.
->Utilizes aws-iot-device-sdk, cors, and express
->Starts a local server on port 3001 and retrives data from s3 and responds with a json object holding messages from the pi
+## Notes
+>This file will be removed in the future in favor of react directly calling to the S3 endpoint.
+

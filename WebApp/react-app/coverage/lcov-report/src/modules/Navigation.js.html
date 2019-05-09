@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">30% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>3/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">16.67% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>1/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>2/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">30% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>3/10</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -99,11 +99,41 @@
 54
 55
 56
-57</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,6 +141,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,18 +197,44 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
+MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon , MDBRow } from 'mdbreact';
+import { Auth } from 'aws-amplify';
 &nbsp;
 class Navigation extends Component {
-&nbsp;
-state = {
-  isOpen: false
-};
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen:false,
+      email :"",
+    };
+  }
 &nbsp;
 toggleCollapse = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >  this.setState({ isOpen: !this.state.isOpen });</span>
+}
+&nbsp;
+handleLogout = <span class="fstat-no" title="function not covered" >as</span>ync event =&gt; {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >     await Auth.signOut()</span>
+    .then(<span class="fstat-no" title="function not covered" >da</span>ta =&gt; <span class="cstat-no" title="statement not covered" >console.log(data))</span>
+    .catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >console.log(err))</span>;
+<span class="cstat-no" title="statement not covered" >    this.props.childProps.userHasAuthenticated(false)</span>
+  }
+  catch(e) {
+<span class="cstat-no" title="statement not covered" >    alert(e.message);</span>
+  }
 }
 &nbsp;
 render() {
@@ -174,13 +242,15 @@ render() {
     &lt;div&gt;
       &lt;MDBNavbar color="indigo" dark expand="md" data-test="navigation"&gt;
         &lt;MDBNavbarBrand&gt;
-          &lt;strong className="white-text"&gt;Pi_oT&lt;/strong&gt;
+        &lt;strong className="white-text"&gt;Pi-oT&lt;/strong&gt;
+&nbsp;
         &lt;/MDBNavbarBrand&gt;
         &lt;MDBNavbarToggler onClick={this.toggleCollapse} /&gt;
         &lt;MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar&gt;
-          &lt;MDBNavbarNav left&gt;
+        {this.props.childProps.isAuthenticated &amp;&amp;
+<span class="branch-1 cbranch-no" title="branch not covered" >          &lt;MDBNavbarNav left&gt;</span>
             &lt;MDBNavItem&gt;
-              &lt;MDBNavLink to="/dashboard"&gt;Dashboard&lt;/MDBNavLink&gt;
+              &lt;MDBNavLink  to="/dashboard"&gt;Dashboard&lt;/MDBNavLink&gt;
             &lt;/MDBNavItem&gt;
             &lt;MDBNavItem&gt;
               &lt;MDBNavLink to="/stats"&gt;Stats&lt;/MDBNavLink&gt;
@@ -189,20 +259,27 @@ render() {
               &lt;MDBNavLink to="/log"&gt;Log&lt;/MDBNavLink&gt;
             &lt;/MDBNavItem&gt;
           &lt;/MDBNavbarNav&gt;
+        }
           &lt;MDBNavbarNav right&gt;
+          {this.props.childProps.isAuthenticated
+            ? &lt;MDBNavLink to="/logout" onClick ={this.handleLogout}&gt; Logout &lt;/MDBNavLink&gt;
+            : &lt;MDBRow&gt;
+                &lt;MDBNavLink to='/signup'&gt;Sign up&lt;/MDBNavLink&gt;
+                &lt;MDBNavLink to="/login"&gt;Login&lt;/MDBNavLink&gt;
+              &lt;/MDBRow&gt;
+          }
+          {this.props.childProps.isAuthenticated &amp;&amp;
           &lt;MDBNavItem&gt;
-              &lt;MDBNavLink to="/login"&gt;Login&lt;/MDBNavLink&gt;
-            &lt;/MDBNavItem&gt;
-            &lt;MDBNavItem&gt;
               &lt;MDBDropdown&gt;
                 &lt;MDBDropdownToggle nav caret&gt;
-                  &lt;MDBIcon icon="user" /&gt;
+                  &lt;MDBIcon icon="user"/&gt;
                 &lt;/MDBDropdownToggle&gt;
-                &lt;MDBDropdownMenu className="dropdown-default" color="dark" right&gt;
+                &lt;MDBDropdownMenu  className="dropdown-default" color="dark" right&gt;
                   &lt;MDBDropdownItem&gt;Account Details&lt;/MDBDropdownItem&gt;
                 &lt;/MDBDropdownMenu&gt;
               &lt;/MDBDropdown&gt;
             &lt;/MDBNavItem&gt;
+          }
           &lt;/MDBNavbarNav&gt;
         &lt;/MDBCollapse&gt;
       &lt;/MDBNavbar&gt;
@@ -211,13 +288,14 @@ render() {
   }
 }
 &nbsp;
-export default Navigation;</pre></td></tr>
+export default Navigation;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 10 2019 23:49:10 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 08 2019 20:10:40 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

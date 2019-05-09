@@ -18,19 +18,57 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Navigation />,
+      "children": Array [
+        <Navigation
+          childProps={
+            Object {
+              "isAuthenticated": false,
+              "userHasAuthenticated": [Function],
+            }
+          }
+        />,
+        <_default
+          childProps={
+            Object {
+              "isAuthenticated": false,
+              "userHasAuthenticated": [Function],
+            }
+          }
+        />,
+      ],
       "data-test": "app",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "childProps": Object {
+            "isAuthenticated": false,
+            "userHasAuthenticated": [Function],
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "childProps": Object {
+            "isAuthenticated": false,
+            "userHasAuthenticated": [Function],
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -39,19 +77,57 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Navigation />,
+        "children": Array [
+          <Navigation
+            childProps={
+              Object {
+                "isAuthenticated": false,
+                "userHasAuthenticated": [Function],
+              }
+            }
+          />,
+          <_default
+            childProps={
+              Object {
+                "isAuthenticated": false,
+                "userHasAuthenticated": [Function],
+              }
+            }
+          />,
+        ],
         "data-test": "app",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "childProps": Object {
+              "isAuthenticated": false,
+              "userHasAuthenticated": [Function],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "childProps": Object {
+              "isAuthenticated": false,
+              "userHasAuthenticated": [Function],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
@@ -1361,11 +1437,20 @@ ShallowWrapper {
            Welcome to Pi-oT.
         </h1>,
         <p>
-           Please login to access the dashboard. 
+           Please login to access the Pi-oT Utilities. 
         </p>,
         <p>
            This web application was written for Dr. Beaty's CS4360 Senior Project class.
         </p>,
+        <br />,
+        <Button
+          color="indigo"
+          href="/login"
+          tag="button"
+          type="redirect"
+        >
+          Login
+        </Button>,
       ],
       "className": "basic",
       "data-test": "home",
@@ -1388,10 +1473,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": " Please login to access the dashboard. ",
+          "children": " Please login to access the Pi-oT Utilities. ",
         },
         "ref": null,
-        "rendered": " Please login to access the dashboard. ",
+        "rendered": " Please login to access the Pi-oT Utilities. ",
         "type": "p",
       },
       Object {
@@ -1404,6 +1489,30 @@ ShallowWrapper {
         "ref": null,
         "rendered": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
         "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Login",
+          "color": "indigo",
+          "href": "/login",
+          "tag": "button",
+          "type": "redirect",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -1419,11 +1528,20 @@ ShallowWrapper {
              Welcome to Pi-oT.
           </h1>,
           <p>
-             Please login to access the dashboard. 
+             Please login to access the Pi-oT Utilities. 
           </p>,
           <p>
              This web application was written for Dr. Beaty's CS4360 Senior Project class.
           </p>,
+          <br />,
+          <Button
+            color="indigo"
+            href="/login"
+            tag="button"
+            type="redirect"
+          >
+            Login
+          </Button>,
         ],
         "className": "basic",
         "data-test": "home",
@@ -1446,10 +1564,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": " Please login to access the dashboard. ",
+            "children": " Please login to access the Pi-oT Utilities. ",
           },
           "ref": null,
-          "rendered": " Please login to access the dashboard. ",
+          "rendered": " Please login to access the Pi-oT Utilities. ",
           "type": "p",
         },
         Object {
@@ -1462,6 +1580,30 @@ ShallowWrapper {
           "ref": null,
           "rendered": " This web application was written for Dr. Beaty's CS4360 Senior Project class.",
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Login",
+            "color": "indigo",
+            "href": "/login",
+            "tag": "button",
+            "type": "redirect",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": [Function],
         },
       ],
       "type": "div",
@@ -1608,6 +1750,7 @@ ShallowWrapper {
         theadColor=""
         theadTextWhite={false}
       />,
+      "className": "basic",
       "data-test": "log",
     },
     "ref": null,
@@ -1811,6 +1954,7 @@ ShallowWrapper {
           theadColor=""
           theadTextWhite={false}
         />,
+        "className": "basic",
         "data-test": "log",
       },
       "ref": null,
@@ -2096,6 +2240,7 @@ ShallowWrapper {
         theadColor=""
         theadTextWhite={false}
       />,
+      "className": "basic",
       "data-test": "log",
     },
     "ref": null,
@@ -2299,6 +2444,7 @@ ShallowWrapper {
           theadColor=""
           theadTextWhite={false}
         />,
+        "className": "basic",
         "data-test": "log",
       },
       "ref": null,
@@ -2549,6 +2695,7 @@ ShallowWrapper {
         theadColor=""
         theadTextWhite={false}
       />,
+      "className": "basic",
       "data-test": "log",
     },
     "ref": null,
@@ -2752,6 +2899,7 @@ ShallowWrapper {
           theadColor=""
           theadTextWhite={false}
         />,
+        "className": "basic",
         "data-test": "log",
       },
       "ref": null,
@@ -2918,33 +3066,43 @@ ShallowWrapper {
               xl={null}
               xs={null}
             >
-              <form>
-                <h1 />
+              <form
+                onSubmit={[Function]}
+              >
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <p
                   className="h4 text-center mb-7"
                 />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginEmailEx"
+                  htmlFor="email"
                 >
                   Your email
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
+                  onChange={[Function]}
                   type="email"
+                  value=""
                 />
                 <br />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginPasswordEx"
+                  htmlFor="password"
                 >
                   Your password
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
+                  onChange={[Function]}
                   type="password"
+                  value=""
                 />
                 <div
                   className="text-center mt-4"
@@ -2952,6 +3110,7 @@ ShallowWrapper {
                 >
                   <Button
                     color="indigo"
+                    disabled={true}
                     tag="button"
                     type="submit"
                   >
@@ -2995,33 +3154,43 @@ ShallowWrapper {
               xl={null}
               xs={null}
             >
-              <form>
-                <h1 />
+              <form
+                onSubmit={[Function]}
+              >
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <p
                   className="h4 text-center mb-7"
                 />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginEmailEx"
+                  htmlFor="email"
                 >
                   Your email
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
+                  onChange={[Function]}
                   type="email"
+                  value=""
                 />
                 <br />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginPasswordEx"
+                  htmlFor="password"
                 >
                   Your password
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
+                  onChange={[Function]}
                   type="password"
+                  value=""
                 />
                 <div
                   className="text-center mt-4"
@@ -3029,6 +3198,7 @@ ShallowWrapper {
                 >
                   <Button
                     color="indigo"
+                    disabled={true}
                     tag="button"
                     type="submit"
                   >
@@ -3055,33 +3225,43 @@ ShallowWrapper {
               xl={null}
               xs={null}
             >
-              <form>
-                <h1 />
+              <form
+                onSubmit={[Function]}
+              >
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <p
                   className="h4 text-center mb-7"
                 />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginEmailEx"
+                  htmlFor="email"
                 >
                   Your email
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
+                  onChange={[Function]}
                   type="email"
+                  value=""
                 />
                 <br />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginPasswordEx"
+                  htmlFor="password"
                 >
                   Your password
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
+                  onChange={[Function]}
                   type="password"
+                  value=""
                 />
                 <div
                   className="text-center mt-4"
@@ -3089,6 +3269,7 @@ ShallowWrapper {
                 >
                   <Button
                     color="indigo"
+                    disabled={true}
                     tag="button"
                     type="submit"
                   >
@@ -3105,33 +3286,43 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <form>
-                <h1 />
+              "children": <form
+                onSubmit={[Function]}
+              >
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <p
                   className="h4 text-center mb-7"
                 />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginEmailEx"
+                  htmlFor="email"
                 >
                   Your email
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
+                  onChange={[Function]}
                   type="email"
+                  value=""
                 />
                 <br />
                 <label
                   className="grey-text"
-                  htmlFor="defaultFormLoginPasswordEx"
+                  htmlFor="password"
                 >
                   Your password
                 </label>
                 <input
                   className="form-control"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
+                  onChange={[Function]}
                   type="password"
+                  value=""
                 />
                 <div
                   className="text-center mt-4"
@@ -3139,6 +3330,7 @@ ShallowWrapper {
                 >
                   <Button
                     color="indigo"
+                    disabled={true}
                     tag="button"
                     type="submit"
                   >
@@ -3160,32 +3352,40 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h1 />,
+                  <br />,
+                  <br />,
+                  <br />,
+                  <br />,
+                  <br />,
                   <p
                     className="h4 text-center mb-7"
                   />,
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginEmailEx"
+                    htmlFor="email"
                   >
                     Your email
                   </label>,
                   <input
                     className="form-control"
-                    id="defaultFormLoginEmailEx"
+                    id="email"
+                    onChange={[Function]}
                     type="email"
+                    value=""
                   />,
                   <br />,
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginPasswordEx"
+                    htmlFor="password"
                   >
                     Your password
                   </label>,
                   <input
                     className="form-control"
-                    id="defaultFormLoginPasswordEx"
+                    id="password"
+                    onChange={[Function]}
                     type="password"
+                    value=""
                   />,
                   <div
                     className="text-center mt-4"
@@ -3193,6 +3393,7 @@ ShallowWrapper {
                   >
                     <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3200,6 +3401,7 @@ ShallowWrapper {
                     </Button>
                   </div>,
                 ],
+                "onSubmit": [Function],
               },
               "ref": null,
               "rendered": Array [
@@ -3210,7 +3412,43 @@ ShallowWrapper {
                   "props": Object {},
                   "ref": null,
                   "rendered": null,
-                  "type": "h1",
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
                 },
                 Object {
                   "instance": null,
@@ -3230,7 +3468,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "Your email",
                     "className": "grey-text",
-                    "htmlFor": "defaultFormLoginEmailEx",
+                    "htmlFor": "email",
                   },
                   "ref": null,
                   "rendered": "Your email",
@@ -3242,8 +3480,10 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "className": "form-control",
-                    "id": "defaultFormLoginEmailEx",
+                    "id": "email",
+                    "onChange": [Function],
                     "type": "email",
+                    "value": "",
                   },
                   "ref": null,
                   "rendered": null,
@@ -3265,7 +3505,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "Your password",
                     "className": "grey-text",
-                    "htmlFor": "defaultFormLoginPasswordEx",
+                    "htmlFor": "password",
                   },
                   "ref": null,
                   "rendered": "Your password",
@@ -3277,8 +3517,10 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "className": "form-control",
-                    "id": "defaultFormLoginPasswordEx",
+                    "id": "password",
+                    "onChange": [Function],
                     "type": "password",
+                    "value": "",
                   },
                   "ref": null,
                   "rendered": null,
@@ -3291,6 +3533,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3307,6 +3550,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Login",
                       "color": "indigo",
+                      "disabled": true,
                       "tag": "button",
                       "type": "submit",
                     },
@@ -3353,33 +3597,43 @@ ShallowWrapper {
                 xl={null}
                 xs={null}
               >
-                <form>
-                  <h1 />
+                <form
+                  onSubmit={[Function]}
+                >
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <p
                     className="h4 text-center mb-7"
                   />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginEmailEx"
+                    htmlFor="email"
                   >
                     Your email
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginEmailEx"
+                    id="email"
+                    onChange={[Function]}
                     type="email"
+                    value=""
                   />
                   <br />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginPasswordEx"
+                    htmlFor="password"
                   >
                     Your password
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginPasswordEx"
+                    id="password"
+                    onChange={[Function]}
                     type="password"
+                    value=""
                   />
                   <div
                     className="text-center mt-4"
@@ -3387,6 +3641,7 @@ ShallowWrapper {
                   >
                     <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3430,33 +3685,43 @@ ShallowWrapper {
                 xl={null}
                 xs={null}
               >
-                <form>
-                  <h1 />
+                <form
+                  onSubmit={[Function]}
+                >
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <p
                     className="h4 text-center mb-7"
                   />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginEmailEx"
+                    htmlFor="email"
                   >
                     Your email
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginEmailEx"
+                    id="email"
+                    onChange={[Function]}
                     type="email"
+                    value=""
                   />
                   <br />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginPasswordEx"
+                    htmlFor="password"
                   >
                     Your password
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginPasswordEx"
+                    id="password"
+                    onChange={[Function]}
                     type="password"
+                    value=""
                   />
                   <div
                     className="text-center mt-4"
@@ -3464,6 +3729,7 @@ ShallowWrapper {
                   >
                     <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3490,33 +3756,43 @@ ShallowWrapper {
                 xl={null}
                 xs={null}
               >
-                <form>
-                  <h1 />
+                <form
+                  onSubmit={[Function]}
+                >
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <p
                     className="h4 text-center mb-7"
                   />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginEmailEx"
+                    htmlFor="email"
                   >
                     Your email
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginEmailEx"
+                    id="email"
+                    onChange={[Function]}
                     type="email"
+                    value=""
                   />
                   <br />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginPasswordEx"
+                    htmlFor="password"
                   >
                     Your password
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginPasswordEx"
+                    id="password"
+                    onChange={[Function]}
                     type="password"
+                    value=""
                   />
                   <div
                     className="text-center mt-4"
@@ -3524,6 +3800,7 @@ ShallowWrapper {
                   >
                     <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3540,33 +3817,43 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <form>
-                  <h1 />
+                "children": <form
+                  onSubmit={[Function]}
+                >
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <p
                     className="h4 text-center mb-7"
                   />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginEmailEx"
+                    htmlFor="email"
                   >
                     Your email
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginEmailEx"
+                    id="email"
+                    onChange={[Function]}
                     type="email"
+                    value=""
                   />
                   <br />
                   <label
                     className="grey-text"
-                    htmlFor="defaultFormLoginPasswordEx"
+                    htmlFor="password"
                   >
                     Your password
                   </label>
                   <input
                     className="form-control"
-                    id="defaultFormLoginPasswordEx"
+                    id="password"
+                    onChange={[Function]}
                     type="password"
+                    value=""
                   />
                   <div
                     className="text-center mt-4"
@@ -3574,6 +3861,7 @@ ShallowWrapper {
                   >
                     <Button
                       color="indigo"
+                      disabled={true}
                       tag="button"
                       type="submit"
                     >
@@ -3595,32 +3883,40 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h1 />,
+                    <br />,
+                    <br />,
+                    <br />,
+                    <br />,
+                    <br />,
                     <p
                       className="h4 text-center mb-7"
                     />,
                     <label
                       className="grey-text"
-                      htmlFor="defaultFormLoginEmailEx"
+                      htmlFor="email"
                     >
                       Your email
                     </label>,
                     <input
                       className="form-control"
-                      id="defaultFormLoginEmailEx"
+                      id="email"
+                      onChange={[Function]}
                       type="email"
+                      value=""
                     />,
                     <br />,
                     <label
                       className="grey-text"
-                      htmlFor="defaultFormLoginPasswordEx"
+                      htmlFor="password"
                     >
                       Your password
                     </label>,
                     <input
                       className="form-control"
-                      id="defaultFormLoginPasswordEx"
+                      id="password"
+                      onChange={[Function]}
                       type="password"
+                      value=""
                     />,
                     <div
                       className="text-center mt-4"
@@ -3628,6 +3924,7 @@ ShallowWrapper {
                     >
                       <Button
                         color="indigo"
+                        disabled={true}
                         tag="button"
                         type="submit"
                       >
@@ -3635,6 +3932,7 @@ ShallowWrapper {
                       </Button>
                     </div>,
                   ],
+                  "onSubmit": [Function],
                 },
                 "ref": null,
                 "rendered": Array [
@@ -3645,7 +3943,43 @@ ShallowWrapper {
                     "props": Object {},
                     "ref": null,
                     "rendered": null,
-                    "type": "h1",
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
                   },
                   Object {
                     "instance": null,
@@ -3665,7 +3999,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Your email",
                       "className": "grey-text",
-                      "htmlFor": "defaultFormLoginEmailEx",
+                      "htmlFor": "email",
                     },
                     "ref": null,
                     "rendered": "Your email",
@@ -3677,8 +4011,10 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "className": "form-control",
-                      "id": "defaultFormLoginEmailEx",
+                      "id": "email",
+                      "onChange": [Function],
                       "type": "email",
+                      "value": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3700,7 +4036,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Your password",
                       "className": "grey-text",
-                      "htmlFor": "defaultFormLoginPasswordEx",
+                      "htmlFor": "password",
                     },
                     "ref": null,
                     "rendered": "Your password",
@@ -3712,8 +4048,10 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "className": "form-control",
-                      "id": "defaultFormLoginPasswordEx",
+                      "id": "password",
+                      "onChange": [Function],
                       "type": "password",
+                      "value": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3726,6 +4064,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <Button
                         color="indigo"
+                        disabled={true}
                         tag="button"
                         type="submit"
                       >
@@ -3742,6 +4081,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": "Login",
                         "color": "indigo",
+                        "disabled": true,
                         "tag": "button",
                         "type": "submit",
                       },
@@ -3911,1957 +4251,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Navigation component DidComponentMount 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Navigation />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <Navbar
-        color="indigo"
-        dark={true}
-        data-test="navigation"
-        expand="md"
-        scrolling={false}
-        tag="nav"
-      >
-        <NavbarBrand>
-          <strong
-            className="white-text"
-          >
-            Pi_oT
-          </strong>
-        </NavbarBrand>
-        <NavbarToggler
-          onClick={[Function]}
-          tag="button"
-          type="button"
-        />
-        <Collapse
-          delay={
-            Object {
-              "hide": 350,
-              "show": 350,
-            }
-          }
-          id="navbarCollapse3"
-          isOpen={false}
-          navbar={true}
-          onClosed={[Function]}
-          onOpened={[Function]}
-        >
-          <NavbarNav
-            left={true}
-            tag="ul"
-          >
-            <NavItem
-              tag="li"
-            >
-              <NavLink
-                active={false}
-                className=""
-                disabled={false}
-                to="/dashboard"
-              >
-                Dashboard
-              </NavLink>
-            </NavItem>
-            <NavItem
-              tag="li"
-            >
-              <NavLink
-                active={false}
-                className=""
-                disabled={false}
-                to="/stats"
-              >
-                Stats
-              </NavLink>
-            </NavItem>
-            <NavItem
-              tag="li"
-            >
-              <NavLink
-                active={false}
-                className=""
-                disabled={false}
-                to="/log"
-              >
-                Log
-              </NavLink>
-            </NavItem>
-          </NavbarNav>
-          <NavbarNav
-            right={true}
-            tag="ul"
-          >
-            <NavItem
-              tag="li"
-            >
-              <NavLink
-                active={false}
-                className=""
-                disabled={false}
-                to="/login"
-              >
-                Login
-              </NavLink>
-            </NavItem>
-            <NavItem
-              tag="li"
-            >
-              <Dropdown
-                dropup={false}
-                tag="div"
-              >
-                <DropdownToggle
-                  aria-haspopup={true}
-                  caret={true}
-                  color="secondary"
-                  nav={true}
-                >
-                  <Fa
-                    border={false}
-                    brand={false}
-                    className=""
-                    fab={false}
-                    fal={false}
-                    far={false}
-                    fixed={false}
-                    flip=""
-                    icon="user"
-                    inverse=""
-                    light={false}
-                    list={false}
-                    pull=""
-                    pulse={false}
-                    regular={false}
-                    rotate=""
-                    size=""
-                    spin={false}
-                    stack=""
-                  />
-                </DropdownToggle>
-                <DropdownMenu
-                  basic={false}
-                  className="dropdown-default"
-                  color="dark"
-                  flip={false}
-                  right={true}
-                  tag="div"
-                >
-                  <DropdownItem
-                    tag="button"
-                    toggle={true}
-                  >
-                    Account Details
-                  </DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
-            </NavItem>
-          </NavbarNav>
-        </Collapse>
-      </Navbar>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <NavbarBrand>
-            <strong
-              className="white-text"
-            >
-              Pi_oT
-            </strong>
-          </NavbarBrand>,
-          <NavbarToggler
-            onClick={[Function]}
-            tag="button"
-            type="button"
-          />,
-          <Collapse
-            delay={
-              Object {
-                "hide": 350,
-                "show": 350,
-              }
-            }
-            id="navbarCollapse3"
-            isOpen={false}
-            navbar={true}
-            onClosed={[Function]}
-            onOpened={[Function]}
-          >
-            <NavbarNav
-              left={true}
-              tag="ul"
-            >
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/dashboard"
-                >
-                  Dashboard
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/stats"
-                >
-                  Stats
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/log"
-                >
-                  Log
-                </NavLink>
-              </NavItem>
-            </NavbarNav>
-            <NavbarNav
-              right={true}
-              tag="ul"
-            >
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/login"
-                >
-                  Login
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <Dropdown
-                  dropup={false}
-                  tag="div"
-                >
-                  <DropdownToggle
-                    aria-haspopup={true}
-                    caret={true}
-                    color="secondary"
-                    nav={true}
-                  >
-                    <Fa
-                      border={false}
-                      brand={false}
-                      className=""
-                      fab={false}
-                      fal={false}
-                      far={false}
-                      fixed={false}
-                      flip=""
-                      icon="user"
-                      inverse=""
-                      light={false}
-                      list={false}
-                      pull=""
-                      pulse={false}
-                      regular={false}
-                      rotate=""
-                      size=""
-                      spin={false}
-                      stack=""
-                    />
-                  </DropdownToggle>
-                  <DropdownMenu
-                    basic={false}
-                    className="dropdown-default"
-                    color="dark"
-                    flip={false}
-                    right={true}
-                    tag="div"
-                  >
-                    <DropdownItem
-                      tag="button"
-                      toggle={true}
-                    >
-                      Account Details
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem>
-            </NavbarNav>
-          </Collapse>,
-        ],
-        "color": "indigo",
-        "dark": true,
-        "data-test": "navigation",
-        "expand": "md",
-        "scrolling": false,
-        "tag": "nav",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <strong
-              className="white-text"
-            >
-              Pi_oT
-            </strong>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Pi_oT",
-              "className": "white-text",
-            },
-            "ref": null,
-            "rendered": "Pi_oT",
-            "type": "strong",
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "onClick": [Function],
-            "tag": "button",
-            "type": "button",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <NavbarNav
-                left={true}
-                tag="ul"
-              >
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/dashboard"
-                  >
-                    Dashboard
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/stats"
-                  >
-                    Stats
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/log"
-                  >
-                    Log
-                  </NavLink>
-                </NavItem>
-              </NavbarNav>,
-              <NavbarNav
-                right={true}
-                tag="ul"
-              >
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/login"
-                  >
-                    Login
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <Dropdown
-                    dropup={false}
-                    tag="div"
-                  >
-                    <DropdownToggle
-                      aria-haspopup={true}
-                      caret={true}
-                      color="secondary"
-                      nav={true}
-                    >
-                      <Fa
-                        border={false}
-                        brand={false}
-                        className=""
-                        fab={false}
-                        fal={false}
-                        far={false}
-                        fixed={false}
-                        flip=""
-                        icon="user"
-                        inverse=""
-                        light={false}
-                        list={false}
-                        pull=""
-                        pulse={false}
-                        regular={false}
-                        rotate=""
-                        size=""
-                        spin={false}
-                        stack=""
-                      />
-                    </DropdownToggle>
-                    <DropdownMenu
-                      basic={false}
-                      className="dropdown-default"
-                      color="dark"
-                      flip={false}
-                      right={true}
-                      tag="div"
-                    >
-                      <DropdownItem
-                        tag="button"
-                        toggle={true}
-                      >
-                        Account Details
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </Dropdown>
-                </NavItem>
-              </NavbarNav>,
-            ],
-            "delay": Object {
-              "hide": 350,
-              "show": 350,
-            },
-            "id": "navbarCollapse3",
-            "isOpen": false,
-            "navbar": true,
-            "onClosed": [Function],
-            "onOpened": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/dashboard"
-                    >
-                      Dashboard
-                    </NavLink>
-                  </NavItem>,
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/stats"
-                    >
-                      Stats
-                    </NavLink>
-                  </NavItem>,
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/log"
-                    >
-                      Log
-                    </NavLink>
-                  </NavItem>,
-                ],
-                "left": true,
-                "tag": "ul",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/dashboard"
-                    >
-                      Dashboard
-                    </NavLink>,
-                    "tag": "li",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "active": false,
-                      "children": "Dashboard",
-                      "className": "",
-                      "disabled": false,
-                      "to": "/dashboard",
-                    },
-                    "ref": null,
-                    "rendered": "Dashboard",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/stats"
-                    >
-                      Stats
-                    </NavLink>,
-                    "tag": "li",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "active": false,
-                      "children": "Stats",
-                      "className": "",
-                      "disabled": false,
-                      "to": "/stats",
-                    },
-                    "ref": null,
-                    "rendered": "Stats",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/log"
-                    >
-                      Log
-                    </NavLink>,
-                    "tag": "li",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "active": false,
-                      "children": "Log",
-                      "className": "",
-                      "disabled": false,
-                      "to": "/log",
-                    },
-                    "ref": null,
-                    "rendered": "Log",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>
-                  </NavItem>,
-                  <NavItem
-                    tag="li"
-                  >
-                    <Dropdown
-                      dropup={false}
-                      tag="div"
-                    >
-                      <DropdownToggle
-                        aria-haspopup={true}
-                        caret={true}
-                        color="secondary"
-                        nav={true}
-                      >
-                        <Fa
-                          border={false}
-                          brand={false}
-                          className=""
-                          fab={false}
-                          fal={false}
-                          far={false}
-                          fixed={false}
-                          flip=""
-                          icon="user"
-                          inverse=""
-                          light={false}
-                          list={false}
-                          pull=""
-                          pulse={false}
-                          regular={false}
-                          rotate=""
-                          size=""
-                          spin={false}
-                          stack=""
-                        />
-                      </DropdownToggle>
-                      <DropdownMenu
-                        basic={false}
-                        className="dropdown-default"
-                        color="dark"
-                        flip={false}
-                        right={true}
-                        tag="div"
-                      >
-                        <DropdownItem
-                          tag="button"
-                          toggle={true}
-                        >
-                          Account Details
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </Dropdown>
-                  </NavItem>,
-                ],
-                "right": true,
-                "tag": "ul",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>,
-                    "tag": "li",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "active": false,
-                      "children": "Login",
-                      "className": "",
-                      "disabled": false,
-                      "to": "/login",
-                    },
-                    "ref": null,
-                    "rendered": "Login",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Dropdown
-                      dropup={false}
-                      tag="div"
-                    >
-                      <DropdownToggle
-                        aria-haspopup={true}
-                        caret={true}
-                        color="secondary"
-                        nav={true}
-                      >
-                        <Fa
-                          border={false}
-                          brand={false}
-                          className=""
-                          fab={false}
-                          fal={false}
-                          far={false}
-                          fixed={false}
-                          flip=""
-                          icon="user"
-                          inverse=""
-                          light={false}
-                          list={false}
-                          pull=""
-                          pulse={false}
-                          regular={false}
-                          rotate=""
-                          size=""
-                          spin={false}
-                          stack=""
-                        />
-                      </DropdownToggle>
-                      <DropdownMenu
-                        basic={false}
-                        className="dropdown-default"
-                        color="dark"
-                        flip={false}
-                        right={true}
-                        tag="div"
-                      >
-                        <DropdownItem
-                          tag="button"
-                          toggle={true}
-                        >
-                          Account Details
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </Dropdown>,
-                    "tag": "li",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        <DropdownToggle
-                          aria-haspopup={true}
-                          caret={true}
-                          color="secondary"
-                          nav={true}
-                        >
-                          <Fa
-                            border={false}
-                            brand={false}
-                            className=""
-                            fab={false}
-                            fal={false}
-                            far={false}
-                            fixed={false}
-                            flip=""
-                            icon="user"
-                            inverse=""
-                            light={false}
-                            list={false}
-                            pull=""
-                            pulse={false}
-                            regular={false}
-                            rotate=""
-                            size=""
-                            spin={false}
-                            stack=""
-                          />
-                        </DropdownToggle>,
-                        <DropdownMenu
-                          basic={false}
-                          className="dropdown-default"
-                          color="dark"
-                          flip={false}
-                          right={true}
-                          tag="div"
-                        >
-                          <DropdownItem
-                            tag="button"
-                            toggle={true}
-                          >
-                            Account Details
-                          </DropdownItem>
-                        </DropdownMenu>,
-                      ],
-                      "dropup": false,
-                      "tag": "div",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "aria-haspopup": true,
-                          "caret": true,
-                          "children": <Fa
-                            border={false}
-                            brand={false}
-                            className=""
-                            fab={false}
-                            fal={false}
-                            far={false}
-                            fixed={false}
-                            flip=""
-                            icon="user"
-                            inverse=""
-                            light={false}
-                            list={false}
-                            pull=""
-                            pulse={false}
-                            regular={false}
-                            rotate=""
-                            size=""
-                            spin={false}
-                            stack=""
-                          />,
-                          "color": "secondary",
-                          "nav": true,
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "border": false,
-                            "brand": false,
-                            "className": "",
-                            "fab": false,
-                            "fal": false,
-                            "far": false,
-                            "fixed": false,
-                            "flip": "",
-                            "icon": "user",
-                            "inverse": "",
-                            "light": false,
-                            "list": false,
-                            "pull": "",
-                            "pulse": false,
-                            "regular": false,
-                            "rotate": "",
-                            "size": "",
-                            "spin": false,
-                            "stack": "",
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "basic": false,
-                          "children": <DropdownItem
-                            tag="button"
-                            toggle={true}
-                          >
-                            Account Details
-                          </DropdownItem>,
-                          "className": "dropdown-default",
-                          "color": "dark",
-                          "flip": false,
-                          "right": true,
-                          "tag": "div",
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": "Account Details",
-                            "tag": "button",
-                            "toggle": true,
-                          },
-                          "ref": null,
-                          "rendered": "Account Details",
-                          "type": [Function],
-                        },
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <Navbar
-          color="indigo"
-          dark={true}
-          data-test="navigation"
-          expand="md"
-          scrolling={false}
-          tag="nav"
-        >
-          <NavbarBrand>
-            <strong
-              className="white-text"
-            >
-              Pi_oT
-            </strong>
-          </NavbarBrand>
-          <NavbarToggler
-            onClick={[Function]}
-            tag="button"
-            type="button"
-          />
-          <Collapse
-            delay={
-              Object {
-                "hide": 350,
-                "show": 350,
-              }
-            }
-            id="navbarCollapse3"
-            isOpen={false}
-            navbar={true}
-            onClosed={[Function]}
-            onOpened={[Function]}
-          >
-            <NavbarNav
-              left={true}
-              tag="ul"
-            >
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/dashboard"
-                >
-                  Dashboard
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/stats"
-                >
-                  Stats
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/log"
-                >
-                  Log
-                </NavLink>
-              </NavItem>
-            </NavbarNav>
-            <NavbarNav
-              right={true}
-              tag="ul"
-            >
-              <NavItem
-                tag="li"
-              >
-                <NavLink
-                  active={false}
-                  className=""
-                  disabled={false}
-                  to="/login"
-                >
-                  Login
-                </NavLink>
-              </NavItem>
-              <NavItem
-                tag="li"
-              >
-                <Dropdown
-                  dropup={false}
-                  tag="div"
-                >
-                  <DropdownToggle
-                    aria-haspopup={true}
-                    caret={true}
-                    color="secondary"
-                    nav={true}
-                  >
-                    <Fa
-                      border={false}
-                      brand={false}
-                      className=""
-                      fab={false}
-                      fal={false}
-                      far={false}
-                      fixed={false}
-                      flip=""
-                      icon="user"
-                      inverse=""
-                      light={false}
-                      list={false}
-                      pull=""
-                      pulse={false}
-                      regular={false}
-                      rotate=""
-                      size=""
-                      spin={false}
-                      stack=""
-                    />
-                  </DropdownToggle>
-                  <DropdownMenu
-                    basic={false}
-                    className="dropdown-default"
-                    color="dark"
-                    flip={false}
-                    right={true}
-                    tag="div"
-                  >
-                    <DropdownItem
-                      tag="button"
-                      toggle={true}
-                    >
-                      Account Details
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem>
-            </NavbarNav>
-          </Collapse>
-        </Navbar>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <NavbarBrand>
-              <strong
-                className="white-text"
-              >
-                Pi_oT
-              </strong>
-            </NavbarBrand>,
-            <NavbarToggler
-              onClick={[Function]}
-              tag="button"
-              type="button"
-            />,
-            <Collapse
-              delay={
-                Object {
-                  "hide": 350,
-                  "show": 350,
-                }
-              }
-              id="navbarCollapse3"
-              isOpen={false}
-              navbar={true}
-              onClosed={[Function]}
-              onOpened={[Function]}
-            >
-              <NavbarNav
-                left={true}
-                tag="ul"
-              >
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/dashboard"
-                  >
-                    Dashboard
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/stats"
-                  >
-                    Stats
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/log"
-                  >
-                    Log
-                  </NavLink>
-                </NavItem>
-              </NavbarNav>
-              <NavbarNav
-                right={true}
-                tag="ul"
-              >
-                <NavItem
-                  tag="li"
-                >
-                  <NavLink
-                    active={false}
-                    className=""
-                    disabled={false}
-                    to="/login"
-                  >
-                    Login
-                  </NavLink>
-                </NavItem>
-                <NavItem
-                  tag="li"
-                >
-                  <Dropdown
-                    dropup={false}
-                    tag="div"
-                  >
-                    <DropdownToggle
-                      aria-haspopup={true}
-                      caret={true}
-                      color="secondary"
-                      nav={true}
-                    >
-                      <Fa
-                        border={false}
-                        brand={false}
-                        className=""
-                        fab={false}
-                        fal={false}
-                        far={false}
-                        fixed={false}
-                        flip=""
-                        icon="user"
-                        inverse=""
-                        light={false}
-                        list={false}
-                        pull=""
-                        pulse={false}
-                        regular={false}
-                        rotate=""
-                        size=""
-                        spin={false}
-                        stack=""
-                      />
-                    </DropdownToggle>
-                    <DropdownMenu
-                      basic={false}
-                      className="dropdown-default"
-                      color="dark"
-                      flip={false}
-                      right={true}
-                      tag="div"
-                    >
-                      <DropdownItem
-                        tag="button"
-                        toggle={true}
-                      >
-                        Account Details
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </Dropdown>
-                </NavItem>
-              </NavbarNav>
-            </Collapse>,
-          ],
-          "color": "indigo",
-          "dark": true,
-          "data-test": "navigation",
-          "expand": "md",
-          "scrolling": false,
-          "tag": "nav",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": <strong
-                className="white-text"
-              >
-                Pi_oT
-              </strong>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Pi_oT",
-                "className": "white-text",
-              },
-              "ref": null,
-              "rendered": "Pi_oT",
-              "type": "strong",
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "onClick": [Function],
-              "tag": "button",
-              "type": "button",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <NavbarNav
-                  left={true}
-                  tag="ul"
-                >
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/dashboard"
-                    >
-                      Dashboard
-                    </NavLink>
-                  </NavItem>
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/stats"
-                    >
-                      Stats
-                    </NavLink>
-                  </NavItem>
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/log"
-                    >
-                      Log
-                    </NavLink>
-                  </NavItem>
-                </NavbarNav>,
-                <NavbarNav
-                  right={true}
-                  tag="ul"
-                >
-                  <NavItem
-                    tag="li"
-                  >
-                    <NavLink
-                      active={false}
-                      className=""
-                      disabled={false}
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>
-                  </NavItem>
-                  <NavItem
-                    tag="li"
-                  >
-                    <Dropdown
-                      dropup={false}
-                      tag="div"
-                    >
-                      <DropdownToggle
-                        aria-haspopup={true}
-                        caret={true}
-                        color="secondary"
-                        nav={true}
-                      >
-                        <Fa
-                          border={false}
-                          brand={false}
-                          className=""
-                          fab={false}
-                          fal={false}
-                          far={false}
-                          fixed={false}
-                          flip=""
-                          icon="user"
-                          inverse=""
-                          light={false}
-                          list={false}
-                          pull=""
-                          pulse={false}
-                          regular={false}
-                          rotate=""
-                          size=""
-                          spin={false}
-                          stack=""
-                        />
-                      </DropdownToggle>
-                      <DropdownMenu
-                        basic={false}
-                        className="dropdown-default"
-                        color="dark"
-                        flip={false}
-                        right={true}
-                        tag="div"
-                      >
-                        <DropdownItem
-                          tag="button"
-                          toggle={true}
-                        >
-                          Account Details
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </Dropdown>
-                  </NavItem>
-                </NavbarNav>,
-              ],
-              "delay": Object {
-                "hide": 350,
-                "show": 350,
-              },
-              "id": "navbarCollapse3",
-              "isOpen": false,
-              "navbar": true,
-              "onClosed": [Function],
-              "onOpened": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <NavItem
-                      tag="li"
-                    >
-                      <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/dashboard"
-                      >
-                        Dashboard
-                      </NavLink>
-                    </NavItem>,
-                    <NavItem
-                      tag="li"
-                    >
-                      <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/stats"
-                      >
-                        Stats
-                      </NavLink>
-                    </NavItem>,
-                    <NavItem
-                      tag="li"
-                    >
-                      <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/log"
-                      >
-                        Log
-                      </NavLink>
-                    </NavItem>,
-                  ],
-                  "left": true,
-                  "tag": "ul",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/dashboard"
-                      >
-                        Dashboard
-                      </NavLink>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "active": false,
-                        "children": "Dashboard",
-                        "className": "",
-                        "disabled": false,
-                        "to": "/dashboard",
-                      },
-                      "ref": null,
-                      "rendered": "Dashboard",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/stats"
-                      >
-                        Stats
-                      </NavLink>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "active": false,
-                        "children": "Stats",
-                        "className": "",
-                        "disabled": false,
-                        "to": "/stats",
-                      },
-                      "ref": null,
-                      "rendered": "Stats",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/log"
-                      >
-                        Log
-                      </NavLink>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "active": false,
-                        "children": "Log",
-                        "className": "",
-                        "disabled": false,
-                        "to": "/log",
-                      },
-                      "ref": null,
-                      "rendered": "Log",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <NavItem
-                      tag="li"
-                    >
-                      <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/login"
-                      >
-                        Login
-                      </NavLink>
-                    </NavItem>,
-                    <NavItem
-                      tag="li"
-                    >
-                      <Dropdown
-                        dropup={false}
-                        tag="div"
-                      >
-                        <DropdownToggle
-                          aria-haspopup={true}
-                          caret={true}
-                          color="secondary"
-                          nav={true}
-                        >
-                          <Fa
-                            border={false}
-                            brand={false}
-                            className=""
-                            fab={false}
-                            fal={false}
-                            far={false}
-                            fixed={false}
-                            flip=""
-                            icon="user"
-                            inverse=""
-                            light={false}
-                            list={false}
-                            pull=""
-                            pulse={false}
-                            regular={false}
-                            rotate=""
-                            size=""
-                            spin={false}
-                            stack=""
-                          />
-                        </DropdownToggle>
-                        <DropdownMenu
-                          basic={false}
-                          className="dropdown-default"
-                          color="dark"
-                          flip={false}
-                          right={true}
-                          tag="div"
-                        >
-                          <DropdownItem
-                            tag="button"
-                            toggle={true}
-                          >
-                            Account Details
-                          </DropdownItem>
-                        </DropdownMenu>
-                      </Dropdown>
-                    </NavItem>,
-                  ],
-                  "right": true,
-                  "tag": "ul",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <NavLink
-                        active={false}
-                        className=""
-                        disabled={false}
-                        to="/login"
-                      >
-                        Login
-                      </NavLink>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "active": false,
-                        "children": "Login",
-                        "className": "",
-                        "disabled": false,
-                        "to": "/login",
-                      },
-                      "ref": null,
-                      "rendered": "Login",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <Dropdown
-                        dropup={false}
-                        tag="div"
-                      >
-                        <DropdownToggle
-                          aria-haspopup={true}
-                          caret={true}
-                          color="secondary"
-                          nav={true}
-                        >
-                          <Fa
-                            border={false}
-                            brand={false}
-                            className=""
-                            fab={false}
-                            fal={false}
-                            far={false}
-                            fixed={false}
-                            flip=""
-                            icon="user"
-                            inverse=""
-                            light={false}
-                            list={false}
-                            pull=""
-                            pulse={false}
-                            regular={false}
-                            rotate=""
-                            size=""
-                            spin={false}
-                            stack=""
-                          />
-                        </DropdownToggle>
-                        <DropdownMenu
-                          basic={false}
-                          className="dropdown-default"
-                          color="dark"
-                          flip={false}
-                          right={true}
-                          tag="div"
-                        >
-                          <DropdownItem
-                            tag="button"
-                            toggle={true}
-                          >
-                            Account Details
-                          </DropdownItem>
-                        </DropdownMenu>
-                      </Dropdown>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          <DropdownToggle
-                            aria-haspopup={true}
-                            caret={true}
-                            color="secondary"
-                            nav={true}
-                          >
-                            <Fa
-                              border={false}
-                              brand={false}
-                              className=""
-                              fab={false}
-                              fal={false}
-                              far={false}
-                              fixed={false}
-                              flip=""
-                              icon="user"
-                              inverse=""
-                              light={false}
-                              list={false}
-                              pull=""
-                              pulse={false}
-                              regular={false}
-                              rotate=""
-                              size=""
-                              spin={false}
-                              stack=""
-                            />
-                          </DropdownToggle>,
-                          <DropdownMenu
-                            basic={false}
-                            className="dropdown-default"
-                            color="dark"
-                            flip={false}
-                            right={true}
-                            tag="div"
-                          >
-                            <DropdownItem
-                              tag="button"
-                              toggle={true}
-                            >
-                              Account Details
-                            </DropdownItem>
-                          </DropdownMenu>,
-                        ],
-                        "dropup": false,
-                        "tag": "div",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "aria-haspopup": true,
-                            "caret": true,
-                            "children": <Fa
-                              border={false}
-                              brand={false}
-                              className=""
-                              fab={false}
-                              fal={false}
-                              far={false}
-                              fixed={false}
-                              flip=""
-                              icon="user"
-                              inverse=""
-                              light={false}
-                              list={false}
-                              pull=""
-                              pulse={false}
-                              regular={false}
-                              rotate=""
-                              size=""
-                              spin={false}
-                              stack=""
-                            />,
-                            "color": "secondary",
-                            "nav": true,
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "border": false,
-                              "brand": false,
-                              "className": "",
-                              "fab": false,
-                              "fal": false,
-                              "far": false,
-                              "fixed": false,
-                              "flip": "",
-                              "icon": "user",
-                              "inverse": "",
-                              "light": false,
-                              "list": false,
-                              "pull": "",
-                              "pulse": false,
-                              "regular": false,
-                              "rotate": "",
-                              "size": "",
-                              "spin": false,
-                              "stack": "",
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "basic": false,
-                            "children": <DropdownItem
-                              tag="button"
-                              toggle={true}
-                            >
-                              Account Details
-                            </DropdownItem>,
-                            "className": "dropdown-default",
-                            "color": "dark",
-                            "flip": false,
-                            "right": true,
-                            "tag": "div",
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": "Account Details",
-                              "tag": "button",
-                              "toggle": true,
-                            },
-                            "ref": null,
-                            "rendered": "Account Details",
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                      ],
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "disableLifecycleMethods": true,
-  },
-}
-`;
+exports[`Navigation component DidComponentMount 1`] = `undefined`;
 
 exports[`Stats component DidComponentMount 1`] = `
 ShallowWrapper {
@@ -5882,7 +4272,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <div
-        className="stat"
+        className="basic"
         data-test="stats"
       >
         <Line
@@ -5997,7 +4387,7 @@ ShallowWrapper {
             }
           }
         />,
-        "className": "stat",
+        "className": "basic",
         "data-test": "stats",
       },
       "ref": null,
@@ -6067,7 +4457,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <div
-          className="stat"
+          className="basic"
           data-test="stats"
         >
           <Line
@@ -6182,7 +4572,7 @@ ShallowWrapper {
               }
             }
           />,
-          "className": "stat",
+          "className": "basic",
           "data-test": "stats",
         },
         "ref": null,

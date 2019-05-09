@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/modules/Stats.js</title>
+    <title>Code coverage report for src/modules/Routes.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,32 +16,32 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/modules</a> Stats.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/modules</a> Routes.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>0/1</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -80,21 +80,21 @@
 35
 36
 37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+38</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,86 +117,44 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
-import { Line } from "react-chartjs-2";
-import { MDBContainer } from "mdbreact";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {Switch, Redirect} from 'react-router-dom';
+import Home from './Home'
+import Login from './Login';
+import Dashboard from './Dashboard';
+import Stats from './Stats';
+import Log from './Log';
+import Logout from './Logout';
+import Display from './Display';
+import Signup from './Signup'
+import AppliedRoute from '../components/AppliedRoute';
 import t from 'prop-types';
 &nbsp;
-class Stats extends Component {
-&nbsp;
-  state = {
-    dataLine: {
-      labels: ["3-13-19", "3-14-19", "3-15-19", "3-16-19", "3-17-19", "3-18-19", "3-19-19"],
-      datasets: [
-        {
-          label: "Successful Connections",
-          fill: false,
-          lineTension: 0.1,
-          backgroundColor: "rgba(75,192,192,0.4)",
-          borderColor: "rgba(75,192,192,1)",
-          borderCapStyle: "butt",
-          borderDash: [],
-          borderDashOffset: 0.0,
-          borderJoinStyle: "miter",
-          pointBorderColor: "rgba(75,192,192,1)",
-          pointBackgroundColor: "#fff",
-          pointBorderWidth: 1,
-          pointHoverRadius: 5,
-          pointHoverBackgroundColor: "rgba(75,192,192,1)",
-          pointHoverBorderColor: "rgba(220,220,220,1)",
-          pointHoverBorderWidth: 2,
-          pointRadius: 1,
-          pointHitRadius: 10,
-          data: [0, 4, 0, 1, 0, 2, 2]
+export default <span class="fstat-no" title="function not covered" >({</span> childProps }) =&gt;
+<span class="cstat-no" title="statement not covered" >    &lt;Switch&gt;</span>
+        &lt;AppliedRoute path ="/" exact component={Home} props={childProps} /&gt;
+        &lt;AppliedRoute path="/login" component={Login} props={childProps} /&gt;
+        &lt;AppliedRoute path="/signup" component={Signup} props={childProps} /&gt;
+        &lt;AppliedRoute path="/logout" component={Logout} props={childProps} /&gt;
+        { !childProps.isAuthenticated &amp;&amp;
+          &lt;Redirect to ='/login'/&gt;
         }
-      ]
-    }
-  }
+        { childProps.isAuthenticated &amp;&amp;
+            &lt;AppliedRoute path="/dashboard" component={Dashboard} props={childProps} /&gt;
+        }
+        { childProps.isAuthenticated &amp;&amp;
+            &lt;AppliedRoute path="/stats" component={Stats} props={childProps} /&gt;
+        }
+        { childProps.isAuthenticated &amp;&amp;
+            &lt;AppliedRoute path="/log" component={Log} props={childProps} /&gt;
+        }
+        { childProps.isAuthenticated &amp;&amp;
+            &lt;AppliedRoute path="/display" component={Display} props={childProps} /&gt;
+        }
+    &lt;/Switch&gt;
 &nbsp;
-  render() {
-    return (
-      &lt;MDBContainer&gt;
-        &lt;div className="basic" data-test="stats"&gt;
-          &lt;Line data={this.state.dataLine} options={{ responsive: true }} /&gt;
-        &lt;/div&gt;
-      &lt;/MDBContainer&gt;
-    );
-  }
-}
 &nbsp;
-Stats.propTypes = {
-  stateVariables: t.oneOf(['dataLine', 'labels', 'datasets'])
-}
-&nbsp;
-export default Stats;</pre></td></tr>
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->

@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">38.46% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>5/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">60% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>3/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">38.46% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>5/13</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -88,9 +88,85 @@
 43
 44
 45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -133,12 +209,57 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
-import './Basic.css';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
-&nbsp;
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+import { Auth } from 'aws-amplify';
+import t from 'prop-types';
 &nbsp;
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email :"",
+      password: ""
+    };
+  }
+&nbsp;
+  validateForm() {
+    return this.state.email.length &gt; 0 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.state.password.length &gt; 0;</span>
+  }
+&nbsp;
+  handleChange = <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        [event.target.id]: event.target.value
+      });
+  }
+&nbsp;
+  handleSubmit = <span class="fstat-no" title="function not covered" >as</span>ync event =&gt; {
+<span class="cstat-no" title="statement not covered" >    event.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >      await Auth.signIn(this.state.email, this.state.password);</span>
+<span class="cstat-no" title="statement not covered" >      this.props.userHasAuthenticated(true)</span>
+<span class="cstat-no" title="statement not covered" >      this.props.history.push("/dashboard")</span>
+<span class="cstat-no" title="statement not covered" >      alert("Login Successful")</span>
+    }
+    catch(e) {
+<span class="cstat-no" title="statement not covered" >      alert(e.message);</span>
+    }
+  }
+&nbsp;
   render() {
     return (
       &lt;div className="basic" data-test="login"&gt;
@@ -146,28 +267,36 @@ class Login extends Component {
         &lt;MDBContainer&gt;
           &lt;MDBRow&gt;
             &lt;MDBCol&gt;
-              &lt;form&gt;
-                &lt;h1&gt;&lt;/h1&gt;
+              &lt;form onSubmit = {this.handleSubmit}&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
                 &lt;p className="h4 text-center mb-7"&gt;&lt;/p&gt;
-                &lt;label htmlFor="defaultFormLoginEmailEx" className="grey-text"&gt;
+                &lt;label htmlFor="email" className="grey-text"&gt;
                   Your email
                 &lt;/label&gt;
                 &lt;input
                   type="email"
-                  id="defaultFormLoginEmailEx"
+                  id="email"
                   className="form-control"
+                  value={this.state.email}
+                  onChange={this.handleChange}
                 /&gt;
                 &lt;br /&gt;
-                &lt;label htmlFor="defaultFormLoginPasswordEx" className="grey-text"&gt;
+                &lt;label htmlFor="password" className="grey-text"&gt;
                   Your password
                 &lt;/label&gt;
                 &lt;input
                   type="password"
-                  id="defaultFormLoginPasswordEx"
+                  id="password"
                   className="form-control"
+                  value={this.state.password}
+                  onChange={this.handleChange}
                 /&gt;
                 &lt;div className="text-center mt-4" data-test="loginSubmit"&gt;
-                  &lt;MDBBtn color="indigo" type="submit"&gt;Login&lt;/MDBBtn&gt;
+                  &lt;MDBBtn color="indigo" type="submit" disabled={!this.validateForm()}&gt;Login&lt;/MDBBtn&gt;
                 &lt;/div&gt;
               &lt;/form&gt;
             &lt;/MDBCol&gt;
@@ -178,13 +307,19 @@ class Login extends Component {
   }
 }
 &nbsp;
-export default Login;</pre></td></tr>
+Login.propTypes = {
+  stateVariables: t.oneOf(['email', 'password']),
+  methods: t.oneOf(['validateForm', 'handleChange', 'handleSubmit'])
+}
+&nbsp;
+export default Login;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 10 2019 23:49:10 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 08 2019 20:10:40 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

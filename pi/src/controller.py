@@ -1,22 +1,40 @@
-#insert path to the rest of the files will change for safty later
+"""
+    controller is the main class that manages all the pi's functions
+"""
 import sys
 from time import sleep
-from modules.Motion import PirSensor
+from modules.motion import PirSensor
 from modules.mqtt_communications import CommunicationHandler
 sys.path.insert(0, 'modules/*')
 
+
+def get_serial():
+    """
+        this method ispulled from
+        https://www.raspberrypi-spy.co.uk/2012/09/getting-your-raspberry-pi-serial-number-using-python/
+    """
+    cpuserial = "0000000000000000"
+    try:
+        file = open('/proc/cpuinfo', 'r')
+        for line in file:
+            if line[0:6] == 'Serial':
+                cpuserial = line[10:26]
+        file.close()
+    except FileNotFoundError:
+        cpuserial = "ERROR000000000"
+    return cpuserial
 
 class Controller():
     """
     Class for Controller of All Pi-ot functions.
     Attributes:
-        -ENDPOINT - The endpoint for AWS Connection for IOT
-        -CA - Certification Info for AWS
-        -CERT - Certificate details for AWS
+        -endpoint - The endpoint for AWS Connection for IOT
+        -ca - certification Info for AWS
+        -cert - certificate details for AWS
         -PRIVATE KEY - Private Key for AWS
         -Communication Handler - The Mqtt communications handler
-        -Pir - The pi's sensor controller
-        -PAYLOAD - The datetime object from the Pi
+        -pir - The pi's sensor controller
+        -payload - The datetime object from the Pi
     """
 
 
@@ -25,17 +43,25 @@ class Controller():
         Args:
             -self - this object
         """
-        self.ENDPOINT = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
+        self.endpoint = "a2vjr670r30pov-ats.iot.us-east-2.amazonaws.com"
 
-        self.CA = "keys/CA.pem"
-        self.CERT = "keys/certificate.pem.crt"
-        self.PRIVATE_KEY = 'keys/private.pem.key'
-        self.COM_HANDLER = CommunicationHandler(self.ENDPOINT, self.CA, self.CERT, self.PRIVATE_KEY)
-
+        self.ca = "keys\\CA.pem"
+        self.cert = "keys\\certificate.pem.crt"
+        self.private_key = 'keys\\private.pem.key'
+        self.com_handler = CommunicationHandler(self.endpoint, self.ca, self.cert, self.private_key)
+        print(get_serial())
         #create settings ini later for this
-        self.PIR = PirSensor(4)
-        while True
-            self.PAYLOAD = self.PIR.look_for_motion()
-            if self.PAYLOAD is not None:
-                self.COM_HANDLER.send_payload(PAYLOAD)
+        self.pir = PirSensor(4)
+        while True:
+            self.payload = self.pir.look_for_motion()
+            if self.payload is not None:
+                self.payload = '{"deviceid":"'+ get_serial() +'","data":"'+self.payload+'"}'
+                self.com_handler.send_payload(self.payload)
                 sleep(5)
+
+
+
+
+
+if __name__ == '__main__':
+    Controller()

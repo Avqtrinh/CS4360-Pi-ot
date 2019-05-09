@@ -8,11 +8,10 @@ from gpiozero import Device
 from gpiozero import exc
 path_length = sys.path[0].index("tests")
 sys.path.insert(0,sys.path[0][0:path_length])
-from modules.Motion import PirSensor
-import controller
+from modules.motion import PirSensor
+from controller import Controller
 
 class TestPiController(unittest.TestCase):
-
     def test__init__(self):
         Device.pin_factory = MockFactory()
         test_controller = Controller()

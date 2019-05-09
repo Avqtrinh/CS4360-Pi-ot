@@ -1,6 +1,7 @@
-from datetime import datetime as dt
+"""
+    Motion module that handles all motion related functions of the pi
+"""
 from gpiozero import MotionSensor
-
 
 class PirSensor():
     """
@@ -18,10 +19,7 @@ class PirSensor():
         try:
             self.pir = MotionSensor(gpioid)
         except NoSensorError:
-            print("Error: 1")
-            print("No motion sensor device found.")
-            print("Please check that the sensor is connected")
-            print("and the GPIO pin ID is correct.")
+            pass
 
 
     def look_for_motion(self):

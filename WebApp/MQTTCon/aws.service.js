@@ -16,7 +16,7 @@ app.set('json spaces',0)
 app.get('/api_logPing',(req,res)=>{
   var params = {
     Bucket:"pidatalog",
-    MaxKeys: 10
+    MaxKeys: 1000
   }
   logS3.listObjectsV2(params, function(err,data){
     if (err) console.log(err,err.stack);

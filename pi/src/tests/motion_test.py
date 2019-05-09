@@ -4,7 +4,7 @@ import unittest
 from gpiozero.pins.mock import MockFactory
 from gpiozero import Device
 sys.path.insert(0, sys.path[0][0:sys.path[0].index("tests")]+'modules')
-from Motion import PirSensor
+from motion import PirSensor
 
 
 class TestMotionSensor(unittest.TestCase):
@@ -12,11 +12,13 @@ class TestMotionSensor(unittest.TestCase):
     # no sensor found
     # sensor is found
     def test_init(self):
+
         Device.pin_factory = MockFactory()
         #test_pir = PirSensor(1)
         #self.assertIsNone(test_pir.pir)
         test_pir = PirSensor(4)
         self.assertIsNotNone(test_pir.pir)
+
 
     #test cases:
     #make sure that if motion_detected returns true to output a datetime

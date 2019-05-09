@@ -1,5 +1,8 @@
+"""
+    Communication Module that handles all communication between the pi and aws
+"""
+import AWSIoTPythonSDK
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
-from uuid import getnode as get_mac
 
 class CommunicationHandler():
     """
@@ -9,10 +12,10 @@ class CommunicationHandler():
         -initalized - used for testing
     """
 
-
     def __init__(self, ENDPOINT, CA, CERT, PRIVATE_KEY):
         """
-        This method initializes the CommunicationHandler class with the MQTT client and handles errors on client creation.
+        This method initializes the CommunicationHandler class with the
+        MQTT client and handles errors on client creation.
         Args:
             -self
             -ENDPOINT - The endpoint for AWS Connection for IOT
@@ -21,7 +24,6 @@ class CommunicationHandler():
             -PRIVATE KEY - Private Key for AWS
         """
         try:
-            print("test")
             self.mqtt_client = AWSIoTMQTTClient("client")
             self.mqtt_client.configureEndpoint(ENDPOINT, 8883)
             self.mqtt_client.configureCredentials(CA, PRIVATE_KEY, CERT)
@@ -35,42 +37,30 @@ class CommunicationHandler():
             self.initilized = False
 
 
-    def send_payload(self, data):
+    def send_payload(self, payload):
         """
-        Handles the sending of the data to AWS in a Json format.
+        Handles the sending of the payload to AWS in a Json format.
         Args:
             -self - this object
-            -data - the object that is to be formated into a json (will be gps data)
+            -payload - the object that is to be formated into a json (will be gps payload)
 
         Attributes:
             -PAYLOAD - the json object that is sent to aws
         """
-        if data in("", '', None):
+        if payload in("", '', None):
             print("Error: Message Empty.")
             return False
-        payload = {"deviceid": getSerial(), "data":data}
+
         try:
             self.mqtt_client.connect()
             self.mqtt_client.publish("pi", payload, 0)
             print("Publish Success.")
             return True
-        except FailedToSendError:
+        except AWSIoTPythonSDK.exception.AWSIoTExceptions.connectTimeoutException:
             print("Publish Failed.")
             return False
 
-    ##https://www.raspberrypi-spy.co.uk/2012/09/getting-your-raspberry-pi-serial-number-using-python/
-    def getSerial():
-        cpuserial = "0000000000000000"
-        try:
-            f = open('/proc/cpuinfo','r')
-            for line in f:
-                if line[0:6]=='Serial':
-                    cpuserial = line[10:26]
-            f.close()
-        except:
-            cpuserial = "ERROR000000000"
 
-  return cpuserial
 class Error(Exception):
     """Base class for other exceptions"""
 

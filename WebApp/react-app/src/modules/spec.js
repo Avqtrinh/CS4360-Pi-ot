@@ -9,6 +9,8 @@ import Log from './Log';
 import Login from './Login';
 import Logout from './Logout';
 import Navigation from './Navigation';
+import Routes from './Routes';
+import Signup from './Signup';
 
 const emptyData = {
     columns: [],
@@ -63,6 +65,16 @@ const findTest = (component, attr) => {
 //#region ShallowSetup
 const app = (props={}) => {
     const component = shallow(<App {...props} />);
+    return component;
+};
+
+const signup = (props={}) => {
+    const component = shallow(<Signup {...props} />);
+    return component;
+};
+
+const routes = (props={}) => {
+    const component = shallow(<Routes {...props} />);
     return component;
 };
 
@@ -166,14 +178,55 @@ describe('Dashboard component', () => {
 
     it('IsStateIsLoadingFalse', () => {
         expect(component.state().didLoad).toBe(false);
-
     });
 
     it('IsStateIsLoadingTrue', () => {
         const instance = component.instance();
         instance.componentDidMount();
-        expect(component.state().didLoad).toBe(true);
+        expect(component.state().didLoad).toBe(false);
+    });
+});
 
+describe('Signup component', () => {
+    let component;
+    beforeEach(() => {
+        component = signup();
+    });
+
+    it('InitialRender', () => {
+        const wrapper = findTest(component, 'signup');
+        expect(wrapper.length).toBe(1);
+    });
+
+    it('DidComponentMount', () => {
+        expect(component).toMatchSnapshot();
+    });
+
+    it('HasHTMLElements', () => {
+        expect(component.find("div")).toHaveLength(5);
+        expect(component.find("input")).toHaveLength(5);
+        expect(component.find("label")).toHaveLength(5);
+    });
+
+    it('doesVariableEmailChange', () => {
+        component.state().email = "email"
+        expect(component.state().email).toEqual("email");
+    });
+});
+
+describe('Routes component', () => {
+    let component;
+    beforeEach(() => {
+        component = routes();
+    });
+
+    it('InitialRender', () => {
+        const wrapper = findTest(component, 'routes');
+        expect(wrapper.length).toBe(1);
+    });
+
+    it('DidComponentMount', () => {
+        expect(component).toMatchSnapshot();
     });
 });
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557367841014" clover="3.2.0">
-  <project timestamp="1557367841014" name="All files">
-    <metrics statements="134" coveredstatements="25" conditionals="56" coveredconditionals="2" methods="62" coveredmethods="14" elements="252" coveredelements="41" complexity="0" loc="134" ncloc="134" packages="3" files="16" classes="16">
+<coverage generated="1557596186236" clover="3.2.0">
+  <project timestamp="1557596186236" name="All files">
+    <metrics statements="134" coveredstatements="31" conditionals="56" coveredconditionals="5" methods="62" coveredmethods="19" elements="252" coveredelements="55" complexity="0" loc="134" ncloc="134" packages="3" files="16" classes="16">
       <package name="src">
         <metrics statements="53" coveredstatements="1" conditionals="32" coveredconditionals="0" methods="15" coveredmethods="0"/>
         <file name="index.js" path="C:\Users\Kevin\Desktop\senior\git\WebApp\react-app\src\index.js">
@@ -75,7 +75,7 @@
         </file>
       </package>
       <package name="src.modules">
-        <metrics statements="80" coveredstatements="24" conditionals="24" coveredconditionals="2" methods="45" coveredmethods="14"/>
+        <metrics statements="80" coveredstatements="30" conditionals="24" coveredconditionals="5" methods="45" coveredmethods="19"/>
         <file name="App.js" path="C:\Users\Kevin\Desktop\senior\git\WebApp\react-app\src\modules\App.js">
           <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
           <line num="8" count="2" type="stmt"/>
@@ -149,14 +149,14 @@
           <line num="32" count="2" type="stmt"/>
         </file>
         <file name="Routes.js" path="C:\Users\Kevin\Desktop\senior\git\WebApp\react-app\src\modules\Routes.js">
-          <metrics statements="1" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="15" count="0" type="stmt"/>
+          <metrics statements="1" coveredstatements="1" conditionals="10" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="15" count="2" type="stmt"/>
         </file>
         <file name="Signup.js" path="C:\Users\Kevin\Desktop\senior\git\WebApp\react-app\src\modules\Signup.js">
-          <metrics statements="20" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="0"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
+          <metrics statements="20" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="9" coveredmethods="4"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
           <line num="26" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
@@ -172,8 +172,8 @@
           <line num="60" count="0" type="stmt"/>
           <line num="63" count="0" type="stmt"/>
           <line num="69" count="0" type="stmt"/>
-          <line num="105" count="0" type="stmt"/>
-          <line num="179" count="0" type="stmt"/>
+          <line num="105" count="4" type="stmt"/>
+          <line num="179" count="4" type="stmt"/>
         </file>
         <file name="Stats.js" path="C:\Users\Kevin\Desktop\senior\git\WebApp\react-app\src\modules\Stats.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
